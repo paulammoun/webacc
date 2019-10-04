@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<head>
+
+
+<%a5
+Delete tmpl_ux_statacc
+DIM tmpl_ux_statacc as P
+tmpl_ux_statacc = a5w_load_component("ux_stataccount") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:ux_stataccount)
+
+'Override settings start -----------------------------------------
+with tmpl_ux_statacc
+.alias = "ux_statacc"
+_dialogFilename = "ux_stataccount"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_ux_statacc
+dim x_ux_statacc as p
+x_ux_statacc = a5w_run_Component(tmpl_ux_statacc) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:ux_stataccount)
+
+?x_ux_statacc.Output.Head.JavaScript
+?x_ux_statacc.Output.Head.CSS_Link
+
+?x_ux_statacc.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/Alpha-Blue2/style.css">
+<!--Alpha Five Temporary Code End -->
+
+</head>
+
+
+<%a5 ?x_ux_statacc.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="Alpha-Blue2page">
+<!--Alpha Five Temporary Code End -->	
+
+
+
+
+
+<%a5 ?x_ux_statacc.Output.Body.Dialog2_HTML %>
+<%a5 ?a5dialogHelper_generateCORSHeaders() %>
+
+</body>
+
+</html>
+

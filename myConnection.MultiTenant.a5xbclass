@@ -1,0 +1,233 @@
+define class myConnection::MultiTenant
+dim ConnectionString as c 
+dim TenantIDFieldName as c 
+dim SessionVariableName as c 
+dim TenantIDFieldType as c = default "N"
+dim private cn as sql::Connection
+
+function get_metadata as c()
+    get_metadata = <<%json%
+{
+	"properties" : {
+		"ConnectionString" : {
+			"description" : "Specify the connection string that points to your database.",
+			"label" : "Connection string",
+			"readonly" : true
+		},
+		"TenantIDFieldName" : {
+			"description" : "Specify the fieldname of the field that contains the tenant Id. All of the tables in your database that are multi-tenant should include this field.",
+			"label" : "Tenant ID field name"
+		},
+		
+		"TenantIDFieldType" : { 
+			"description" : "Specify the field type for the tenant ID field. The field can be character or numeric.",
+			"label" : "Tenant ID field type",
+			"readonly" : true
+		},
+		"SessionVariableName" : { 
+			"description": "Specify the name of the session variable where the current tenant ID value is stored. ",
+			"label" : "Session variable name"
+		}
+		
+	}
+}
+%json%
+end function
+
+function tenantIdfieldtype_onpopup as c ( value as c )
+
+dim choices as c 
+choices = comma_to_crlf("Numeric,Character")
+dim p as p
+p = ui_get_list2p("Tenant ID Field Type",value,choices)
+if p.lastbutton = "Cancel" then 
+	tenantIdfieldtype_onpopup = value 
+else
+	tenantIdfieldtype_onpopup = p.selection 
+end if 
+	
+	
+end function 
+
+function ConnectionString_onpopup as c (value as c )
+dim p as p 
+p = a5_DefineConnectionString(value,"alphadao",.f.)
+if p.lastbutton = "OK" then 
+	connectionstring_onpopup = p.connstring 
+else
+	connectionstring_onpopup = value
+end if 
+end function 
+
+function open as l( _cn as sql::Connection )
+	'if mdbFile = "" then
+	'	cn.callresult.FromText("The database could not find the data you requested")
+	'	exit function
+	'end if
+	
+	'open = cn.open("{A5API=Access,FileName='"+mdbFile+"',UserName='Admin'}")
+	dim cs as c 
+	cs = ConnectionString
+	cs = stritran(cs,"::Name::","")
+	cs = "::name::" + cs 
+	open = cn.open(cs)
+end function
+
+
+function removeColumn as c (sql as c, column as c )
+removeColumn = sql
+dim ist as sql::InsertStatement
+dim flag as l 
+flag = ist.parse(sql)
+if flag = .f. then 
+	exit function 
+end if 	
+dim ix as n
+dim count as n 
+count = ist.column.count 
+dim i as n 
+dim ix as n = -1
+for i = 1 to count 
+	if ist.column[i].name = column then 
+		ix = i 
+		exit for
+	end if 
+next i 
+if ix = -1 then 
+	exit function 
+end if 
+ist.Column.remove(ix)
+ist.Value.remove(ix)
+sql = ist.SQLStatement
+removeColumn = sql
+end function 
+
+function query as l (statement as c,args as sql::arguments,er as sql::Executeresult )
+	dim se as sql::Statement
+	if left(TenantIDFieldType,1) = "C" then 
+		dim _tenantId as c 
+	else
+		dim _tenantId as n 
+	end if 
+	if eval_valid("session." + SessionVariableName) then 
+		_tenantId = eval("session." + SessionVariableName)
+	end if 
+	
+	cn.PortableSQLEnabled = .t.
+	if se.Parse(statement) then
+		if se.TokenTypeName = "InsertStatement" then
+			
+			'in case the user has added the tenantid to the sql statement, remove it.
+			statement = removeColumn(statement,TenantIDFieldName)
+			
+		    dim ist as sql::InsertStatement
+			ist.Parse(statement)
+			dim si as sql::InsertStatement::ColumnReference
+			si.Name = TenantIDFieldName
+			ist.Column.add(si)
+			dim sv as sql::InsertStatement::ValueExpression
+			if left(TenantIDFieldType,1) = "C" then 
+				_tenantId = "'" + stritran(_tenantId,"'","''") + "'"
+			end if 
+			sv.Parse(""+_tenantId)
+			ist.Value.add(sv)
+			statement = ist.SQLStatement
+			query = cn.Execute(statement,args)
+			if query then
+				er.hasLastInsertedIdentity = .t.
+				er.lastInsertedIdentity = cn.callresult.lastInsertedIdentity
+			end if
+		else	
+			
+			dim flagMustQualifyTenantField as l = .f.
+			dim q as sql::query 
+			dim flag as l 
+			dim alias as c = ""
+			if atc(".",statement) > 0 'do any existing columns have alias prefixes? if not then don't bother
+				flag = q.parse(statement)
+				if flag then 
+					if q.TableReferences.count > 1 then 
+						flagMustQualifyTenantField = .t.
+						alias = q.TableReferences[1].alias
+					end if 
+				end if 
+			end if 
+					
+					
+			dim _tenantidfieldname as c = TenantIDFieldName
+			if flagMustQualifyTenantField then 
+				_tenantidfieldname = alias + "." + _tenantidfieldname
+			end if 
+			
+			_tenantidfieldname = a5_qualify_field(_tenantidfieldname)
+			
+			if left(TenantIDFieldType,1) = "C" then 
+				_tenantId = stritran(_tenantId,"'","''")
+				
+				dim whereStatement as c = _tenantidfieldname  + " = '" +_tenantId + "'"
+			else
+				dim whereStatement as c = _tenantidfieldname  + " = " +_tenantId
+			end if 
+			if se.where.SQLStatement <> "" then
+				whereStatement = se.where.SQLStatement + " and "+_tenantidfieldname+" = "+_tenantId
+			end if
+			if se.TokenTypeName	= "UpdateStatement" then
+				statement = strtran(statement,se.where.SQLStatement,whereStatement)
+				query = cn.Execute(statement,args)
+				dim rows as n 
+				rows = cn.callresult.RowsAffected
+				er.rowsAffected = rows 
+				
+			else if	se.TokenTypeName = "DeleteStatement" then
+				statement = strtran(statement,se.where.SQLStatement,whereStatement)			
+				query = cn.Execute(statement,args)
+				dim rows as n 
+				rows = cn.callresult.RowsAffected
+				er.rowsAffected = rows 
+			else if se.TokenTypeName = "Query" then
+				if se.where.SQLStatement <> "" then
+					statement = strtran(statement,se.where.SQLStatement,whereStatement)
+				else
+					statement = a5cs_sql_add_filter_order(statement,whereStatement,"","")
+				end if
+				query = cn.Execute(statement,args)
+			end if
+		end if	
+		if query then
+			er.resultset = cn.ResultSet
+		end if
+	else
+		cn.CallResult.fromText( se.callresult.text )	
+	end if
+end function
+
+function ValidateQuery as l(statement as c,er as sql::executeresult)
+	dim qs as sql::Query
+	dim flag as l = qs.Parse(statement)
+	if flag then
+		cn.PortableSQLEnabled = .t.
+		ValidateQuery = qs.Validate(cn)
+		if ValidateQuery then
+			er.resultset = qs.ResultSet
+		end if	
+	end if
+end function
+
+function ListTables as c(includeTypes as l)
+	ListTables = cn.ListTables()
+end function
+
+function GetTableInfo as p(tn as sql::tablename)
+	dim ti as sql::TableInfo
+	cn.GetTableInfo(ti,tn.name,tn.owner,tn.schema)
+	GetTableInfo = ti
+end function
+
+function GetLastError as c()
+	GetLastError = cn.CallResult.text
+end function
+
+function Close as v(_cn as sql::Connection)
+	cn.close()
+end function
+end class

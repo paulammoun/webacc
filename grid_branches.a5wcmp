@@ -1,0 +1,2123 @@
+{
+    "$schema": "GRID",
+    "$definition": {
+        "_style_hasSassOverrides": true,
+        "saveFileType": "Formatted JSON",
+        "SecurityModel": "Group Based",
+        "GUID": "d3759c1f-789a-42e1-80f2-51f1a0c5a107",
+        "DateFormatOnClient": "DD/MM/YY",
+        "clientSideDateFormat": "dd/MM/yyyy",
+        "flagTreeViewGrid": true,
+        "flagTreeViewDV": true,
+        "componentType": "Grid",
+        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"grid_branches\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .f.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::SQL\"\ntmpl.CS.SQL = \"SELECT \"+chr(13)+chr(10)+\"\tbranches.id,\"+chr(13)+chr(10)+\"\tbranches.branchename,\"+chr(13)+chr(10)+\"\tbranches.company_id,\"+chr(13)+chr(10)+\"\tcompany.companyname AS companyname \"+chr(13)+chr(10)+\"FROM branches branches\"+chr(13)+chr(10)+\"\t INNER JOIN company company\"+chr(13)+chr(10)+\"\t\t ON  branches.company_id = company.id    \"+chr(13)+chr(10)+\"ORDER BY branches.id\"\nDIM tmpl.Arguments[1] AS P\nwith tmpl.Arguments[1]\n\t.Name = \"\"\n\t.DataType = \"\"\n\t.Source = \"\"\n\t.SourceDisplay = \"\"\n\t.VariableScope = \"\"\n\t.VariableName = \"\"\n\t.VariableWithScope = \"\"\n\t.DefaultValue = \"\"\n\t.Prompt = .f.\n\t.PromptText = \"\"\n\t.PromptControlType = \"\"\n\t.PromptChoices = \"\"\n\t.PromptDlgTitle = \"\"\n\t.PromptTextAbove = \"\"\n\t.PreviewValue = \"\"\nend with\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = <<%txt%\nbranches|id\ncompany|id%txt%\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\nDIM tmpl.update.tables[2] as p\nwith tmpl.update.tables[1]\n\t.Name = \"branches\"\n\t.Table_Alias = \"branches\"\n\t.PrimaryKey = \"id\"\nEnd With\nwith tmpl.update.tables[2]\n\t.Name = \"company\"\n\t.Table_Alias = \"company\"\n\t.Readonly = .t.\nEnd With\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .t.\ntmpl.title = \"<font size=\\\"4\\\"><strong>Creation Of Branches</strong></font>\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"<table border=\\\"0\\\" cellpadding=\\\"20\\\" cellspacing=\\\"1\\\"><tr><td>&nbsp;<font style=\\\"font-size:14pt; font-weight:bold;\\\">There are no records on file...</font></td></tr></table>\"\ntmpl.total_records_row_position = 2\ntmpl.total_records_row = \"Records:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 4\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"branches.id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"branchename\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"BRANCHENAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: left;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.branchename\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Branche Names\"\n\t.Column.Sort = \"branches.branchename\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.InLineStyle = \"text-align: left; font-size: 13px;\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"company_id\"\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"COMPANY_ID\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Hidden\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.company_id\"\n\t.SourceAlias = \"branches\"\n\t.Column.Heading = \"\"\n\t.Column.Sort = \"<No Sort>\"\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"companyname\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"COMPANYNAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"company.companyname\"\n\t.SourceAlias = \"company\"\n\t.Column.Heading = \"Company Name\"\n\t.Column.Sort = \"company.companyname\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.InLineStyle = \"text-align: left; font-size: 13px;\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.ToolbarActionButtons = <<%html%\n{ActionButton:LISTBRANCHES}\n%html%\ntmpl.style_name = \"Alpha\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.HasQuickSearch = .t.\ndim tmpl.QuickSearch as P\nwith tmpl.QuickSearch\n\t.QuickSearchPosition = \"In Grid\"\n\t.QuickSearchAlign = \"Left\"\n\t.FieldToSearch = \"branchename,company_id\"\n\t.AllowQBFStyleSearch = .t.\n\t.SearchStyle = \"Contains\"\n\t.ControlType = \"Textbox\"\n\t.AutoSubmit = .f.\n\t.Label = \"Search for:\"\n\t.labelInLineStyle = \"\"\n\t.HasfreeFormLayout = .f.\n\t.freeFormLayout = \"\"\n\t.SearchButtonLabel = \"Search\"\n\t.Textbox.Size = 100\n\t.Textbox.MaxLength = -1\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.Orientation = \"Horizontal\"\n\t.HasShowAllButton = .t.\n\t.ShowAllButtonLabel = \"All\"\n\t.InitialSelection = \"\"\n\t.Textbox.Type = \"Static\"\n\t.Textbox.Choices = \"\"\nend with\ntmpl.DetailView.Has_DetailView = .t.\ntmpl.detailView.show_row_labels = .t.\ntmpl.DetailView.linkfield = \"\"\ntmpl.DetailView.editable = .t.\ntmpl.DetailView.edit.allow_update = .t.\ntmpl.DetailView.edit.allow_insert = .t.\ntmpl.DetailView.edit.allow_delete = .t.\ntmpl.DetailView.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.DetailView.edit.updateWhichFields = \"Dirty Fields Only\"\ntmpl.DetailView.edit.Show_Update_Commands = .f.\ntmpl.DetailView.edit.Execute_Update_Commands = .t.\ntmpl.DetailView.AddNewLinkLabel  = \"Add\"\ntmpl.DetailView.LayoutColumns = 1\ntmpl.DetailView.UseSimpleStyles  = .t.\ntmpl.DetailView.SimpleStyleMode  = \"LayoutOnly\"\ntmpl.DetailView.HasTitle  = .f.\ntmpl.DetailView.SaveRecordButtonLabel  = \"Save\"\ntmpl.DetailView.Title  = \"Detail View \"\ntmpl.DetailView.edit.Delete_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Save_TargetPage = \"<Self>\"\ntmpl.DetailView.edit.Add_TargetPage = \"<Self>\"\ntmpl.DetailView.Toolbar.Position = \"Below\"\ntmpl.DetailView.Toolbar.showRecordNavigatorLinks = .t.\ntmpl.customizationString.DetailView.toolbar = \"\"\ntmpl.DetailView.edit.check_for_write_conflicts = .t.\ntmpl.DetailView.Toolbar.Buttons = <<%txt%\n<div style=\"padding-top:6px;\">\n\t{grid.detailView_part.deleteRecord}\n\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\t{grid.detailView_part.cancelEdits}\n\t{grid.detailView_part.saveChanges}\n\t{grid.DetailViewActionButtonHTMLTemplate}\n</div>%txt%\ntmpl.DetailView.ToolbarActionButtons = \"\"\ntmpl.detailView.window.animation.hasAnimation = .t.\ntmpl.detailView.window.animation.show.method = \"Fade\"\ntmpl.detailView.window.animation.show.speed = \"Slow\"\ntmpl.detailView.window.animation.hide.method = \"None\"\ntmpl.detailView.window.animation.hide.speed = \"Fast\"\ntmpl.DetailView.scrollIntoView = .f.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.DetailView.edit.RefreshRowMethod = \"FullPage\"\ntmpl.DetailView.edit.FocusAfterFullPageRefreshForInsert = \"First record\"\ntmpl.DetailView.edit.FocusAfterFullPageRefreshForUpdate = \"Current page\"\ntmpl.DetailView.edit.FocusAfterFullPageRefreshForDelete = \"Current page\"\ntmpl.DetailView.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.DetailView.edit.RefreshRowOnDirty = .t.\ntmpl.DetailView.edit.RowEditStyle = \"InitiallyEditable\"\ntmpl.DetailView.edit.LazyEdit = .t.\ntmpl.DetailView.displayStyle = \"PopupWindow-Modal\"\ntmpl.DetailView.ajaxWindowPositionAttribute = \"\"\ntmpl.DetailView.ajaxWindowWidth = \"\"\ntmpl.DetailView.ajaxWindowHeight = \"\"\ntmpl.DetailView.ShowNewRecordIfNoRecordsInQuery = .f.\ntmpl.DetailView.windowDragOpacity = 75\ntmpl.DetailView.PopupWindowTitle = \"New Branches\"\ntmpl.DetailView.PopupWindowDirection = \"ltr\"\ntmpl.DetailView.OpenMethod = \"Double-click on a Grid row\"\ntmpl.DetailView.Toggle = .f.\ntmpl.DetailView.PopulateUsingJavaScript = .f.\ntmpl.DetailView.OnlyShowOnRequest = .t.\ntmpl.DetailView.HideGridIfDetailViewIsVisible = .f.\ntmpl.DetailView.HasCloseLink = .t.\ntmpl.DetailView.CloseDetailViewLinkLabel = \"Close\"\ntmpl.DetailView.CanClose = .t.\ntmpl.DetailView.total_records_row = \"\"\ntmpl.DetailView.CloseAfterSubmit = .t.\ntmpl.EditRegion.DetailView.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.DetailView.Right = <<%editregion%\n%editregion%\n\ntmpl.DetailFields = 3\nDIM tmpl.DetailField_Info[tmpl.DetailFields] as P \nwith tmpl.DetailField_Info[1]\n\t.Fieldname = \"id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"id\"\n\t.Varname = \"ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 11\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"branches.id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id\"\nend with\nwith tmpl.DetailField_Info[2]\n\t.Fieldname = \"branchename\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"branchename\"\n\t.Varname = \"BRANCHENAME\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 105\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 255\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.branchename\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Branche Name\"\n\t.Column.Sort = \"branches.branchename\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\nend with\nwith tmpl.DetailField_Info[3]\n\t.Fieldname = \"company_id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"company_id\"\n\t.Varname = \"COMPANY_ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::SQL\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT companyname,id FROM company ORDER BY companyname, id\"\n\t.DropDownBox.DisplayValueField = \"companyname\"\n\t.DropDownBox.StoredValueField = \"id\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.company_id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Company Name\"\n\t.Column.Sort = \"branches.company_id\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.GUID = \"d3759c1f-789a-42e1-80f2-51f1a0c5a107\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\nDIM tmpl.controls[1] as P\nwith  tmpl.controls[1]\n\t.idInternal = \"4ff084ae-b36f-48cd-a121-6a34b32a0de6\"\n\t.type = \"Button\"\n\t.Name = \"LISTBRANCHES\"\n\t.trailingSeparator = .T.\n\t.bubbleHelp = \"\"\n\t.readDataFrom = \"GridPart\"\n\t.actionJSAttribute = <<%str%\n/* actionJavascript:fde6cae6-8269-41f1-be9a-f95f212c97b0  */\n{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1(this);%str%\n\t.actionJSGlobal = <<%str%\nwindow['{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1'] = function(objEle) {\nvar rowNum = {grid.object}._selectedRow;\nvar rowId = $u.s.tran(rowNum,'-','_');\n window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'] = {Grid.object}.getWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce' );\nif(!window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1']) {\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'] = {grid.object}.createWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce','modal-url-resizable',{\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'List Of Branches',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\tvar ro = new Object();\n\tro.hostComponentType = 'Grid';\n\tro.reportName = 'rep_branches@ProjectReport';\n\tro.reportNameShort = 'rep_branches';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\tro.rawArgumentMapping = '';\n\tro.controlReferences = [];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._gridCurrentFilter = {grid.object}._gridFilter;\n\tro._gridCurrentOrder = {grid.object}._gridOrder;\n\tro._gridCurrentArguments = {grid.object}._gridArguments;\n\tro._gridCurrentDBType = {grid.object}._gridDBType;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\tro.htmlReporting = {initialView: 'PDF'};\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\tA5.component.runReport(ro);\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'].show();\n}%str%\n\t.actionXbasic = \"\"\n\t.actionClientSideXbasic = \"\"\n\t.buttonStyle = \"Text only\"\n\t.buttonClass = \"[class.gridButton]\"\n\t.buttonClassHover = \"[class.gridButtonHover]\"\n\t.buttonClassPressed = \"[class.gridButtonPressed]\"\n\t.buttonClassDisabled = \"[class.gridButtonDisabled]\"\n\t.buttonInlineStyle = \"\"\n\t.buttonText = \"Print\"\n\t.hyperlinkClass = \"[class.gridHyperlinkButton]\"\n\t.hyperlinkInlineStyle = \"\"\n\t.hyperlinkImagePosition = \"None\"\n\t.textClass = \"\"\n\t.textInlineStyle = \"\"\n\t.imageName = \"\"\n\t.hoverImageName = \"\"\n\t.pressedImageName = \"\"\n\t.disabledimageName = \"\"\n\t.imageClass = \"\"\n\t.imageInlineStyle = \"\"\n\t.securityGroups = \"\"\n\t.serverSideShowHideExpression = \"\"\n\t.readDataFromForClientSideExpns = \"GridPart\"\n\t.clientSideShowHideExpression = \"\"\n\t.clientSideEnableExpression = \"\"\n\t.precalc.watchJavascriptShowHide = \"\"\n\t.precalc.watchJavascriptEnable = \"\"\n\t.precalc.watchColumnsShowHide = \"\"\n\t.precalc.watchColumnsEnable = \"\"\n\t.precalc.JStoSetupWatchEvents = \"\"\n\t.precalc.buttonObjectJavascript = <<%str%\nwindow['{grid.componentName}_BUTTONS_LISTBRANCHES'] = new A5.Button({\n\tlayout: 'text',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'Print',\n\tonClick: function() { /* actionJavascript:fde6cae6-8269-41f1-be9a-f95f212c97b0  */\n{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1(this);\n},\n\ttheme: '{grid.style}'\n});%str%\n\t.precalc.objectHTML = \"<button type=\\\"button\\\" id=\\\"{id}\\\"></button>&nbsp;\"\n\t.precalc.objectName = \"{grid.componentName}_BUTTONS_LISTBRANCHES\"\n\t.precalc.bindJS = \"{grid.componentName}_BUTTONS_LISTBRANCHES.bind({bindIdList});\"\nend with\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2019-09-25:14-51-08.343\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
+        "datasourceType": 3,
+        "componentName": "grid_branches",
+        "query_ado": {
+            "mdb_or_cs": 1,
+            "connection_type": 1,
+            "base_on": 1,
+            "Arguments": []
+        },
+        "query_cs": {
+            "connection_type": 1,
+            "connection_name": "SQL",
+            "base_on": 2,
+            "table_name": "branches",
+            "table_alias": "branches",
+            "sql_select": "SELECT \n\tbranches.id,\n\tbranches.branchename,\n\tbranches.company_id,\n\tcompany.companyname AS companyname \nFROM branches branches\n\t INNER JOIN company company\n\t\t ON  branches.company_id = company.id    \nORDER BY branches.id",
+            "database_type": "CS",
+            "surrogate_primary_key": "id",
+            "FieldInfo": "<a_expn<[1]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"\">\n<portable_type=\"Integer32\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"id\">\n<basecolumn=\"id\">\n<varname=\"id\">\n<basetable=\"branches\">\n<alias_to_update=\"branches\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"branches\">\n<searchSortExpression=\"branches.id\">\n<searchExpression=\"branches.id\">\n>\n<[2]<a5_type=\"Character\">\n<a5_shorttype=\"C\">\n<CS_type=\"\">\n<portable_type=\"NationalVaryingCharacter\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=255>\n<name=\"branchename\">\n<basecolumn=\"branchename\">\n<varname=\"branchename\">\n<basetable=\"branches\">\n<alias_to_update=\"branches\">\n<Precision=255>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"branches\">\n<searchSortExpression=\"branches.branchename\">\n<searchExpression=\"branches.branchename\">\n>\n<[3]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"\">\n<portable_type=\"Integer32\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"company_id\">\n<basecolumn=\"company_id\">\n<varname=\"company_id\">\n<basetable=\"branches\">\n<alias_to_update=\"branches\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"branches\">\n<searchSortExpression=\"branches.company_id\">\n<searchExpression=\"branches.company_id\">\n>\n<[4]<a5_type=\"Character\">\n<a5_shorttype=\"C\">\n<CS_type=\"\">\n<portable_type=\"NationalVaryingCharacter\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=255>\n<name=\"companyname\">\n<basecolumn=\"companyname\">\n<varname=\"companyname\">\n<basetable=\"company\">\n<alias_to_update=\"company\">\n<Precision=255>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"company\">\n<searchSortExpression=\"company.companyname\">\n<searchExpression=\"company.companyname\">\n>\n>\n",
+            "SurrogatePrimaryKeyData": "<arrTables<[1]<Primary_Key=\"id\">\n<Name=\"branches\">\n<Alias=\"branches\">\n>\n>\n",
+            "SQLBuilder": {
+                "SQL": "SELECT \n\tbranches.id,\n\tbranches.branchename,\n\tbranches.company_id,\n\tcompany.companyname AS companyname \nFROM branches branches\n\t INNER JOIN company company\n\t\t ON  branches.company_id = company.id    \nORDER BY branches.id",
+                "PrimaryKeyData": "<arrTables<[1]<Primary_Key=\"id\">\n<Name=\"branches\">\n<Alias=\"branches\">\n<fields=\"\">\n<readOnly=.F.>\n<hasBeenExplicitlySet=.T.>\n>\n<[2]<Primary_Key=\"id\">\n<Name=\"company\">\n<alias=\"company\">\n<fields=\"\">\n<readOnly=.T.>\n>\n>\n<last_button=\"ok\">\n<flagTopAliasPrimaryKeyIsAutoIncrement=.T.>\n",
+                "ColumnAliases": "id|||||||branches.id\nbranchename|||||||branches.branchename\ncompany_id|||||||branches.company_id\ncompanyname|||||||company.companyname\n",
+                "ColumnTypes": "id=N\nbranchename=C\ncompany_id=N\ncompanyname=C\n",
+                "ColumnNativeTypes": "id=\nbranchename=\ncompany_id=\ncompanyname=\n",
+                "ColumnPortableTypes": "id=Integer32\nbranchename=NationalVaryingCharacter\ncompany_id=Integer32\ncompanyname=NationalVaryingCharacter\n",
+                "CanBeUsedInWhereClauseFields": "id\nbranchename\ncompany_id\ncompanyname\n",
+                "lastbutton": "OK"
+            },
+            "Arguments": [
+                {}
+            ],
+            "table_type": "Table",
+            "primaryKeyTopAliasIsAutoIncrement": true
+        },
+        "query_dbf": {
+            "type": "Table",
+            "Direction": "Ascending",
+            "Arguments": []
+        },
+        "fields": {
+            "a_fields": [
+                {
+                    "fieldname": "id",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "Label",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "className": "",
+                        "Size": 20,
+                        "readonly": false,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "Hide": true,
+                        "heading": "Id",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "branches.id",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.id",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "int",
+                    "autoincrement": true,
+                    "table": "branches",
+                    "FieldToUpdate": "id",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Integer32",
+                    "width": 11,
+                    "varname": "id",
+                    "Display": "id",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=#130,130,130}{DATA=id}id",
+                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=#130,130,130}{DATA=id}id",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"ID\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: right;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"branches.id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id\"\n\nend with\n\n\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=#130,130,130}{DATA=id}id",
+                    "index": 4000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                },
+                {
+                    "fieldname": "branchename",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "Label",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: left;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "className": "",
+                        "Size": 20,
+                        "readonly": false,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "heading": "Branche Names",
+                        "InLineStyle": "text-align: left; font-size: 13px;",
+                        "LabelInLineStyle": "text-align: left; font-size: 13px; font-weight: bold;",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "branches.branchename",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.branchename",
+                    "type": "C",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "varchar",
+                    "table": "branches",
+                    "FieldToUpdate": "branchename",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "VaryingCharacter",
+                    "width": 255,
+                    "varname": "branchename",
+                    "Display": "branchename",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=branchename}branchename",
+                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=branchename}branchename",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"branchename\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"BRANCHENAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"text-align: left;\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.branchename\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Branche Names\"\n\t.Column.Sort = \"branches.branchename\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.InLineStyle = \"text-align: left; font-size: 13px;\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\nend with\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=branchename}branchename",
+                    "index": 4000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                },
+                {
+                    "fieldname": "company_id",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "Hidden",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "className": "",
+                        "Size": 20,
+                        "readonly": false,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "LabelPosition": "Left",
+                        "sort": "branches.company_id",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.company_id",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "table": "branches",
+                    "FieldToUpdate": "company_id",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "SourceAlias": "branches",
+                    "PortableType": "Integer32",
+                    "width": 11,
+                    "varname": "company_id",
+                    "Display": "company_id",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=company_id}company_id",
+                    "displayODFlat": "{F=Tahoma,8}{I:''}{T=.2}{C=}{DATA=company_id}company_id",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"company_id\"\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"COMPANY_ID\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Hidden\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.company_id\"\n\t.SourceAlias = \"branches\"\n\t.Column.Heading = \"\"\n\t.Column.Sort = \"<No Sort>\"\nend with\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=company_id}company_id",
+                    "index": 4000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                },
+                {
+                    "fieldname": "companyname",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "Label",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "className": "",
+                        "Size": 20,
+                        "readonly": false,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "heading": "Company Name",
+                        "InLineStyle": "text-align: left; font-size: 13px;",
+                        "LabelInLineStyle": "text-align: left; font-size: 13px; font-weight: bold;",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "company.companyname",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "company.companyname",
+                    "type": "C",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "company",
+                    "canBeUsedInWhereClause": true,
+                    "table": "company",
+                    "FieldToUpdate": "companyname",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "SourceAlias": "company",
+                    "PortableType": "NationalVaryingCharacter",
+                    "width": 255,
+                    "varname": "companyname",
+                    "Display": "companyname",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=companyname}companyname",
+                    "displayODFlat": "{F=Tahoma,8}{I:'a5_blue_text'}{T=.2}{C=}{DATA=companyname}companyname",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"companyname\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"NationalVaryingCharacter\"\n\t.nativeType = \"\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Varname = \"COMPANYNAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Label\"\n\t.Label.InLineStyle = \"\"\n\t.Label.ClassName = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"company.companyname\"\n\t.SourceAlias = \"company\"\n\t.Column.Heading = \"Company Name\"\n\t.Column.Sort = \"company.companyname\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.InLineStyle = \"text-align: left; font-size: 13px;\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\nend with\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'a5_blue_text'} {C=}{DATA=companyname}companyname",
+                    "index": 4000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                }
+            ]
+        },
+        "field_index": 1,
+        "DetailView": {
+            "editable": true,
+            "has_DetailView": true,
+            "LayoutColumns": 1,
+            "AddNewLinkLabel": "Add",
+            "SaveRecordButtonLabel": "Save",
+            "DeleteRecordButtonLabel": "Delete",
+            "AddRecordButtonLabel": "Add",
+            "Title": "Detail View ",
+            "show_row_labels": true,
+            "edit": {
+                "Execute_Update_Commands": true,
+                "allow_update": true,
+                "allow_insert": true,
+                "allow_delete": true,
+                "validateFieldsSetting": "Dirty Fields Only",
+                "updateWhichFields": "Dirty Fields Only",
+                "Number_Of_Insert_Rows": 1,
+                "cancel_button_text": "Cancel",
+                "close_button_text": "Close",
+                "save_confirm_before_submit_message": "Update record?",
+                "delete_confirm_before_submit_message": "Delete record?",
+                "add_confirm_before_submit_message": "Add record?",
+                "check_for_write_conflicts": true,
+                "write_conflict_check_type": 2,
+                "save_original_values": true,
+                "Delete_TargetPage": "<Self>",
+                "Save_TargetPage": "<Self>",
+                "Add_TargetPage": "<Self>",
+                "field_error_style": {
+                    "type": "Icon",
+                    "icon": "images/$$generic.error.png.a5image"
+                },
+                "RefreshRowMethod": "FullPage",
+                "row_errors_window_title": "Errors",
+                "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+                "FocusAfterFullPageRefreshForInsert": "First record",
+                "FocusAfterFullPageRefreshForUpdate": "Current page",
+                "FocusAfterFullPageRefreshForDelete": "Current page",
+                "Editable_GridRow_Options_Style": "Icons",
+                "RefreshRowOnDirty": true,
+                "RowEditStyle": "InitiallyEditable",
+                "LazyEdit": true
+            },
+            "OnlyShowOnRequest": true,
+            "HasCloseLink": true,
+            "CloseDetailViewLinkLabel": "Close",
+            "CloseAfterSubmit": true,
+            "CanClose": true,
+            "Toolbar": {
+                "Position": "Below",
+                "showRecordNavigatorLinks": true,
+                "Buttons": "<div style=\"padding-top:6px;\">\n\t{grid.detailView_part.deleteRecord}\n\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\t{grid.detailView_part.cancelEdits}\n\t{grid.detailView_part.saveChanges}\n\t{grid.DetailViewActionButtonHTMLTemplate}\n</div>"
+            },
+            "UseSimpleStyles": true,
+            "SimpleStyleMode": "LayoutOnly",
+            "displayStyle": "PopupWindow-Modal",
+            "windowDragOpacity": 75,
+            "PopupWindowTitle": "New Branches",
+            "PopupWindowDirection": "ltr",
+            "OpenMethod": "Double-click on a Grid row",
+            "window": {
+                "animation": {
+                    "hasAnimation": true,
+                    "show": {
+                        "method": "Fade",
+                        "speed": "Slow"
+                    },
+                    "hide": {
+                        "method": "None",
+                        "speed": "Fast"
+                    }
+                }
+            }
+        },
+        "detailfields": {
+            "a_fields": [
+                {
+                    "fieldname": "id",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "TextBox",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "className": "",
+                        "Size": 11,
+                        "readonly": false,
+                        "MaxLength": 11,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "Hide": true,
+                        "heading": "Id",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "branches.id",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.id",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "int",
+                    "autoincrement": true,
+                    "table": "branches",
+                    "FieldToUpdate": "id",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Integer32",
+                    "varname": "id",
+                    "Display": "id",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=id}id",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=id}id",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"id\"\n\t.Varname = \"ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 11\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"branches.id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id\"\n\nend with\n\n\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=#130,130,130}{DATA=id}id",
+                    "index": 4000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                },
+                {
+                    "fieldname": "branchename",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "TextBox",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "className": "",
+                        "Size": 105,
+                        "readonly": false,
+                        "MaxLength": 255,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "heading": "Branche Name",
+                        "LabelInLineStyle": "text-align: left; font-size: 13px; font-weight: bold;",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "branches.branchename",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.branchename",
+                    "type": "C",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "varchar",
+                    "table": "branches",
+                    "FieldToUpdate": "branchename",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "VaryingCharacter",
+                    "varname": "branchename",
+                    "Display": "branchename",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=branchename}branchename",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=branchename}branchename",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"branchename\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"branchename\"\n\t.Varname = \"BRANCHENAME\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 105\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 255\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.branchename\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Branche Name\"\n\t.Column.Sort = \"branches.branchename\"\n\t.Column.FirstClickDirection = \"A\"\n\t.Column.LabelInLineStyle = \"text-align: left; font-size: 13px; font-weight: bold;\"\n\nend with\n\n\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=branchename}branchename",
+                    "index": 1000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                },
+                {
+                    "fieldname": "company_id",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "FrameControlID": "1",
+                        "FramePaneID": "1"
+                    },
+                    "controltype": "DropDownBox",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "className": "",
+                        "Size": 255,
+                        "readonly": false,
+                        "MaxLength": 11,
+                        "stylefieldiferror": true
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "toolbaricons": "",
+                            "toolbardefinition": "",
+                            "editButtonText": "Edit..."
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "use_saved_connection_string": true,
+                    "saved_connection_string": "SQL",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Dynamic",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "cs": {
+                            "connectionString": "::name::SQL",
+                            "sql": "SELECT DISTINCT companyname,id FROM company ORDER BY companyname, id"
+                        },
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>",
+                        "flagIsDefined": true
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel"
+                    },
+                    "column": {
+                        "heading": "Company Name",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "branches.company_id",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "columnQBEOptionsJSON": "",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "branches.company_id",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "branches",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "int",
+                    "table": "branches",
+                    "FieldToUpdate": "company_id",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Integer32",
+                    "varname": "COMPANY_ID",
+                    "Display": "company_id",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=company_id}company_id",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_combobox'}{T=.2}{C=}{DATA=company_id}company_id",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"company_id\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"branches\"\n\t.FieldToUpdate = \"company_id\"\n\t.Varname = \"COMPANY_ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"DropDownBox\"\n\t.DropdownBox.fieldNameOfFieldLinkedToParentControl = \"<Auto>\"\n\t.DropdownBox.fieldTypeOfFieldLinkedToParentControl = \"\"\n\t.DropdownBox.methodForComputingCascadingFilter = \"<Auto>\"\n\t.DropdownBox.explicitCasacadingFilter = \"\"\n\t.DropdownBox.InLineStyle = \"\"\n\t.DropdownBox.Type = \"Dynamic\"\n\t.DropdownBox.Size = 1\n\t.DropdownBox.selectStyle = \"Single\"\n\t.DropdownBox.NotInListRule = \"Add to List\"\n\t.DropDownBox.Datasource = \"CS\"\n\t.DropDownBox.maxchoices = 0\n\t.DropDownBox.CS.ConnectionString = \"::name::SQL\"\n\t.DropDownBox.CS.SQL = \"SELECT DISTINCT companyname,id FROM company ORDER BY companyname, id\"\n\t.DropDownBox.DisplayValueField = \"companyname\"\n\t.DropDownBox.StoredValueField = \"id\"\n\t.DropDownBox.DisplayValueFieldType = \"C\"\n\t.DropDownBox.StoredValueFieldType = \"N\"\n\t.DropdownBox.noSelectionDisplayValue = \"\"\n\t.DropdownBox.hasCascadingChoices = .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"branches.company_id\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Company Name\"\n\t.Column.Sort = \"branches.company_id\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n\n\n\n\n\n\n",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_combobox'} {C=}{DATA=company_id}company_id",
+                    "index": 3000,
+                    "repeatingSectionParentId": -1,
+                    "parentContainer": -1,
+                    "containerStartIndex": 1
+                }
+            ]
+        },
+        "detailViewToolbar": {
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "search": {
+            "HTML_Template_source": "Computed",
+            "title": "Search ",
+            "title_when_hidden": "Click here to search...",
+            "show_title": true,
+            "search_button_label": "Search",
+            "form_method": "Get",
+            "include_sorting_listbox": true,
+            "sorting_listbox_label_position": "Left",
+            "sort": {
+                "prompt": "Sort&nbsp;by",
+                "listbox": {
+                    "fieldname_prompt": "Select Field",
+                    "order_prompt": "Select Order",
+                    "order_choices": "Ascending,Descending"
+                }
+            },
+            "include_records_per_page_listbox": true,
+            "records_per_page_label_position": "Left",
+            "records_per_page": {
+                "prompt": "Records&nbsp;per&nbsp;page",
+                "listbox": {
+                    "value_prompt": "Select Value",
+                    "choices": "1,2,5,10,25,50,75,100"
+                }
+            },
+            "orientation": "Vertical",
+            "combine_criteria_using": 1,
+            "style": 2,
+            "allow_qbf_style": true,
+            "keyword_label": "Search for?",
+            "has_Clear_link": true,
+            "Clear_link_Label": "Clear Search Criteria",
+            "Clear_link_BubbleHelp": "Clear Search",
+            "TargetPage": "<Self>",
+            "InitialState": "Open",
+            "embedInGridPosition": "Above Titles",
+            "embedded": {
+                "hasFreeformLayout": true,
+                "showHideEmbeddedSearchIcon": "images/$$filter.png.a5image",
+                "showHideEmbeddedSearchBubbleHelp": "Show/hide the Search Part",
+                "showSearchIconsInRowSelector": true,
+                "searchIconBubbleHelp": "Search for records",
+                "clearSearchIconBubbleHelp": "Clear search criteria",
+                "searchIcon": "images/$$filter.records.png.a5image",
+                "clearSearchIcon": "images/$$filter.clear.png.a5image"
+            },
+            "embeddedStyle": "Free-form region for each column",
+            "toolbarPosition": "Below",
+            "savedSearches": {
+                "loadSearchPrompt": "Saved search to load:",
+                "saveSearchPrompt": "Name:",
+                "listboxHeading": "Existing Saved Searches",
+                "promptToLoadChoices": "Click to load choices...",
+                "loadButtonLabel": "Load",
+                "saveButtonLabel": "Save",
+                "cancelButtonLabel": "Cancel",
+                "listBoxHeight": "1in",
+                "dialogWidth": "2in",
+                "executeSearchOnLoad": true,
+                "saveSearchBubbleHelp": "Save search criteria",
+                "loadSearchBubbleHelp": "Load search criteria",
+                "warningBlankName": "You have not specifed a name.",
+                "warningDuplicateName": "Search not saved. Please specify a unique name."
+            }
+        },
+        "searchToolbar": {
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "searchField_index": 1,
+        "events": {
+            "canAjaxCallback": "",
+            "afterAjaxCallback": ""
+        },
+        "eventIndex": 1,
+        "activeLanguage": "<Default>",
+        "LayoutColumns": 1,
+        "DetailLayoutColumns": 1,
+        "style_name": "Alpha",
+        "PreCalcMode": "Standard",
+        "FontSize": "Medium",
+        "show_title": true,
+        "title": "<font size=\"4\"><strong>Creation Of Branches</strong></font>",
+        "style_type": "Alpha Five",
+        "useCompactTheme": true,
+        "showPulseEffect": false,
+        "overrideStyleName": "Default",
+        "resolveAbstractClassNames": true,
+        "odd_band_size": 1,
+        "even_band_size": 1,
+        "odd_column_band_size": 1,
+        "even_column_band_size": 1,
+        "rows": 10,
+        "maxRowsPerPage": 200,
+        "rowsWhenSearchActive": -1,
+        "suppress_empty_rows": true,
+        "has_row_separator": true,
+        "show_column_titles": 1,
+        "show_row_labels": true,
+        "sort_style": 3,
+        "reset_page_number_when_sorting": true,
+        "RepeatingColumns": 1,
+        "snaking": "TBLR",
+        "total_records_row_position": 2,
+        "total_records_row": "Records:&nbsp; {Total_Records}&nbsp;",
+        "grid_layout_style": 1,
+        "grid_layout_template_computation_method": "Automatic",
+        "No_records_message": "<table border=\"0\" cellpadding=\"20\" cellspacing=\"1\"><tr><td>&nbsp;<font style=\"font-size:14pt; font-weight:bold;\">There are no records on file...</font></td></tr></table>",
+        "Show_Add_Records_Confirmation_Message": true,
+        "summary": {
+            "total": {
+                "label": "Total",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "count": {
+                "label": "Count",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "average": {
+                "label": "Average",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "min": {
+                "label": "Minimum",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "max": {
+                "label": "Maximum",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "StdDev": {
+                "label": "Std. Dev.",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "Var": {
+                "label": "Variance",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "First": {
+                "label": "First",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "Last": {
+                "label": "Last",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "RowOrder": "Total,Count,Average,Min,Max,StdDev,Var,First,Last",
+            "ShowOnLastPageOnly": true,
+            "repeatColumnHeadingAboveSummaryValues": false
+        },
+        "NewRecordsTitle": "<tr><td class=\"[class.gridData]\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" >New Records</td></tr>",
+        "ExistingRecordsTitle": "<tr><td class=\"[class.gridData]\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" >Existing Records</td></tr>",
+        "row_separator": "<tr><td class=\"{a5_style}SeparatorTD\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" ></td></tr>",
+        "highlight_row_onHover": true,
+        "highlight_row_onSelect": true,
+        "hasRecordsPerPageSelector": true,
+        "RecordsPerPageChoices": "1,2,5,10,25,50,75,100",
+        "RecordsPerPageSelectorTemplate": "&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page",
+        "alphabet_button": {
+            "style": "Hyperlink",
+            "has_ALL_option": true,
+            "ALL_Label": "All",
+            "alignment": "Left",
+            "SearchBarType": "Alphabet Buttons"
+        },
+        "has_advancedSearch": false,
+        "advancedSearch_jsondefinition": "",
+        "qbe": {
+            "menu_internationalization": "None",
+            "initial_display": "Hidden",
+            "toggleQBERowHyperlinkText": "Show/Hide QBE Row"
+        },
+        "SimpleStyleMode": "FieldsOnly",
+        "RowExpand": {
+            "ExpandMethod": "Click icon",
+            "Type": "LinkedContent",
+            "WorkingMessage": "<div style=\"width: 4in; height: .5in\">\n\t<img src=\"css/A5System/Images/wait.gif\" /> Working...\n</div> \n",
+            "Mode": "Multiple"
+        },
+        "linkedContent": {
+            "lockWindowText": "<div style=\"padding: 5pt;\"><img style=\"vertical-align:middle;\" src=\"css/A5System/Images/wait.gif\" /> Please wait...</div>",
+            "lockWindowClassName": "A5WindowLock"
+        },
+        "hasSelectedRowColumn": true,
+        "CheckboxSelectType": "SinglePage",
+        "MasterTemplateStyle": "Table - Vertical Layout",
+        "MasterLayout": {
+            "PaneLabel": {
+                "Search": "Search",
+                "Grid": "Grid",
+                "DetailView": "Detail"
+            },
+            "AccordionStyle": "Multiple",
+            "InitialOpenPanes": "Search,Grid,DetailView"
+        },
+        "verticalAlignDataInColumns": "Middle",
+        "CollapseBar": {
+            "Title": "Collapse Grid",
+            "InitialState": "open"
+        },
+        "honorDBFFieldRules": true,
+        "languageTags_RemoveUnConsumedTags": true,
+        "onlyIncludeSelectedFieldsInQuery": true,
+        "flagAddPKToORDER": true,
+        "captureJSErrorStackTrace": false,
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close"
+        },
+        "friendlydatesCustomizationJSON": "",
+        "ToolbarActionButtons": "{ActionButton:LISTBRANCHES}\n\n\n\n",
+        "gridToolbar": {
+            "ExportButtonIcon": "images/$$application.ms.excel.png.a5image",
+            "ExportButtonHelp": "Export data in Grid to Excel",
+            "ExportButtonFormat": "Excel-XLSX",
+            "ExportButtonMaxRows": "10000",
+            "exportHiddenColumns": true,
+            "exportUseColumnHeadings": true,
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "helpTableType": "DBF",
+        "fieldHelpWindowStyle": "modal-resizeable",
+        "autoRefreshInterval": 60,
+        "genericDataStoreTableType": "DBF",
+        "RecordNavigationStyle": "NavigationButtons",
+        "fetchMoreRecordsButton": {
+            "text": "More Records"
+        },
+        "namedLayout": {
+            "selectorPosition": "AboveGrid"
+        },
+        "scrollableRegionHeight": "2in",
+        "scrollableRegionWidth": "100%",
+        "defaultColumnWidth": "1in",
+        "RecNav": {
+            "HTML_Template_source": "Computed",
+            "Position": 1,
+            "Show_disabled_controls": true,
+            "Show_Page_Count": true,
+            "Page_Numbering_Style": 3,
+            "PagesTemplate_w_PageCount": "{PageNumber} of {PageCount}",
+            "PagesTemplate_wout_PageCount": "{PageNumber}",
+            "Has_First_Button": true,
+            "Has_Prev_Button": true,
+            "Has_Next_Button": true,
+            "Has_Last_Button": true,
+            "Number_of_page_links": 10,
+            "First_Label": "First",
+            "Prev_Label": "Prev",
+            "Next_Label": "Next",
+            "Last_Label": "Last",
+            "Justify": "Left",
+            "SuppressIfOnlyOnePage": true,
+            "First_on_Image_name": "{css_path_reference}/{a5_style}/FirstOn.png",
+            "First_off_Image_name": "{css_path_reference}/{a5_style}/FirstOff.png",
+            "Prev_on_Image_name": "{css_path_reference}/{a5_style}/PrevOn.png",
+            "Prev_off_Image_name": "{css_path_reference}/{a5_style}/PrevOff.png",
+            "Next_on_Image_name": "{css_path_reference}/{a5_style}/NextOn.png",
+            "Next_off_Image_name": "{css_path_reference}/{a5_style}/NextOff.png",
+            "Last_on_Image_name": "{css_path_reference}/{a5_style}/LastOn.png",
+            "Last_off_Image_name": "{css_path_reference}/{a5_style}/LastOff.png"
+        },
+        "edit": {
+            "Execute_Update_Commands": true,
+            "allow_update": true,
+            "allow_insert": true,
+            "number_of_insert_rows": 3,
+            "allow_delete": true,
+            "validateFieldsSetting": "Dirty Fields Only",
+            "delete_checkbox_label": "Delete",
+            "delete_checkbox_label_position": "Left",
+            "delete_checkbox_allowDeleteAll": false,
+            "cancel_button_text": "Cancel",
+            "submit_button_text": "Submit",
+            "confirm_before_submit_message": "Submit changes?",
+            "check_for_write_conflicts": true,
+            "write_conflict_check_type": 2,
+            "save_original_values": true,
+            "TargetPage": "<Self>",
+            "field_error_style": {
+                "type": "Icon",
+                "icon": "images/$$generic.error.png.a5image"
+            },
+            "RefreshRowMethod": "AutoSelect",
+            "Editable_GridRow_Options_Style": "Icons",
+            "RefreshRowOnFocus": true,
+            "RefreshRowOnDirty": true,
+            "row_errors_window_title": "Errors",
+            "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+            "RowEditStyle": "AllRows",
+            "NewRecordsEditStyle": "AlwaysShown",
+            "NewRecordsButtonLabel": "New Records",
+            "DeleteRecordControl": "Checkbox",
+            "HasRowStatusColumn": true,
+            "OneEditableRowAtATime": true,
+            "LazyEdit": true
+        },
+        "ValidationSettingsErrorTemplate": "Field '{Fieldlabel}', Value '{Value}' : {Error}",
+        "ValidationSettingsMessage": "Click the 'Back' button and correct the errors.",
+        "ValidationErrorsRowColumnTitle": "Row",
+        "ValidationErrorsErrorColumnTitle": "Error",
+        "OnlyValidateEditedFields": true,
+        "AddNewRecordRowsPosition": "Bottom",
+        "autoNumberColumnLabel": "Auto",
+        "HasQuickSearch": true,
+        "QuickSearch": {
+            "QuickSearchPosition": "In Grid",
+            "QuickSearchAlign": "Left",
+            "FieldToSearch": "branchename,company_id",
+            "ControlType": "Textbox",
+            "Label": "Search for:",
+            "SearchButtonLabel": "Search",
+            "AllowQBFStyleSearch": true,
+            "SearchStyle": "Contains",
+            "Height": 1,
+            "SelectStyle": "Single",
+            "Size": 100,
+            "MaxLength": -1,
+            "Orientation": "Horizontal",
+            "choices": {
+                "type": "Static",
+                "datasource": "DBF-Table"
+            },
+            "connection_type": "Access Database",
+            "HasShowAllButton": true,
+            "ShowAllButtonLabel": "All"
+        },
+        "info": {
+            "createdBy": "user",
+            "LastUpdatedBy": "user",
+            "DateUpdated": "09/25/2019 03:25:27 80 pm",
+            "DateCreated": "09/25/2019 12:06:30 95 pm"
+        },
+        "BuilderVersion": 2,
+        "_flagShowAlphaWarning": false,
+        "current_pane_tree": "Detail View.Properties",
+        "hasActionButtons": true,
+        "embeddedMode": false,
+        "_style_versionNumber": 4,
+        "AjaxOn": true,
+        "fpInstalled": "FtbXCTxOYL1FRPkhgxL04QosPo76ZUtXHPJOF9UzYkH3IIsShPZ0Fd3N8MdobMGEPNKHkALJ6GxGiqZFpdJyXd/kZc/UcvZLJOek/+m6lZwNLZQLl0OSUwGGWK3ctugjAHyJEwUXI4ue13o/Js4OE5sfgSvIt0gniH8lXxomp/IgZcI7k5pVu2ScAS2gUnP3sYKdnUgoJindfGhT/iVmBvtDjhA8bpDGGDwIUEDhzdKyG0ygwwAdRPpph8TEhK/Au/SXeueZI7XcCEDYwcjFO3aWCc9iXOc/wbgzjJo10rf7as6uWN5PYi/wEOFuVk5HnFuxRJJGMYnENUh0bx98cYnTafYbWHgWt7CVUA2Vla9HFUOWjSGGVKGQlacgC4cCi330KSxGFN7jwlsLGPRv7HvA025kd9JOSkVhf/0X1i3k4YG2hjhOgF525fyBbRywXTyxoKyozTmrm8Fgruo+Cvsqhm9vg4MxhtLNGBpHwCWv++9AY8k1sFDDD40ck118nIGEVzFGsASuzNZ83nwvz6OgsYEcMgaZapzsFbqzW8yEdlkztwL6crUvwJBbuZ/kNDcyVVwjIOLCPPmSfeGe8bcGD5paeIlw8nPibld0/NOYNxeOYRPRplkldYsnDJW46JA9CX3oYcP/7uDAwgpKmkxc0F3KKuvnedTWf01eWLsQGEyrD7wuOtrE5KRecCv5fv6GUdlYuuKKNQg9rgbxnRVfqDUDLGnmNv/Lq2w6Ot9sUKAj4a9YV5OeUR/yyYjSaDduH3Ln+m15S44JlGwZ0gLxoXg5wMPzMaGn7YGFNYzzT1ikA9DmGQn1SX5ODUxQSghZ6Z0m+55AFI6642VKKZ6G5c0w4p8njaFng9UhsnSLskUMp0YtYwtZV98++nCf++Tpei7khhaKDodlPh+mnmc7KDmL7ujkoRRH7RvqPcWJdxrgAcFvdVxrQxget/OaJQFS3MiWVU60YKcbcHfrT1jEttsfk/PMmcmBs85pieJq5tF4Lx7MEoWcrCXFdviktV8Rg7vQIq3GNUwxR0D3v6xv48DhTp2fIZNzJsID5yO4e4vqrTjMlDuvTL4RpkOh5ds6Sof1QEtfLdXo8bWA1+5qP6CLjjTbyGMxbE193pKk1R9Mg86zKpJPUSRKrvl7UkeI+sE2P+N/Rv1zPmLaHZrEaI1Jl8rF2gL0NF3Izdh2+GeFn1raRhtYKKLF4IZ/bdPOD5Gi9dSIlzVLUguZon1sOMW3JXsa0Af4dSe+E26T9OMC0SGh0fZEK+lr0hetZCL+1aACzIT8d3mu05EmJKDcc5D5lUPbsIk14QTqd6V9SItCLI81V11unPj4PoKwAqL2KQYImWzzaE5wsv2o6waON9reCx+LO2Rz2mV5+OltxuNK5d6V9rTnlslu6zNZHawoXJFNw1oqmh8DCgoht1ShyVfJZg0xfjgdpUy9IjWtCFiNNJoiK3Kk8xra8v6SjAj79gVa+h8A5ZKnIkx0jL2EyruvMPyPUK8RqQJmRcrEuk9Z6++IXoaI11Q5OZ3s84KiQeluM8qOOgQRE92P3EbpYHQOHO5zGc+UZMEOvlKqcMpRv05sdG+FYUJ7uyAC/m+cNraRrP8thXZeJaLhq6xissmywbNma7aV6E855DeXbHR6luvjJsqDxJhT9qlzyh8jCpFyJ8fSEzLLbHNyBxpWa9ChsIg6UHyO6EAAcE1Zi1sVUa/Uwy5WCoc2wCgjfgQFCT8MuyBbCXlChNswnRqVXtoXxWx9haDZLssBiaUdIbvkWBgEnvL1HuNOE329cuOgnLk57x41v5JSOtEU5jAic1idhjeCmyOcksSDy0oEbyUoIOLi1SaLUx/de4xUQDnk2F5NcjP+IOj1D5GkPGIL5Xh2iDdtAQl32toUOATwrMAuhod/RwXOHuY2j54p2V9JuQr2LVnmS6oe70J2YpTmDnsNFjzYt6CL4rT1TcCdyjri4JojtDNOCz7KU9rB4P4UrdPSMr3lQEih8ui6A/+gosXRg2ULvWXNE0iEe4uWg1A0aSeN1af6TtUmZHpVctofF5PmcO/D7MEVNCzFYGilVL+KlU5NMs2F2TxYylQh6v97WhJpToEXzoLdwhyygfQ9Tnf7X0J+8rFWfPhV6z875pPWfShWn6usIUdeexB8aKKnyIO775GauKcEvyCPRWzyZ4GDtPZ0MxLAblpMR4ScEw5Rcc1J/iz1grf+/UvWbTRXwKeqcAr/ufe7p/JbTHdrLUxNidid0f/z2uC+2TUBt4yUV5+o3oRO5Ak24pYk6CzZVKhiqKhltfPl9Zjl5uYLXfxjZSrxpidzqR+61u9Rd8k80BVr3zCuJ7xqtF3pXuvvDyR/VV5aIG1zueQ/zlne99L439pC3P6sv6LMKzHO1x3NbqkuJwCBhBiMY1trEjcDgC/ioxlcZSEdUsy0K7LozNRvzyI8CJ/PdLoKcXh9rOO42+5SB/l7/Hjz4YV1TcZf743R7spWbxj+HKUs46vurn7cV8JbZFRzuw3Sn96SeDLY2ldHSSrOAX+ZAiDhUoyhpb1RwUOExYBOzu7nUHiTgTURX1SssITyCg3ZPrzwT36A+yb9CM14phRFlrsfHitGNM1SYTq/ol9k7E9+4KwaGrFmHPtwqdbrgK8RvOWUQqXuNAc/RzQewzoLEsgMhOI30ZR49esBfKUw2qawHy3sOzB59GrOwfz7mO7xDCvFtuZvXW3ASbvCk0FyV9KyNzbU+Ft1ZgQGg7I6ElRqx2w6un6UayF/0+QHDx+GSyEHvJoOhwQe6DrRlFmZnirj9DzY7pf5crzcykDTesHDoHYRryIwo4OoUHW3tIha1bU1hziWy2PmC8gM4UsMpLxBZDf1+G0glu25+3UJfEYS7OZyW7rK58OJbO2EC6Edm8LQFA+gOhaCrzNg10YBY7BqJjMndUiFUhk3SPBdFkOcbk231syKZtxw6xxd6vmMs2kRftv9OZ3gVNFhX1L41IJaPACQVmsJSpCK1MrjILGtYwGif5L04qRB8IobVBNV3/OSkP2iJB5at/pbtcv125GIlXhUsVxDaimAzZdTIWXjesm2hz6U7f10ffnyw7AUN3Y3bXbPPoDLMtuF3IqkKtltlTbciFinldZzrJLV1j+U4jeqWdFn3v8VmXQEfyqc0X+pNK6QmUN65NwT9QpYwkNz3aHUWKXHBoAi2rAR9SoBXPEfl59Zow3MRZOGVYlVXN7KncA2+K0ITKugArB0C2+mlaVtZORKR9X8+XhAyJB6eNjfg9gkt5BxQ4CK7yY7Y5RjyrvJx16pr1JfMATb23626/jd9ufHz4snbOwRBV2BdsqjpnmSn+cPOTyl6/BQKUi81ZDCKYg6oHtxPKBbuI70yUBMJph0hqQxDWuQAoxxlJoltun8Z0x6Mk0ksGq7DPAuWL6b8Hn4MCU+RZdW0Kl4IgulmgCOH2ijY/RXZarhZ87Eb3IGvgxxIC6/IHzcjiP6uysDcJqoZFyVC56gLtNgcTQXZmwrOu+DRCJfoj4sDAQ6iwFPMQ/2Uo/aWmxJuCI1jafEav5nymeWf/q40Wdv44mWUF4GM34GgaAl6Yc0",
+        "componentFilename": "C:\\alpha_projects\\WebAcc\\WebAcc.WebProjects\\Default.WebProject\\grid_branches.a5wcmp",
+        "PAliases": {
+            "alias": "[PathAlias.ADB_Path]\n",
+            "alias_expanded": "C:\\alpha_projects\\WebAcc\n",
+            "alias_aliasExpanded": "[PathAlias.ADB_Path]|C:\\alpha_projects\\WebAcc"
+        },
+        "_row_onHover": true,
+        "ADB_PATH": "C:\\alpha_projects\\WebAcc",
+        "EXE_PATH": "C:\\Program Files (x86)\\a5V12",
+        "VersionNumber": 4,
+        "controls": [
+            {
+                "idInternal": "4ff084ae-b36f-48cd-a121-6a34b32a0de6",
+                "type": "Button",
+                "Name": "LISTBRANCHES",
+                "trailingSeparator": true,
+                "readDataFrom": "GridPart",
+                "actionJSAttribute": "/* actionJavascript:fde6cae6-8269-41f1-be9a-f95f212c97b0  */\n{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1(this);",
+                "actionJSGlobal": "window['{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1'] = function(objEle) {\nvar rowNum = {grid.object}._selectedRow;\nvar rowId = $u.s.tran(rowNum,'-','_');\n\n\n window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'] = {Grid.object}.getWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce' );\nif(!window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1']) {\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'] = {grid.object}.createWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce','modal-url-resizable',{\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'List Of Branches',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\n\n\t\n\tro.hostComponentType = 'Grid';\n\tro.reportName = 'rep_branches@ProjectReport';\n\tro.reportNameShort = 'rep_branches';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\t\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\tro.rawArgumentMapping = '';\n\tro.controlReferences = [];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._gridCurrentFilter = {grid.object}._gridFilter;\n\tro._gridCurrentOrder = {grid.object}._gridOrder;\n\tro._gridCurrentArguments = {grid.object}._gridArguments;\n\tro._gridCurrentDBType = {grid.object}._gridDBType;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_1'].show();\n\n}",
+                "buttonStyle": "Text only",
+                "buttonClass": "[class.gridButton]",
+                "buttonClassHover": "[class.gridButtonHover]",
+                "buttonClassPressed": "[class.gridButtonPressed]",
+                "buttonClassDisabled": "[class.gridButtonDisabled]",
+                "buttonText": "Print",
+                "hyperlinkClass": "[class.gridHyperlinkButton]",
+                "hyperlinkImagePosition": "None",
+                "readDataFromForClientSideExpns": "GridPart",
+                "precalc": {
+                    "buttonObjectJavascript": "window['{grid.componentName}_BUTTONS_LISTBRANCHES'] = new A5.Button({\n\tlayout: 'text',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'Print',\n\tonClick: function() { /* actionJavascript:fde6cae6-8269-41f1-be9a-f95f212c97b0  */\n{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_1(this);\n},\n\ttheme: '{grid.style}'\n});",
+                    "objectHTML": "<button type=\"button\" id=\"{id}\"></button>&nbsp;",
+                    "objectName": "{grid.componentName}_BUTTONS_LISTBRANCHES",
+                    "bindJS": "{grid.componentName}_BUTTONS_LISTBRANCHES.bind({bindIdList});"
+                }
+            }
+        ],
+        "CurrentSelectionActionButtons": "4ff084ae-b36f-48cd-a121-6a34b32a0de6",
+        "a_actionJavascript": [
+            {
+                "actionGuid": "fde6cae6-8269-41f1-be9a-f95f212c97b0 ",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$presentation.report'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Open, or Email a Report, Label or Letter layout {T=4}{I:'a5_vertical_line'}\">\n<action=\"Open, or Email a Report, Label or Letter layout \">\n<icon=\"$$presentation.report\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_openReport(v,wf,pv,dlg_mode)\">\n<metaData=<<%str1%\n<flagAdvancedExport=.F.>\n<reportSendEmail=.F.>\n<reportSendEmailJson=\"\">\n<reportPrintDefinition=<<%str%\n<layoutType=1>\n<layoutName=\"rep_branches@ProjectReport\">\n<dbfFilter=\"\">\n<sqlFilter=\"\">\n<dbfOrder=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=\"\">\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=\"\">\n%str%>\n<report<layoutTypeC=\"\">\n<layoutName=\"rep_branches@ProjectReport\">\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=\"\">\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<sqlReport=.T.>\n<pdfOpenParameters=\"\">\n<initialView=\"PDF\">\n<HTMLToolbar<buttons<pdf=.T.>\n<excel=.T.>\n<printHTML=.T.>\n<word=.T.>\n<text=.F.>\n<close=.F.>\n<close_text=\"Close\">\n<pdfButton<text=\"PDF\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.adobe.pdf.png.a5image\">\n<bubbleHelp=\"Print report as a PDF document.\">\n>\n<excelButton<text=\"Excel\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.excel.png.a5image\">\n<bubbleHelp=\"Export report to Excel.\">\n>\n<printHTMLButton<text=\"Print HTML\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$device.printer.png.a5image\">\n<bubbleHelp=\"Print the HTML report.\">\n>\n<WordButton<text=\"Word\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.word.png.a5image\">\n<bubbleHelp=\"Export report to Word.\">\n>\n<textButton<text=\"Text\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$control.text.png.a5image\">\n<bubbleHelp=\"Export data in report to a text file.\">\n>\n<bookmarksButton<buttonType=\"Text\">\n<text=\"Bookmarks\">\n<imageName=\"images/$$generic.book.png.a5image\">\n>\n>\n<bookMarkPanelSize=\"3in\">\n>\n<maxDisplayRecords=0>\n<moreRecordsTemplate=\"<hr />Showing first [DisplayRecords] of [TotalRecords] records in query\">\n<moreRecordsStyle=\"text-align: center;\">\n<beforeExecuteClientSideFunctionName=\"\">\n<afterExecuteJavascript=\"\">\n>\n<flagExportMode=.F.>\n<htmlReportHeight=\"3in\">\n<htmlReportWidth=\"6in\">\n<parentNavigator=\"\">\n<dynamicPanelTitle=\"\">\n<dynamicPanelSetFocus=.T.>\n<waitMessagePanel=\"\">\n<dynamicPanelCanClose=.F.>\n<ajaxWindowWorkingMessageUseCSSAnimation=.F.>\n<ajaxWindowWorkingMessageCSSAnimationSettings<size=\"32\">\n>\n<targetType=\"Window\">\n<targetDIVid=\"\">\n<targetDIVcanHide=.T.>\n<targetDIVHideHyperlink=\"Close\">\n<targetDIVIframeStyle=\"height: 5in; width: 6in;\">\n<dockWindow=.F.>\n<dockLocation=\"Bottom\">\n<windowNameExplicit=\"<Default>\">\n<ajaxWindowType=\"Modal-Popup\">\n<onCompleteXbasicFunction=\"\">\n<targetPanel=\"\">\n<clientSideFilename=\"\">\n<targetFolder=\"\">\n<ajaxWindowPositionAttribute=\"\">\n<ajaxWindowPositionAttributeEnglish=\"\">\n<ajaxWindowModalLockClassName=\"<Default>\">\n<ajaxWindowTitle=\"List Of Branches\">\n<ajaxPaneTitle=\"Pane\">\n<ajaxPaneAlwaysUseNewPane=.T.>\n<ajaxWindowReuseExistingWindow=.F.>\n<ajaxWindowHeight=\"5in\">\n<ajaxWindowWidth=\"8in\">\n<ajaxWindowisResizable=.T.>\n<ajaxWindowWorkingMessage=\"Working...\">\n<ajaxWindowWorkingMessageIcon=\"css/A5System/Images/wait.gif\">\n<ajaxWindowTitlePosition=\"Top\">\n<ajaxWindowTitleDirection=\"ltr\">\n<ajaxWindowTitleHasClose=.T.>\n<ajaxWindowTitleShow=.T.>\n<ajaxWindowDisableMove=.F.>\n<window<hasCustomButtons=.F.>\n<buttonCount=0>\n<customButtonsInLineStyle=\"\">\n<tbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<header<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<footer<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<bbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<pointer<has=.F.>\n<location=\"Auto\">\n>\n<onInitialize=\"\">\n<onBeforeShow=\"\">\n<onShow=\"\">\n<onBeforeHide=\"\">\n<onHide=\"\">\n<onFocus=\"\">\n<onMove=\"\">\n<onResize=\"\">\n<subtheme=\"\">\n<animation<hasAnimation=.F.>\n<show<method=\"Fade\">\n<speed=\"Slow\">\n>\n<hide<method=\"None\">\n<speed=\"Fast\">\n>\n>\n<buttons>\n>\n<ajaxFailedMessage=\"\">\n<offlineJavascript=\"\">\n<ajaxcallbacktimeout=\"<Default>\">\n%str1%>\n<javascriptAttribute=\"{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}(this);\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=<<%str%\nwindow['{grid.componentName}_G_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}'] = function(objEle) {\nvar rowNum = {grid.object}._selectedRow;\nvar rowId = $u.s.tran(rowNum,'-','_');\n\n\n window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}'] = {Grid.object}.getWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce' );\nif(!window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}']) {\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}'] = {grid.object}.createWindow('WINDOW_ae079ca1_a20d_49b2_a1ac_f39376a099ce','modal-url-resizable',{\n\theight: '5in',\n\twidth: '8in',\n\ttitle: {\n\t\thtml: 'List Of Branches',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\n\n\t\n\tro.hostComponentType = 'Grid';\n\tro.reportName = 'rep_branches@ProjectReport';\n\tro.reportNameShort = 'rep_branches';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\t\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\tro.rawArgumentMapping = '';\n\tro.controlReferences = [];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._gridCurrentFilter = {grid.object}._gridFilter;\n\tro._gridCurrentOrder = {grid.object}._gridOrder;\n\tro._gridCurrentArguments = {grid.object}._gridArguments;\n\tro._gridCurrentDBType = {grid.object}._gridDBType;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_ACTIONBUTTON_LISTBRANCHES_{ACTIONNUMBER}'].show();\n\n}\n%str%>\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n<flagWrapInTryCatch=.F.>\n<tryCatchJavascript=\"\">\n"
+            }
+        ],
+        "A5SaveTimeStamp": "20190925152527955"
+    }
+}

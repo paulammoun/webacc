@@ -1,0 +1,4534 @@
+/*typography*/
+
+@font-face {
+font-family: 'Fins';
+src: url(Fins-Regular.otf) 
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Fins", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #eef3f7;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #ccc;
+  text-decoration: none !important;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:focus {
+  outline: none !important;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+[role="button"] {
+  cursor: pointer;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px !important;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 775px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1111px;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px !important;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+small,
+.small {
+  font-size: 85%;
+}
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #337ab7;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #286090;
+}
+.text-success {
+  color: #3c763d;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #2b542c;
+}
+.text-info {
+  color: #31708f;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #245269;
+}
+.text-warning {
+  color: #8a6d3b;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #66512c;
+}
+.text-danger {
+  color: #a94442;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #843534;
+}
+.bg-primary {
+  color: #fff;
+  background-color: #337ab7;
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #286090;
+}
+.bg-success {
+  background-color: #dff0d8;
+}
+a.bg-success:hover,
+a.bg-success:focus {
+  background-color: #c1e2b3;
+}
+.bg-info {
+  background-color: #d9edf7;
+}
+a.bg-info:hover,
+a.bg-info:focus {
+  background-color: #afd9ee;
+}
+.bg-warning {
+  background-color: #fcf8e3;
+}
+a.bg-warning:hover,
+a.bg-warning:focus {
+  background-color: #f7ecb5;
+}
+.bg-danger {
+  background-color: #f2dede;
+}
+a.bg-danger:hover,
+a.bg-danger:focus {
+  background-color: #e4b9b9;
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #777777;
+}
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777777;
+}
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '\2014 \00A0';
+}
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+.blockquote-reverse footer:before,
+blockquote.pull-right footer:before,
+.blockquote-reverse small:before,
+blockquote.pull-right small:before,
+.blockquote-reverse .small:before,
+blockquote.pull-right .small:before {
+  content: '';
+}
+.blockquote-reverse footer:after,
+blockquote.pull-right footer:after,
+.blockquote-reverse small:after,
+blockquote.pull-right small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+
+
+/*typography*/
+select option {
+  border-left: 2px solid #52a19e;
+  color: #52a19e;
+}
+
+.warrantyPage {
+color: Black;
+}
+.warrantyHeading {
+}
+.warrantyTextHighlight {
+font-style: italic;
+font-weight: bold;
+border-bottom: 1px dotted Black;
+}
+.warrantyLink {
+color: Black;
+}
+.warrantyLink:hover {
+text-decoration: none;
+color: Gray;
+}
+.warrantyGroup {
+border: 1px solid #c3c3c3;
+padding: 4px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyGroupLabel {
+}
+.warrantyUILock {
+background-color: #232222;
+border: 1px solid Black;
+opacity: .25;
+filter: alpha(opacity: 25);
+}
+.warrantyEdit {
+    height: 35px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #54a09e;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.warrantyEditError {
+color: #fe0000;
+background: url('images/a5generated/box/size/8x8/fill/Up_Diagonal/.%23255%2c195%2c195/.%23255%2c218%2c218.png.a5image') repeat center #ffdada;
+font: 10pt Calibri, Tahoma, Arial;
+border: 1px solid #fe0000;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyEditWatermark {
+color: Gray;
+font-style: italic;
+}
+.warrantyEditBG {
+height: 35px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.warrantyEditBGError {
+color: #fe0000;
+font: 10pt Calibri, Tahoma, Arial;
+border: 1px solid #fe0000;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyEditBGEdit {
+background: repeat-x top transparent;
+font: 10pt Calibri, Tahoma, Arial;
+border: 1px none #c3c3c3;
+padding: 3px;
+margin: 0px;
+outline: none;
+}
+.warrantyEditBGError .warrantyEditBGEdit {
+color: #fe0000;
+}
+.warrantyEditBGEditWatermark {
+color: Gray;
+font-style: italic;
+}
+.warrantyEditBGSeparator {
+background-color: transparent;
+font: 0pt arial;
+padding: 0px;
+width: 1px;
+}
+.warrantyEditBGHover .warrantyEditBGSeparator, .warrantyEditBGFocus .warrantyEditBGSeparator {
+background-color: #c3c3c3;
+}
+.warrantyEditBGButton {
+    padding: 1px 10px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+.warrantyEditBGHover .warrantyEditBGButton, .warrantyEditBGFocus .warrantyEditBGButton {
+
+}
+.warrantyEditBGHover .warrantyEditBGButtonHover {
+}
+.warrantyEditBGHover .warrantyEditBGButtonPressed, .warrantyEditBGFocus .warrantyEditBGButtonPressed {
+}
+.warrantyEditBGFocus {
+  border-color: #00BCD4;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 188, 212, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 188, 212, .6);
+}
+.warrantyButton {
+display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #417e7f;
+    border-color: #417e7f;
+}
+.warrantyButton .fa {
+  color: #fff !important;
+}
+.warrantyButtonT {
+display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.warrantyButtonHover, .warrantyButtonTHover {
+color: #fff;
+    background-color: #294E4E;
+    border-color: #294E4E;
+}
+.warrantyButtonPressed, .warrantyButtonTPressed {
+color: #fff;
+    background-color: #076A77;
+    border-color: #076A77;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.warrantyButtonDisabled, .warrantyButtonTDisabled, .warrantyButton[disabled], .warrantyButtonT[disabled] {
+color: #ddd !important;
+    cursor: not-allowed;
+    /*pointer-events: none;*/
+    opacity: .7;
+}
+.warrantyButtonDisabled, .warrantyButtonTDisabled, .warrantyButton[disabled], .warrantyButtonT[disabled] .fa {
+  color:#ddd !important;
+}
+.warrantyButtonDD {
+text-shadow: 1px 1px #ffffff;
+color: #333232;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23241%2c241%2c241/.%23217%2c216%2c216.png.a5image') repeat-x top #dad9d9;
+font: 10pt Calibri, Tahoma, Arial;
+border: 1px solid #c7c6c6;
+padding: 0px;
+vertical-align: middle;
+border-radius: 4px;
+box-sizing: border-box;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+}
+.warrantyButtonTDD {
+text-shadow: 1px 1px #ffffff;
+color: #333232;
+background-color: transparent;
+font: 10pt Calibri, Tahoma, Arial;
+border-style: none;
+padding: 1px;
+vertical-align: middle;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+}
+.warrantyButtonDDHover, .warrantyButtonTDDHover {
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border: 1px solid #4170ff;
+padding: 0px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyButtonDDPressed, .warrantyButtonTDDPressed {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23216%2c216%2c216/.%23242%2c240%2c240.png.a5image') repeat-x top #f0efef;
+border: 1px solid #9d9999;
+padding: 0px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyButtonDDDisabled, .warrantyButtonTDDDisabled {
+color: #8a8888;
+}
+.warrantyButtonDDContent, .warrantyButtonDDSplitContent, .warrantyButtonTDDContent, .warrantyButtonTDDSplitContent {
+padding: 2px 4px;
+cursor: default;
+}
+.warrantyButtonDDDropdown, .warrantyButtonDDSplitDropdown, .warrantyButtonTDDDropdown, .warrantyButtonTDDSplitDropdown {
+padding: 2px;
+cursor: default;
+}
+.warrantyButtonDDHover .warrantyButtonDDSplitContent, .warrantyButtonTDDHover .warrantyButtonTDDSplitContent {
+border-right: 1px solid White;
+padding-right: 3px;
+}
+.warrantyButtonDDPressed .warrantyButtonDDSplitContent, .warrantyButtonTDDPressed .warrantyButtonTDDSplitContent {
+border-right: 1px solid #f5f4f4;
+padding-right: 3px;
+}
+.warrantyButtonDDHover .warrantyButtonDDSplitDropdown, .warrantyButtonTDDHover .warrantyButtonTDDSplitDropdown {
+border-left: 1px solid #83a2ff;
+padding-left: 1px;
+}
+.warrantyButtonDDPressed .warrantyButtonDDSplitDropdown, .warrantyButtonTDDPressed .warrantyButtonTDDSplitDropdown {
+border-left: 1px solid #c7c6c6;
+padding-left: 1px;
+}
+.warrantyButtonDDHover .warrantyButtonDDSplitDropdownHover, .warrantyButtonTDDHover .warrantyButtonTDDSplitDropdownHover {
+background: url('images/a5generated/box/size/1x10/fill/Gradient_Horizontal/.HTML-White/.%23229%2c228%2c228.png.a5image') repeat-x top #cedafe;
+border-left: 1px solid #4170ff;
+padding: 2px;
+padding-left: 1px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+-webkit-top-right-border-radius: 3px;
+-moz-top-right-border-radius: 3px;
+-webkit-bottom-right-border-radius: 3px;
+-moz-bottom-right-border-radius: 3px;
+}
+.warrantyButtonGroupHF {
+border-right-style: none;
+margin-right: 0px;
+border-radius: 3px 0px 0px 3px;
+}
+.warrantyButtonGroupHM {
+border-right-style: none;
+margin-left: 0px;
+margin-right: 0px;
+border-radius: 0px;
+}
+.warrantyButtonGroupHL {
+margin-left: 0px;
+border-radius: 0px 3px 3px 0px;
+}
+.warrantyButtonGroupVF {
+border-bottom-style: none;
+margin-bottom: 0px;
+display: block;
+width: 100%;
+border-radius: 3px 3px 0px 0px;
+}
+.warrantyButtonGroupVM {
+border-bottom-style: none;
+margin-top: 0px;
+margin-bottom: 0px;
+display: block;
+width: 100%;
+border-radius: 0px;
+}
+.warrantyButtonGroupVL {
+margin-top: 0px;
+display: block;
+width: 100%;
+border-radius: 0px 0px 3px 3px;
+}
+.warrantySliderH {
+padding: 6px;
+}
+.warrantySliderHInner {
+background: url('images/a5generated/box/size/1x4/fill/Gradient_Horizontal/.%23242%2c241%2c241/.%23253%2c252%2c252.png.a5image') repeat-x top #fdfcfc;
+font: 0pt arial;
+border: 1px solid #c3c3c3;
+height: 6px;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+}
+.warrantySliderHHandle {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23242+242+242/.%23217+216+216.png.a5image') repeat-x top;
+font-size: 0pt;
+border: 1px solid #c7c6c6;
+margin-top: -6px;
+margin-left: -6px;
+width: 16px;
+height: 16px;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+}
+.warrantySliderHRange {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23242+242+242/.%23217+216+216.png.a5image') repeat-x top;
+font-size: 0pt;
+border: 1px solid #c3c3c3;
+margin: -1px;
+height: 6px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantySliderHHandleHover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border-color: #93aeff;
+}
+.warrantySliderHHandleSelected {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border-color: #4170ff;
+}
+.warrantySliderHRangeHover {
+background: url('images/a5generated/box/size/1x28/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border-color: #93aeff;
+}
+.warrantySliderHRangeSelected {
+background: url('images/a5generated/box/size/1x28/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border-color: #4170ff;
+}
+.warrantySwitch {
+color: #333232;
+background: url('images/a5generated/box/size/1x28/fill/Gradient_Horizontal/.%23242%2c241%2c241/.%23253%2c252%2c252.png.a5image') repeat-x top #fdfcfc;
+border: 1px solid #c3c3c3;
+cursor: default;
+height: 28px;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+}
+.warrantySwitchOn {
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23216%2c216%2c216/.%23242%2c240%2c240.png.a5image') repeat-x top #f0efef;
+}
+.warrantySwitchOff {
+}
+.warrantySwitchInner {
+margin: 0px 14px;
+}
+.warrantySwitchRight {
+text-align: center;
+padding: 4px;
+padding-left: 32px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.warrantySwitchLeft {
+text-align: center;
+padding: 4px;
+padding-right: 32px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.warrantySwitchButton {
+background: url('images/a5generated/box/size/1x28/fill/Gradient_Horizontal/.%23242+242+242/.%23217+216+216.png.a5image') repeat-x top;
+border: 1px solid #c7c6c6;
+margin-top: -1px;
+margin-left: -15px;
+width: 28px;
+height: 28px;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+}
+.warrantyList {
+width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: Black;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.warrantyListItem {
+padding: 6px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.warrantyListItem:nth-child(2n)  {
+    background-color: #f9f9f9;
+}
+.warrantyListItemHover {
+background-color: #f9f9f9;
+}
+.warrantyListItemSelected {
+background-color: #f9f9f9;
+}
+.warrantyListItemLabelMain {
+font-size: 125%;
+font-weight: bold;
+}
+.warrantyListItemLabelSub {
+font-weight: bold;
+}
+.warrantyListItemLabelContext {
+color: #767575;
+font-style: italic;
+}
+.warrantyListItemLabelDetail {
+color: #fefefe;
+background-color: #979696;
+padding: 2px 10px;
+border-radius: 12px;
+}
+.warrantyListItemContent {
+color: #575656;
+}
+.warrantyListTitle {
+background: #f0f0f0;
+border: 1px none #f0f0f0;
+border-top-style: solid;
+border-bottom-style: solid;
+padding: 2px 4px;
+}
+.warrantyListSeparator {
+border: 1px none #d9d8d8;
+border-top-style: solid;
+margin: 0px;
+}
+.warrantyListHeader {
+vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    border-top: 0;
+    padding: 8px;
+    line-height: 1.42857143;
+    text-align: left;
+    font-weight: 700;
+}
+.warrantyListHeaderItem {
+padding: 4px 6px;
+cursor: default;
+}
+.warrantyListHeaderItemHover {
+}
+.warrantyTree {
+padding: 2px;
+overflow: auto;
+border-radius: 2px;
+box-sizing: border-box;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+overflow-x: hidden;
+}
+.warrantyTreeNode {
+color: #dddddd;
+text-decoration: none;
+padding: 4px 4px 4px 20px;
+margin: 1px;
+display: block;
+cursor: default;
+outline: none;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 0 !important;
+width: 100%;
+}
+
+.warrantyTreeNode:hover {
+  color:#fff;
+}
+.warrantyTreeNodeHover {
+
+}
+.warrantyTreeNodeSelected {
+
+}
+.warrantyTreeNodeLabel {
+text-decoration: none;
+color: Black;
+cursor: pointer;
+outline: none;
+width: 100%;
+display: inline-block;
+}
+.warrantyDP {
+color: Black;
+margin: 10px;
+background-color: White;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-collapse: separate !important;
+border-spacing: 1px 1px !important;
+}
+.warrantyDPHeader {
+padding: 2px 4px;
+}
+.warrantyDPHeaderButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #4c4c4c;
+padding: 2px 4px;
+margin: 1px;
+display: inline-block;
+cursor: default;
+outline: none;
+}
+.warrantyDPHeaderButtonHover {
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border: 1px solid #4170ff;
+padding: 1px 3px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyDPHeaderButtonSelected {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23216%2c216%2c216/.%23242%2c240%2c240.png.a5image') repeat-x top #f0efef;
+border: 1px solid #9d9999;
+padding: 1px 3px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyDPItem {
+text-align: center;
+text-decoration: none;
+color: Black;
+padding: 8px 10px;
+margin: 1px;
+display: block;
+cursor: default;
+outline: none;
+}
+.warrantyDPItemHover {
+padding: 8px 10px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyDPItemSelected {
+background: #337AB7;
+border: 1px solid #337AB7;
+padding: 8px 10px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyDPItemOutOfRange {
+color: #595959;
+}
+.warrantyDPItemDisabled {
+color: #b2b2b2;
+}
+.warrantyDPPanel {
+background-color: #fdfcfc;
+padding: 2px;
+}
+.warrantyDPDaysOfWeek {
+border-bottom: 1px none #c3c3c3;
+border-bottom-style: solid;
+padding: 2px 4px;
+}
+.warrantyDPWeeksOfYear {
+background-color: #eae9e9;
+border-right: 1px solid #c3c3c3;
+}
+.warrantyDPWeeksOfYearHeader {
+border-bottom-style: none;
+}
+.warrantyDPDate {
+background-color: #fdfcfc;
+padding: 2px;
+}
+.warrantyDPDateWeekend {
+background: url('images/a5generated/box/size/8x8/fill/Up_Diagonal/.%23246%2c244%2c244/.%23238%2c236%2c236.png.a5image') repeat center #efeded;
+padding: 2px;
+}
+.warrantyDPDateToday {
+background: url('images/a5generated/box/size/8x8/fill/Up_Diagonal/.%23237%2c235%2c235/.%23230%2c226%2c226.png.a5image') repeat center #e6e3e3;
+padding: 2px;
+}
+.warrantyTP .warrantyEdit {
+display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.warrantyEdit:focus {
+    border-color: #54a09e;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(84, 160, 158, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(84, 160, 158, .6);
+}
+.warrantyTPEditButton {
+text-align: center;
+text-decoration: none;
+background-color: #f9f9f9;
+border: 1px solid #c3c3c3;
+border-top-style: none;
+padding: 2px;
+display: block;
+border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTPEditButton:hover {
+background: url('images/a5generated/box/size/1x8/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border-top-style: solid;
+padding-top: 1px;
+}
+.warrantyTPMeridianButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #333232;
+padding: 2px 3px;
+margin-left: 2px;
+vertical-align: middle;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+outline: none;
+}
+.warrantyTPMeridianButton:hover {
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23233%2c238%2c254/.%23188%2c204%2c254.png.a5image') repeat-x top #beceff;
+border: 1px solid #4170ff;
+padding: 1px 2px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+.warrantyGrid {
+width: 100%;
+max-width: 100%;
+color: Black;
+background-color: transparent;
+border-spacing: 0;
+border-collapse: collapse;
+}
+
+@media screen and (max-width: 767px) {
+  .warrantyGrid {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #33363b;
+  }
+
+  .warrantyGrid {
+      margin-bottom: 0;
+  }
+
+  .warrantyGrid>tbody>tr>td, .warrantyGrid>tbody>tr>th, .warrantyGrid>tfoot>tr>td, .warrantyGrid>tfoot>tr>th, .warrantyGrid>thead>tr>td, .warrantyGrid>thead>tr>th {
+      white-space: nowrap;
+  }
+}
+.warrantyGridHeader {
+border:none;
+padding: 5px;
+line-height: 1.42857143;
+text-align: left;
+color: #000;
+}
+.warrantyGridFooter {
+  border-top: 1px solid #ddd;
+  padding: 4px 6px;
+  line-height: 50px;
+}
+.warrantyGridSummaryLabel {
+color: Gray;
+background-color: #fdfcfc;
+padding: 2px;
+}
+.warrantyGridSummaryData {
+background-color: #fdfcfc;
+padding: 2px;
+}
+.warrantyGridQBE {
+background-color: #f2f1f1;
+}
+.warrantyGridSeparator {
+background-color: White;
+font-size: 0px;
+padding: 0px;
+margin: 0px;
+height: 1px;
+}
+.warrantyGridRowHeader {
+}
+.warrantyGridDataHeader {
+/*background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23252%2c252%2c252/.%23242%2c241%2c241.png.a5image') repeat-x top #f2f1f1;
+border: 1px solid #c3c3c3;
+border-left-style: none;
+border-right-style: none;*/
+padding: 4px 6px;
+}
+.warrantyGridData {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-radius: 4px;
+    /*border-top: 1px solid #33363b;*/
+}
+.warrantyGridDataAlt {
+padding: 2px;
+}
+.warrantyGridRowHover .warrantyGridDataAlt, .warrantyGridRowHover .warrantyGridData {
+background-color: #f5f5f5;
+}
+.warrantyGridRowSelected .warrantyGridDataAlt, .warrantyGridRowSelected .warrantyGridData {
+background-color: #f5f5f5;
+}
+.warrantyGridDataError {
+/*color: #fe0000;
+background: url('images/a5generated/box/size/8x8/fill/Up_Diagonal/.%23255%2c195%2c195/.%23255%2c218%2c218.png.a5image') repeat center #ffdada;
+font: 10pt Calibri, Tahoma, Arial;*/
+}
+.warrantyGridHeader .warrantyLink {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+}
+.warrantyGridHeader .warrantyLink:hover {
+text-decoration: underline;
+color: #353535;
+}
+.warrantyGridFooter .warrantyLink {
+display: inline-block;
+padding: 5px 0px;
+border-radius: 15px;
+color: #54a09e;
+}
+.warrantyGrid tbody:nth-child(2n) tr td {
+    background-color: #f4f5f7;
+}
+.warrantyGridForm {
+}
+.warrantyGridFormLabel {
+padding: 2px;
+}
+.warrantyGridFormData {
+padding: 2px;
+}
+.warrantyGridFormDataError {
+color: #fe0000;
+background: url('images/a5generated/box/size/8x8/fill/Up_Diagonal/.%23255%2c195%2c195/.%23255%2c218%2c218.png.a5image') repeat center #ffdada;
+font: 10pt Calibri, Tahoma, Arial;
+}
+.warrantyDialogLabel {
+}
+.warrantyDialogRSHeader {
+  border-bottom: 2px solid #ddd;
+    border-top: 0;
+    line-height: 1.42857143;
+    text-align: left;
+}
+.warrantyDialogRSFooter {
+text-align: right;
+border-top: 1px dotted #c3c3c3;
+padding-top: 2px;
+}
+.warrantyDialogRSRow {
+/*padding: 3px;
+vertical-align: top;
+    border-top: 1px solid #ddd;*/
+}
+
+div.warrantyDialogRSRow:nth-child(2n) {
+  background-color: #f9f9f9;
+} 
+.warrantyDialogRSRowSelected {
+  background-color: #ddd;
+border: 1px solid #beceff;
+padding: 2px;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+.warrantyDialogRSRowHover {
+
+}
+.warrantyDialogRSRowError {
+color: #fe0000;
+border: 1px solid #fe0000;
+padding: 2px;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+.warrantyDialogRSSeparator {
+border-top: 1px dotted #c3c3c3;
+margin-top: 5px;
+line-height: 5px;
+}
+.warrantyMenu {
+color: Black;
+background-color: #f2f1f1;
+border: 1px solid #a5a3a3;
+border-radius: 3px;
+box-shadow: 3px 3px 6px #aaa;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-box-shadow: 3px 3px 6px #aaa;
+-webkit-box-shadow: 3px 3px 6px #aaa;
+}
+.warrantyMenuInner {
+border: 1px solid White;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenuIconColumn {
+background: url('MenuIconColBack.png') repeat-y left;
+}
+.warrantyMenuNoIndent {
+background-color: #f2f1f1;
+}
+.warrantyMenuItem {
+text-decoration: none;
+white-space: nowrap;
+color: Black;
+padding: 2px;
+margin: 1px;
+display: block;
+cursor: default;
+outline: none;
+}
+.warrantyMenuItemHover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23242%2c245%2c254/.%23200%2c214%2c254.png.a5image') repeat-x top #cad7fe;
+border: 1px solid #93aeff;
+padding: 1px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenuItemSelected {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border: 1px solid #93aeff;
+padding: 1px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenuItemDisabled {
+color: #8c8c8c;
+}
+.warrantyMenuItemDisabledHover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c249%2c249/.%23232%2c231%2c231.png.a5image') repeat-x top #e8e7e7;
+border: 1px solid #cdcaca;
+padding: 1px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenuItem .warrantyMenuItemCascade {
+background: url('MenuCascade.png') no-repeat right;
+padding-right: 18px;
+}
+.warrantyMenuItemDisabled .warrantyMenuItemCascade {
+background: url('MenuCascadeDisabled.png') no-repeat right;
+}
+.warrantyMenuSeparator {
+font-size: 0px;
+border-style: none;
+border-top: 1px solid #d9d8d8;
+border-bottom: 1px solid White;
+padding: 0px;
+}
+.warrantyMenuTitle {
+color: Gray;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23244%2c242%2c242/.%23233%2c230%2c230.png.a5image') repeat-x top #e9e6e6;
+border: 1px none #d9d8d8;
+border-top-style: solid;
+border-bottom-style: solid;
+padding: 1px 3px;
+}
+.warrantyMenuItemHover .warrantyMenuItemCascade {
+background: url('MenuCascadeHover.png') no-repeat right;
+}
+.warrantyMenubarHItem {
+text-decoration: none;
+white-space: nowrap;
+color: Black;
+padding: 2px 4px;
+margin: 1px;
+display: block;
+cursor: default;
+outline: none;
+}
+.warrantyMenubarHItemHover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23242%2c245%2c254/.%23200%2c214%2c254.png.a5image') repeat-x top #cad7fe;
+border: 1px solid #93aeff;
+padding: 1px 3px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenubarHItemPressed {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border: 1px solid #93aeff;
+padding: 1px 3px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenubarHItemDisabled {
+color: #8c8c8c;
+}
+.warrantyMenubarHSeparator {
+font-size: 0px;
+border-style: none;
+border-left: 1px solid #d9d8d8;
+border-right: 1px solid White;
+padding: 0px;
+vertical-align: middle;
+height: 10pt;
+}
+.warrantyMenubarHItemCascade {
+background: url('MenubarHCascade.png') no-repeat right;
+padding-right: 12px;
+}
+.warrantyMenubarHItemHover .warrantyMenubarHItemCascade {
+background-image: url('MenubarHCascadeHover.png');
+}
+.warrantyMenubarHItemPressed .warrantyMenubarHItemCascade {
+background-image: url('MenubarHCascadePressed.png');
+}
+.warrantyMenubarHItemDisabled .warrantyMenubarHItemCascade {
+background-image: url('MenubarHCascadeDisabled.png');
+}
+.warrantyMenubarVItem {
+text-decoration: none;
+white-space: nowrap;
+color: Black;
+padding: 2px 4px;
+margin: 1px;
+display: block;
+cursor: default;
+outline: none;
+}
+.warrantyMenubarVItemHover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23242%2c245%2c254/.%23200%2c214%2c254.png.a5image') repeat-x top #cad7fe;
+border: 1px solid #93aeff;
+padding: 1px 3px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenubarVItemPressed {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border: 1px solid #93aeff;
+padding: 1px 3px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyMenubarVItemDisabled {
+color: #8c8c8c;
+}
+.warrantyMenubarVSeparator {
+font-size: 0px;
+border-style: none;
+border-top: 1px solid #d9d8d8;
+border-bottom: 1px solid White;
+padding: 0px;
+}
+.warrantyMenubarVItemCascade {
+background: url('MenubarVCascade.png') no-repeat right;
+padding-right: 10px;
+}
+.warrantyMenubarVItemHover .warrantyMenubarVItemCascade {
+background-image: url('MenubarVCascadeHover.png');
+}
+.warrantyMenubarVItemPressed .warrantyMenubarVItemCascade {
+background-image: url('MenubarVCascadePressed.png');
+}
+.warrantyMenubarVItemDisabled .warrantyMenubarVItemCascade {
+background-image: url('MenubarVCascadeDisabled.png');
+}
+.warrantyWin {
+position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.warrantyWin .warrantyGrid tbody tr td {
+    background-color: transparent;
+}
+.warrantyWinActive {
+
+}
+.warrantyWinAdjust {
+}
+.warrantyWinInner {
+
+}
+.warrantyWinTitle {
+padding: 15px;
+cursor: move;
+border-bottom: 1px solid #33363b;
+background-color: #33363b;
+color: #ddd;
+}
+.warrantyWinBodyContainer {
+
+}
+.warrantyWinTBar {
+background-color: #f5f4f4;
+border: 1px solid #a5a3a3;
+border-bottom-style: none;
+padding: 2px;
+}
+.warrantyWinBody {
+padding: 15px;
+overflow: auto;
+}
+.warrantyWinButtons {
+text-align: right;
+padding: 10px 4px;
+border-top: 1px solid #ccc;
+}
+.warrantyWinBBar {
+background-color: #f5f4f4;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+padding: 2px;
+}
+.warrantyWinHeader {
+padding: 2px 4px;
+}
+.warrantyWinFooter {
+padding: 2px 4px;
+}
+.warrantyWinActive .warrantyWinInner {
+
+}
+.warrantyWinActive .warrantyWinBodyContainer {
+}
+.warrantyWinActive .warrantyWinTBar, .warrantyWinActive .warrantyWinBody, .warrantyWinActive .warrantyWinButtons, .warrantyWinActive .warrantyWinBBar {
+}
+.warrantyWinResizer {
+background: url('images/a5generated/box/size/1x8/fill/Gradient_Horizontal/.%23191%2c190%2c190/.%23217%2c216%2c216.png.a5image') repeat-x bottom #bfbebe;
+font-size: 1px;
+cursor: s-resize;
+height: 10px;
+}
+.warrantyDDWin {
+position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    right: 15px;
+    left: inherit;
+    background-color: #34615F;
+    color: #fff;
+}
+.warrantyDDWinAdjust {
+}
+.warrantyDDWinInner {
+  padding: 10px;
+border: none;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+}
+.warrantyDDWinTitle {
+text-shadow: #ffffff 0px 0px 3px;
+font-weight: bold;
+padding: 2px 4px;
+cursor: move;
+}
+.warrantyDDWinHeader {
+padding: 2px 4px;
+}
+.warrantyDDWinBody {
+padding: 2px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+padding: 8px 0px;
+}
+.warrantyDDWinButtons {
+text-align: right;
+border-top: 1px solid #c3c3c3;
+padding: 8px 4px;
+}
+.warrantyDDWinFooter {
+padding: 2px 4px;
+}
+.warrantyDDWinResizer {
+background: url('images/a5generated/box/size/1x8/fill/Gradient_Horizontal/.%23242%2c241%2c241/.%23219%2c218%2c218.png.a5image') repeat-x top #dddcdc;
+font-size: 1px;
+border-top: 1px solid #c3c3c3;
+cursor: s-resize;
+height: 10px;
+}
+.warrantyDDWinBBar {
+padding: 2px 4px;
+}
+.warrantyDDWinTBar {
+border-bottom: 1px solid #c3c3c3;
+padding: 2px 4px;
+}
+.warrantyWinPointerDown, .warrantyDDWinPointerDown, .warrantyMenuPointerDown {
+border-top: 10px solid #a5a3a3;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+margin-left: -10px;
+left: 50%;
+width: 0;
+height: 0;
+bottom: -10px;
+}
+.warrantyWinPointerUp, .warrantyDDWinPointerUp, .warrantyMenuPointerUp {
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #a5a3a3;
+margin-left: -10px;
+top: -10px;
+left: 50%;
+width: 0;
+height: 0;
+}
+.warrantyWinPointerLeft, .warrantyDDWinPointerLeft, .warrantyMenuPointerLeft {
+border-top: 10px solid transparent;
+border-right: 10px solid #a5a3a3;
+border-bottom: 10px solid transparent;
+margin-top: -10px;
+top: 50%;
+left: -10px;
+width: 0;
+height: 0;
+}
+.warrantyWinPointerRight, .warrantyDDWinPointerRight, .warrantyMenuPointerRight {
+border-top: 10px solid transparent;
+border-left: 10px solid #a5a3a3;
+border-bottom: 10px solid transparent;
+margin-top: -10px;
+top: 50%;
+right: -10px;
+width: 0;
+height: 0;
+}
+.warrantyPanelHeader {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23252%2c252%2c252/.%23242%2c241%2c241.png.a5image') repeat-x top #f2f1f1;
+border-right: 1px solid #c3c3c3;
+border-bottom: 1px solid #c3c3c3;
+padding: 4px 6px;
+}
+.warrantyPanelBody {
+background-color: #fdfcfc;
+border-right: 1px solid #c3c3c3;
+padding: 4px;
+}
+.warrantyPanelFooter {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23252%2c252%2c252/.%23242%2c241%2c241.png.a5image') repeat-x top #f2f1f1;
+border-top: 1px solid #c3c3c3;
+border-right: 1px solid #c3c3c3;
+padding: 4px 6px;
+}
+.warrantyPanelOverlay:before {
+content: '';
+display: block;
+position: absolute;
+top: 0px;
+width: 2px;
+height: 100%;
+left: -3px;
+border-right: #c3c3c3 1px solid;
+background: rgba(0,0,0,.1);
+}
+.warrantyPanelOverlay:after {
+content: '';
+display: block;
+position: absolute;
+top: 0px;
+width: 2px;
+height: 100%;
+right: -3px;
+border-left: #c3c3c3 1px solid;
+background: rgba(0,0,0,.1);
+}
+.warrantyPanelTopHeader {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border-right: 1px solid #c3c3c3;
+border-bottom: 1px solid #c3c3c3;
+padding: 4px 6px;
+}
+.warrantyPanelTopBody {
+background-color: #fdfcfc;
+border-right: 1px solid #c3c3c3;
+padding: 4px;
+}
+.warrantyPanelTopFooter {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border-top: 1px solid #c3c3c3;
+border-right: 1px solid #c3c3c3;
+padding: 4px 6px;
+}
+.warrantyPanelNavIndButton {
+background: url('images/a5generated/box/size/1x10/fill/Gradient_Horizontal/.%23241%2c241%2c241/.%23217%2c216%2c216.png.a5image') repeat-x top #dad9d9;
+border: 1px solid #c7c6c6;
+margin: 2px;
+display: inline-block;
+width: 10px;
+height: 10px;
+border-radius: 5px;
+}
+.warrantyPanelNavIndButtonSelected {
+background: url('images/a5generated/box/size/1x10/fill/Gradient_Horizontal/.%23216%2c216%2c216/.%23242%2c240%2c240.png.a5image') repeat-x top #f0efef;
+border: 1px solid #9d9999;
+}
+.warrantyAccordion {
+}
+.warrantyAccordionButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #a5a3a3;
+padding: 2px 4px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+outline: none;
+}
+.warrantyAccordionButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c247%2c247/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+}
+.warrantyAccordionButtonSelected {
+text-decoration: none;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23252%2c250%2c250/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+border: 1px solid #a5a3a3;
+border-bottom-color: #d9d8d8;
+padding: 2px 4px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px 2px 0px 0px;
+-moz-border-radius: 2px 2px 0px 0px;
+-webkit-border-radius: 2px 2px 0px 0px;
+outline: none;
+}
+.warrantyAccordionButtonSelected:hover {
+}
+.warrantyAccordionButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #a5a3a3;
+padding: 2px 4px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+outline: none;
+}
+.warrantyAccordionButtonDisabled:hover {
+}
+.warrantyAccordionPane {
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+padding: 2px;
+margin-top: -2px;
+margin-bottom: 2px;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+}
+.warrantyAccordionIconButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #a5a3a3;
+padding: 2px 4px;
+padding-left: 20px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+outline: none;
+}
+.warrantyAccordionIconButton:before {
+position: absolute;
+top: 2px;
+left: 3px;
+content: url('Expand.png');
+}
+.warrantyAccordionIconButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c247%2c247/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+}
+.warrantyAccordionIconButtonSelected {
+text-decoration: none;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23252%2c250%2c250/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+border: 1px solid #a5a3a3;
+border-bottom-color: #d9d8d8;
+padding: 2px 4px;
+padding-left: 20px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 2px 2px 0px 0px;
+-moz-border-radius: 2px 2px 0px 0px;
+-webkit-border-radius: 2px 2px 0px 0px;
+outline: none;
+}
+.warrantyAccordionIconButtonSelected:before {
+position: absolute;
+top: 2px;
+left: 3px;
+content: url('Collapse.png');
+}
+.warrantyAccordionIconButtonSelected:hover {
+}
+.warrantyAccordionIconButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #a5a3a3;
+padding: 2px 4px;
+padding-left: 20px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+outline: none;
+}
+.warrantyAccordionButtonDisabled:hover {
+}
+.warrantyTabTContainer {
+}
+.warrantyTabTBand {
+}
+.warrantyTabTButton {
+    text-decoration: none;
+    text-shadow: 1px 1px #ffffff;
+    color: #555555;
+    border: 2px solid #c3c3c3;
+    padding: 2px 4px;
+    margin-right: 2px;
+    margin-bottom: -1px;
+    display: block;
+    float: left;
+    cursor: default;
+    border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    outline: none;
+}
+.warrantyTabTButton:hover {
+border-color: #333333;
+    color: #333333;
+}
+.warrantyTabTButtonSelected {
+    text-decoration: none;
+    text-shadow: 1px 1px #ffffff;
+    color: #00BCD4;
+    background-color: #fdfcfc;
+    border: 2px solid #00BCD4;
+    padding: 2px 4px;
+    padding-bottom: 3px;
+    margin-right: 2px;
+    margin-bottom: -1px;
+    display: block;
+    float: left;
+    cursor: default;
+    position: relative;
+    border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    outline: none;
+}
+.warrantyTabTButtonSelected:hover {
+}
+.warrantyTabTButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+border-bottom-style: none;
+padding: 2px 4px;
+margin-right: 2px;
+margin-bottom: -1px;
+display: block;
+float: left;
+cursor: default;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabTButtonDisabled:hover {
+}
+.warrantyTabTPanes {
+}
+.warrantyTabTPane {
+color: Black;
+    background-color: #fdfcfc;
+    border-top: 1px solid #e0e0e0;
+    padding: 2px
+}
+.warrantyTabBContainer {
+}
+.warrantyTabBBand {
+}
+.warrantyTabBButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23227%2c225%2c225/.%23249%2c248%2c248.png.a5image') repeat-x bottom #e3e1e1;
+border: 1px solid #c3c3c3;
+border-top-color: #a5a3a3;
+padding: 2px 4px;
+margin-top: -1px;
+margin-right: 2px;
+display: block;
+float: left;
+cursor: default;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabBButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23238%2c236%2c236/.%23249%2c247%2c247.png.a5image') repeat-x bottom #efeded;
+border-color: #a5a3a3;
+}
+.warrantyTabBButtonSelected {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+padding: 2px 4px;
+padding-top: 3px;
+margin-top: -1px;
+margin-right: 2px;
+display: block;
+float: left;
+cursor: default;
+position: relative;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabBButtonSelected:hover {
+}
+.warrantyTabBButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23227%2c225%2c225/.%23249%2c248%2c248.png.a5image') repeat-x bottom #e3e1e1;
+border: 1px solid #c3c3c3;
+border-top-color: #a5a3a3;
+padding: 2px 4px;
+margin-top: -1px;
+margin-right: 2px;
+display: block;
+float: left;
+cursor: default;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabBButtonDisabled:hover {
+}
+.warrantyTabBPanes {
+}
+.warrantyTabBPane {
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+padding: 2px;
+}
+.warrantyTabLContainer {
+}
+.warrantyTabLBand {
+}
+.warrantyTabLButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+padding: 2px;
+margin-right: -1px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px 0px 0px 2px;
+-moz-border-radius: 2px 0px 0px 2px;
+-webkit-border-radius: 2px 0px 0px 2px;
+outline: none;
+}
+.warrantyTabLButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c247%2c247/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+border-color: #a5a3a3;
+}
+.warrantyTabLButtonSelected {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-right-style: none;
+padding: 2px;
+padding-right: 3px;
+margin-right: -1px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 2px 0px 0px 2px;
+-moz-border-radius: 2px 0px 0px 2px;
+-webkit-border-radius: 2px 0px 0px 2px;
+outline: none;
+}
+.warrantyTabLButtonSelected:hover {
+}
+.warrantyTabLButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+padding: 2px;
+margin-right: -1px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 2px 0px 0px 2px;
+-moz-border-radius: 2px 0px 0px 2px;
+-webkit-border-radius: 2px 0px 0px 2px;
+outline: none;
+}
+.warrantyTabLButtonDisabled:hover {
+}
+.warrantyTabLPanes {
+}
+.warrantyTabLPane {
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+padding: 2px;
+}
+.warrantyTabRContainer {
+}
+.warrantyTabRBand {
+}
+.warrantyTabRButton {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+border-left-style: none;
+padding: 2px;
+margin-left: 0px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 0px 2px 2px 0px;
+-moz-border-radius: 0px 2px 2px 0px;
+-webkit-border-radius: 0px 2px 2px 0px;
+outline: none;
+}
+.warrantyTabRButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c247%2c247/.%23238%2c236%2c236.png.a5image') repeat-x top #efeded;
+border-color: #a5a3a3;
+}
+.warrantyTabRButtonSelected {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-left-style: none;
+padding: 2px;
+padding-left: 3px;
+margin-left: -1px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 0px 2px 2px 0px;
+-moz-border-radius: 0px 2px 2px 0px;
+-webkit-border-radius: 0px 2px 2px 0px;
+outline: none;
+}
+.warrantyTabRButtonSelected:hover {
+}
+.warrantyTabRButtonDisabled {
+text-decoration: none;
+text-shadow: 1px 1px #ffffff;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+border-left-style: none;
+padding: 2px;
+margin-left: 0px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+border-radius: 0px 2px 2px 0px;
+-moz-border-radius: 0px 2px 2px 0px;
+-webkit-border-radius: 0px 2px 2px 0px;
+outline: none;
+}
+.warrantyTabRButtonDisabled:hover {
+}
+.warrantyTabRPanes {
+}
+.warrantyTabRPane {
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+padding: 2px;
+}
+.warrantyTabbandT {
+color: Black;
+border: 1px solid #a5a3a3;
+padding: 0px;
+background-color: #33363b;
+}
+.warrantyTabbandTButton {
+background-color: transparent;
+text-decoration: none;
+white-space: nowrap;
+color: #ccc;
+border-right: 1px solid #4d4d4d;
+border-bottom-style: none;
+padding: 8px 12px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+display: block;
+cursor: default;
+position: relative;
+/*border-radius: 2px 2px 0px 0px;
+-moz-border-radius: 2px 2px 0px 0px;
+-webkit-border-radius: 2px 2px 0px 0px;*/
+outline: none;
+font-size: 14px;
+}
+.warrantyTabbandTButton:hover {
+border-color: #a5a3a3;
+}
+a.warrantyTabbandTButton:hover {
+    color: #000;
+}
+.warrantyTabbandTButtonSelected {
+text-decoration: none;
+    white-space: nowrap;
+    color: #33363b;
+    background-color: #eef3f7;
+    border: none;
+    border-bottom-style: none;
+    padding: 9px 12px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+    display: block;
+    cursor: default;
+    position: relative;
+    /*border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -webkit-border-radius: 2px 2px 0px 0px;*/
+    outline: none;
+    font-size: 14px;
+}
+a.warrantyTabbandTButtonSelected:after {
+    content: "";
+    background: #52a19e;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 80%;
+    left: 10%;
+}
+a.warrantyTabbandTButtonSelected:focus {
+  color: #33363b;
+}
+a.warrantyTabbandTButtonSelected:hover {
+  color: #000 !important;
+}
+.warrantyTabbandTButtonDisabled {
+text-decoration: none;
+white-space: nowrap;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23249%2c248%2c248/.%23226%2c225%2c225.png.a5image') repeat-x top #e4e2e2;
+border: 1px solid #c3c3c3;
+border-bottom-style: none;
+padding: 2px 4px;
+margin-top: 2px;
+margin-right: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabbandTButtonDisabled:hover {
+}
+.warrantyTabbandTLScroll {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-left-style: none;
+border-bottom-style: none;
+padding: 2px;
+padding-bottom: 3px;
+margin-bottom: -1px;
+display: block;
+position: relative;
+border-radius: 0px 2px 0px 0px;
+-moz-border-radius: 0px 2px 0px 0px;
+-webkit-border-radius: 0px 2px 0px 0px;
+outline: none;
+}
+.warrantyTabbandTLScroll:hover {
+}
+.warrantyTabbandTLScrollDisabled {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-left-style: none;
+border-bottom-style: none;
+padding: 2px;
+padding-bottom: 3px;
+margin-bottom: -1px;
+display: block;
+position: relative;
+border-radius: 0px 2px 0px 0px;
+-moz-border-radius: 0px 2px 0px 0px;
+-webkit-border-radius: 0px 2px 0px 0px;
+outline: none;
+}
+.warrantyTabbandTLScrollDisabled:hover {
+}
+.warrantyTabbandTRScroll {
+text-decoration: none;
+color: Black;
+background-color: #f5f4f4;
+border: 1px solid #a5a3a3;
+border-right-style: none;
+border-bottom-style: none;
+padding: 2px;
+padding-bottom: 3px;
+margin-bottom: -1px;
+display: block;
+position: relative;
+border-radius: 2px 0px 0px 0px;
+-moz-border-radius: 2px 0px 0px 0px;
+-webkit-border-radius: 2px 0px 0px 0px;
+outline: none;
+}
+.warrantyTabbandTRScroll:hover {
+}
+.warrantyTabbandTRScrollDisabled {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-right-style: none;
+border-bottom-style: none;
+padding: 2px;
+padding-bottom: 3px;
+margin-bottom: -1px;
+display: block;
+position: relative;
+border-radius: 2px 0px 0px 0px;
+-moz-border-radius: 2px 0px 0px 0px;
+-webkit-border-radius: 2px 0px 0px 0px;
+outline: none;
+}
+.warrantyTabbandTRScrollDisabled:hover {
+}
+.warrantyTabbandTSeparator {
+/*background-color: #fdfcfc;
+font: 0pt arial;
+border-top: 1px solid #a5a3a3;
+padding: 0px;
+height: 3px;*/
+}
+.warrantyTabbandB {
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23227%2c225%2c225/.%23249%2c248%2c248.png.a5image') repeat-x bottom #e3e1e1;
+border: 1px solid #a5a3a3;
+border-bottom-style: solid;
+padding: 0px;
+}
+.warrantyTabbandBButton {
+text-decoration: none;
+white-space: nowrap;
+color: Black;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23227%2c225%2c225/.%23249%2c248%2c248.png.a5image') repeat-x bottom #e3e1e1;
+border: 1px solid #c3c3c3;
+border-top-style: none;
+padding: 2px 4px;
+margin-right: 2px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabbandBButton:hover {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23238%2c236%2c236/.%23249%2c247%2c247.png.a5image') repeat-x bottom #efeded;
+border-color: #a5a3a3;
+}
+.warrantyTabbandBButtonSelected {
+text-decoration: none;
+white-space: nowrap;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+padding: 2px 4px;
+padding-top: 3px;
+margin-top: -1px;
+margin-right: 2px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabbandBButtonSelected:hover {
+}
+.warrantyTabbandBButtonDisabled {
+text-decoration: none;
+white-space: nowrap;
+color: #888585;
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23227%2c225%2c225/.%23249%2c248%2c248.png.a5image') repeat-x bottom #e3e1e1;
+border: 1px solid #c3c3c3;
+border-top-style: none;
+padding: 2px 4px;
+margin-right: 2px;
+margin-bottom: 2px;
+display: block;
+cursor: default;
+position: relative;
+border-radius: 0px 0px 2px 2px;
+-moz-border-radius: 0px 0px 2px 2px;
+-webkit-border-radius: 0px 0px 2px 2px;
+outline: none;
+}
+.warrantyTabbandBButtonDisabled:hover {
+}
+.warrantyTabbandBLScroll {
+text-decoration: none;
+color: Black;
+background-color: #f5f4f4;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+border-left-style: none;
+padding: 2px;
+padding-top: 3px;
+margin-top: -1px;
+display: block;
+position: relative;
+border-radius: 0px 0px 2px 0px;
+-moz-border-radius: 0px 0px 2px 0px;
+-webkit-border-radius: 0px 0px 2px 0px;
+outline: none;
+}
+.warrantyTabbandBLScroll:hover {
+}
+.warrantyTabbandBLScrollDisabled {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+border-left-style: none;
+padding: 2px;
+padding-top: 3px;
+margin-top: -1px;
+display: block;
+position: relative;
+border-radius: 0px 0px 2px 0px;
+-moz-border-radius: 0px 0px 2px 0px;
+-webkit-border-radius: 0px 0px 2px 0px;
+outline: none;
+}
+.warrantyTabbandBLScrollDisabled:hover {
+}
+.warrantyTabbandBRScroll {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+border-right-style: none;
+padding: 2px;
+padding-top: 3px;
+margin-top: -1px;
+display: block;
+position: relative;
+border-radius: 0px 0px 0px 2px;
+-moz-border-radius: 0px 0px 0px 2px;
+-webkit-border-radius: 0px 0px 0px 2px;
+outline: none;
+}
+.warrantyTabbandBRScroll:hover {
+}
+.warrantyTabbandBRScrollDisabled {
+text-decoration: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #a5a3a3;
+border-top-style: none;
+border-right-style: none;
+padding: 2px;
+padding-top: 3px;
+margin-top: -1px;
+display: block;
+position: relative;
+border-radius: 0px 0px 0px 2px;
+-moz-border-radius: 0px 0px 0px 2px;
+-webkit-border-radius: 0px 0px 0px 2px;
+outline: none;
+}
+.warrantyTabbandBRScrollDisabled:hover {
+}
+.warrantyTabbandBSeparator {
+background-color: #fdfcfc;
+font: 0pt arial;
+border-bottom: 1px solid #a5a3a3;
+padding: 0px;
+height: 3px;
+}
+.warrantyControlGroup {
+background-color: #f5f4f4;
+border: 1px solid #c3c3c3;
+border-radius: 3px;
+}
+.warrantyControlGroupRow {
+border-top: 1px solid #c3c3c3;
+}
+.warrantyControlGroupRowFirst {
+border-top-style: none;
+}
+/* Spin List */
+.warrantySpinList {
+text-shadow: none;
+color: Black;
+background-color: #fdfcfc;
+border: 1px solid #c3c3c3;
+padding: 3px;
+vertical-align: top;
+border-radius: 2px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.warrantySpinList:after {
+background-image: url('spinListShadow.png');
+display: block;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+border-radius: 1px;
+content: "";
+background-size: 100% 100%;
+}
+.warrantySpinListItem {
+font: 10pt Calibri, Tahoma, Arial;
+padding: 2px;
+}
+.warrantySpinListGroup {
+white-space: nowrap;
+border: 1px solid #c3c3c3;
+padding: 0px;
+overflow: hidden;
+border-radius: 2px;
+}
+.warrantySpinListGroup .warrantySpinList {
+border-style: none;
+border-right: 1px solid #c3c3c3;
+display: inline-block;
+border-radius: 0px;
+}
+.warrantySpinListGroup .warrantySpinList:last-child {
+border-style: none;
+}
+.warrantySpinListGroup .warrantySpinList:after {
+border-radius: 0px;
+}
+.warrantySpinListSelectBand:before {
+background: url('images/a5generated/box/size/1x22/fill/Gradient_Horizontal/.%23228%2c234%2c254/.%23176%2c195%2c254.png.a5image') repeat-x top #b2c5ff;
+border-top: 1px solid #93aeff;
+border-bottom: 1px solid #93aeff;
+margin-top: -8pt;
+display: block;
+position: absolute;
+top: 50%;
+left: 0px;
+width: 100%;
+height: 16pt;
+content: "";
+background-size: 100% 100%;
+}
+/* Scroll Indicator */
+.warrantyScrollIndH, .warrantyScrollIndV {
+padding: 0px;
+width: 5px;
+height: 5px;
+}
+.warrantyScrollIndHBar, .warrantyScrollIndVBar {
+background-color: Black;
+border-radius: 6px;
+opacity: .5;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+/* fix to help with firefox button padding */
+button::-moz-focus-inner {
+border-width: 0;
+padding: 0;
+}
+div[id="tbi.MENUPANEL_HEADER"].warrantyGridHeader,
+td[id="tbi.EXPANDBAR"].warrantyGridHeader {
+    background-color: #33363b;
+    color: #ddd;
+}
+div[id="tbi.MENUPANEL_HEADER"].warrantyGridHeader:hover {
+  color:#FFF;
+}
+div[id="tbi.TABBAND"].warrantyTabbandT,
+.warrantyFooterTD {
+    border:none !important;
+}
+
+.warrantyGridData a:hover,
+.warrantyGridData a:focus {
+    text-decoration: none;
+}
+
+.warrantyListItem.TBI_LIST_MATER_10549XMKWVR1LIST1CONTROLDIS {
+    padding: 20px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    position: relative;
+    margin: 1.5rem 1rem 1rem 1rem;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.warrantyListItemLabelContext,
+.warrantyListItemLabelMain,
+.warrantyListItemLabelSub,
+.warrantyListItemContent {
+    padding-bottom: 10px;
+}
+
+.warrantyListItemLabelDetail {
+    background-color: #4caf50;
+}
+
+.warrantyListItemLabelContext {
+    color: #212121;
+    font-style: italic;
+    font-size: 16px;
+}
+.warrantyListItemLabelMain {
+    font-size: 17px;
+    font-weight: bold;
+}
+.warrantyListItemLabelSub {
+    font-weight: bold;
+    font-size: 14px;
+    color: #727272;
+}
+
+div[style="display: table-cell; padding-right:4px;"] {
+    border: 1px solid #CCCCCC;
+    border-right:0;
+    padding: 0px 20px;
+    border-radius: 4px 0px 0px 4px;
+    vertical-align: middle;
+}
+
+i[id*="HELPICON"] {
+    margin-left: -14px;
+    z-index: 999999;
+    padding-top: 2px;
+    position: absolute;
+}
+.warrantyDialogLabelRequired {
+}
+
+.warrantyDialogLabelRequired:after {
+  content: "*";
+  padding-left: 5px;
+  color: red;
+  font-size: 14px;
+}
+
+.warrantyEditRequired {
+  height: 35px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    background-image: linear-gradient(45deg, transparent, transparent 50%, red 50%, red 100%);
+  background-position: top right;
+  background-size: .5em .5em;
+  background-repeat: no-repeat;
+}
+.warrantyEditRequired:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.warrantyTabbandTButtonSelected .fa {
+  vertical-align: initial !important;
+  font-weight: 100;
+  opacity: .5;
+  font-size: 12px;
+  color: #33363b;
+  margin-left: 15px;
+}
+.warrantyTabbandTButtonSelected .fa:hover {
+  opacity: 1;
+}
+
+.warrantyTabbandTButton .fa {
+  vertical-align: initial !important;
+  font-weight: 100;
+  opacity: .2;
+  font-size: 12px;
+  color: #ccc;
+  margin-left: 15px;
+}
+.warrantyTabbandTButton .fa:hover {
+  opacity: 1;
+}
+.required {
+    position: absolute;
+    margin-left: -10px;
+    color: #FB0000;
+    font-size: 15px;
+}
+div[id="TBI_LIST_MATER_10549XMKW.V.R1.LIST1.CONTROL.NORECORDSINLIST"] {
+  background: url("../../images/no_result_background2.png") no-repeat center ;
+  text-align: center;
+    vertical-align: middle;
+    padding: 35% 0;
+    color: white;
+    font-size: 29px;
+    text-shadow: 2px 2px #000000;
+}
+
+.warrantyWinTitle .fa {
+  vertical-align: top !important;
+  font-weight: 100;
+  opacity: .2;
+  font-size: 12px;
+  color: #ddd;
+  margin-right: 5px;
+}
+.warrantyWinTitle .fa:hover {
+  opacity: 1;
+}
+label {
+  margin-bottom: 0px;
+}
+.warrantyDialogRSHeader div[id*="TITLES"] {
+    height: 33px;
+}
+div[id*=".REPEATINGSECTION"] .A5CWLayout {
+  padding: 6px 4px 6px 4px;
+}
+
+/*div[id*=".REPEATINGSECTION"] textarea, 
+div[id*=".REPEATINGSECTION"] textarea.warrantyEdit, 
+div[id*=".REPEATINGSECTION"] input.warrantyEdit, 
+div[id*=".REPEATINGSECTION"] input[type=text], 
+div[id*=".REPEATINGSECTION"] input[type=password], 
+div[id*=".REPEATINGSECTION"] input[type=email], 
+div[id*=".REPEATINGSECTION"] input[type=number], 
+div[id*=".REPEATINGSECTION"] [type=text].warrantyEdit, 
+div[id*=".REPEATINGSECTION"] [type=password].warrantyEdit, 
+div[id*=".REPEATINGSECTION"] [type=email].warrantyEdit, 
+div[id*=".REPEATINGSECTION"] [type=tel].warrantyEdit, 
+div[id*=".REPEATINGSECTION"] [contenteditable].warrantyEdit {
+  padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 -1px 0 #9e9e9e;
+    box-shadow: inset 0 -1px 0 #9e9e9e;
+    font-size: 14px;
+    height: 28px;
+}
+
+div[id*=".REPEATINGSECTION"] textarea:focus, 
+div[id*=".REPEATINGSECTION"] textarea.warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] input.warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] input[type=text]:focus, 
+div[id*=".REPEATINGSECTION"] input[type=password]:focus, 
+div[id*=".REPEATINGSECTION"] input[type=email]:focus, 
+div[id*=".REPEATINGSECTION"] input[type=number]:focus, 
+div[id*=".REPEATINGSECTION"] [type=text].warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] [type=password].warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] [type=email].warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] [type=tel].warrantyEdit:focus, 
+div[id*=".REPEATINGSECTION"] [contenteditable].warrantyEdit:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #00BCD4;
+    box-shadow: inset 0 -2px 0 #00BCD4;
+}
+
+div[id*=".REPEATINGSECTION"] .warrantyEdit {
+  display: block;
+    width: 100%;
+    height: 37px;
+    padding: 6px 16px;
+    font-size: 13px;
+    line-height: 1.846;
+    color: #666666;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}*/
+.warrantyDialogRSFooter .fa {
+  padding: 4px;
+  cursor: pointer;
+  color: #8a8a8a;
+  transition: color 300ms ease-in-out 0s;
+  font-size: 20px;
+}
+.warrantyDialogRSFooter .fa:hover {
+  color: #000;
+  transition: color 300ms ease-in-out 0s;
+}
+td[id="tbi.DIVIDER"] {
+    width: 0px !important;
+}
+
+td[id="tbi.EXPANDBAR"].warrantyGridHeader {
+  width: 50px !important;
+  text-align: center;
+}
+
+/*tab wizard*/
+.alphaTabTBand a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 20px;
+    margin: 20px 8%;
+    float: none;
+    display: -webkit-inline-box;
+    background: #ffffff;
+    z-index: 999999;
+}
+.alphaTabTBand {
+  text-align: center;
+}
+.alphaTabTBand:before{
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 9%;
+    z-index: 1;
+    content: " ";
+    z-index:-999999;
+}
+
+.warrantyTreeNode .fa-plus,
+.warrantyTreeNode .fa-minus{
+  padding-right: 5px;
+  float: right;
+  cursor: pointer;
+}
+ul.warrantyTreeBranch li {
+    padding: 5px;
+}
+ul.warrantyTreeBranch ul.warrantyTreeBranch {
+  background-color: #2c2f34;
+  position: relative;
+  /*border-left-style: solid;
+  border-left-color: #00C7CC;*/
+}
+div[id="tbi.MENU"] {
+  background-color: #33363b;
+  border-right: 1px solid rgba(0,0,0,.15)
+}
+
+.warrantyTree a {
+  color: #dddddd;
+}
+
+.warrantyTree a:hover, .warrantyTree a:focus {
+  color: #fff;
+}
+
+img[src="images/$$folder.png.a5image"],
+img[src="images/$$folder.open.png.a5image"],
+img[src="images/$$web.component.grid.png.a5image"],
+img[src="images/$$web.component.dialog.png.a5image"],
+img[src="images/$$web.page.dynamic.png.a5image"],
+img[src="images/$$web.page.external.png.a5image"],
+button[id*=".FOCUSCATCHER"] {
+  display: none;
+}
+
+.warrantyInput img[src="images/$$folder.png.a5image"],
+.warrantyInput img[src="images/$$folder.open.png.a5image"],
+.warrantyInput img[src="images/$$web.component.grid.png.a5image"],
+.warrantyInput img[src="images/$$web.component.dialog.png.a5image"],
+.warrantyInput img[src="images/$$web.page.dynamic.png.a5image"] {
+  display: inline-block;
+  background: url(../../images/upload.png);
+  width: 0px;
+  height: 0px;
+  padding: 8px;
+}
+
+#header {
+  background-color: #2e5452;
+  background: url("http://res.cloudinary.com/rimuzakki/image/upload/v1454122399/header1_ppfb5e.jpg") no-repeat center center /cover;
+  height: auto;
+}
+#footer {
+  background-color: #00796B;
+    text-align: center;
+    color: #FFF;
+}
+.brand-image {
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+div[id="tbi.TABBAND"] a:hover{
+  color:#FFF;
+}
+ul.warrantyTreeBranch ul.warrantyTreeBranch .warrantyTreeNode {
+  border-bottom: transparent;
+  padding-left: 45px;
+}
+tbody[a5dataregion="A5DataRegion"] textarea, 
+tbody[a5dataregion="A5DataRegion"] textarea.warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] input.warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] input[type=text], 
+tbody[a5dataregion="A5DataRegion"] input[type=password], 
+tbody[a5dataregion="A5DataRegion"] input[type=email], 
+tbody[a5dataregion="A5DataRegion"] input[type=number], 
+tbody[a5dataregion="A5DataRegion"] [type=text].warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] [type=password].warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] [type=email].warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] [type=tel].warrantyEdit, 
+tbody[a5dataregion="A5DataRegion"] [contenteditable].warrantyEdit {
+  padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    height: 28px;
+}
+
+tbody[a5dataregion="A5DataRegion"] textarea:focus, 
+tbody[a5dataregion="A5DataRegion"] textarea.warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] input.warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] input[type=text]:focus, 
+tbody[a5dataregion="A5DataRegion"] input[type=password]:focus, 
+tbody[a5dataregion="A5DataRegion"] input[type=email]:focus, 
+tbody[a5dataregion="A5DataRegion"] input[type=number]:focus, 
+tbody[a5dataregion="A5DataRegion"] [type=text].warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] [type=password].warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] [type=email].warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] [type=tel].warrantyEdit:focus, 
+tbody[a5dataregion="A5DataRegion"] [contenteditable].warrantyEdit:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #407f7f;
+    box-shadow: inset 0 -2px 0 #407f7f;
+}
+
+tbody[a5dataregion="A5DataRegion"] .warrantyEdit {
+  display: block;
+    width: 100%;
+    height: 37px;
+    padding: 6px 16px;
+    font-size: 13px;
+    line-height: 1.846;
+    color: #666666;
+    background-color: transparent;
+    background-image: none;
+    /*border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;*/
+}
+tr[id*=".SEARCHROW"] .warrantyGridData {
+  border-top: initial;
+}
+
+.warrantyTreeNode .fa {
+  padding-right: 5px;
+}
+
+.btnSuccess {
+color: #fff;
+background-color: #4caf50;
+border-color: transparent;
+}
+.btnSuccessHover {
+color: #fff;
+background-color: #439a46;
+border-color: transparent;
+}
+.btnSuccessPressed {
+color: #fff;
+background-color: #4caf50;
+border-color: transparent;
+}
+
+
+.btnInfo {
+color: #fff;
+background-color: #9c27b0;
+border-color: transparent;
+}
+.btnInfoHover {
+color: #fff;
+background-color: #862197;
+border-color: transparent;
+}
+.btnInfoPressed {
+color: #fff;
+background-color: #9c27b0;
+border-color: transparent;
+}
+
+
+.btnWarning {
+color: #fff;
+background-color: #ff9800;
+border-color: transparent;
+}
+.btnWarningHover {
+color: #fff;
+background-color: #e08600;
+border-color: transparent;
+}
+.btnWarningPressed {
+color: #fff;
+background-color: #ff9800;
+border-color: transparent;
+}
+
+
+.btnDanger {
+color: #fff;
+background-color: #e51c23;
+border-color: transparent;
+}
+.btnDangerHover {
+color: #fff;
+background-color: #cb171e;
+border-color: transparent;
+}
+.btnDangerPressed {
+color: #fff;
+background-color: #e51c23;
+border-color: transparent;
+}
+
+/*typography*/
+::-webkit-scrollbar-track
+{
+ -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+ background-color: transparent;
+}
+::-webkit-scrollbar
+{
+ width: 10px;
+ background-color: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+ background-color: #cccccc;
+}
+::-webkit-scrollbar-track:vertical {
+  background: -webkit-linear-gradient(180deg, #fff, #fff, #fff, #fff, #DDDDDD, #DDDDDD, #DDDDDD, #fff, #fff, #fff);
+}
+[type="radio"] {
+  border: 0;
+  height: 1px; margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+/ the basic, unchecked style /
+[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;           /*hard border*/
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;   /*light shadow*/
+  margin-right: 0.75em;
+  transition: 0.5s ease all;    /*animation here*/
+}
+
+/ the checked style using the :checked pseudo class /
+[type="radio"]:checked + label:before {
+  background: #33a2c6;
+  box-shadow: 0 0 0 0.25em #000;
+}
+div[id*="_A5INSTANCE"] {
+    padding-top: 4px;
+    margin-top: 1px;
+}
+button[unselectable] {
+    background-color: #ffffff !important;
+    border-color: transparent !important;
+    padding: 5px 5px;
+    margin: 2px;
+    border: none;
+  }
+/* Btn Help */
+.btn-help {
+    margin-right: -10px;
+    margin-top: 20px;
+    border-radius: 4px 0 0 4px;
+}
+/*tab wizard*/
+.warrantyTabTBand a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 20px;
+    font-size: 25px;
+    margin: 20px 8%;
+    float: none;
+    display: -webkit-inline-box;
+    background: #ffffff;
+    z-index: 999999;
+}
+.warrantyTabTBand {
+  text-align: center;
+}
+.warrantyTabTBand:before{
+     height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 11%;
+    z-index: 1;
+    content: " ";
+    z-index: -999999;
+}
+
+.warrantyTreeNode .fa {
+  padding-right: 15px;
+}
+.btn-help {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+}
+.warrantyCardList {
+  width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: Black;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.warrantyCardList .warrantyListItem {
+    padding: 20px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    position: relative;
+    margin: 1.5rem 1rem 1rem 1rem;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.warrantyCardList .warrantyListItem img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  max-width: none;
+}
+.warrantyCardHorizontalList {
+  width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: Black;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.warrantyCardHorizontalList .warrantyListItem {
+    padding: 20px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    position: relative;
+    margin: 1.5rem 1rem 1rem 1rem;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    width: 23%;
+}
+.warrantyCardHorizontalList div[id*=".CONTROL.CONTENT"] {
+  width: 100%;
+}
+.header-text {
+  font-size: 24px;
+  text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+.warrantyTabTBand .fa,
+.warrantyTabTButtonSelected .fa {
+  vertical-align: top;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+td[id="tbiObj.LOGINMENU.RIGHT"] {
+  position: absolute;
+    right: 25px;
+    font-size: 24px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+td[id="tbiObj.LOGINMENU.RIGHT"] a {
+  color: #fff;
+  opacity: .9;
+}
+td[id="tbiObj.LOGINMENU.RIGHT"] a:hover {
+  color: #fff;
+  opacity: 1;
+}
+ul.warrantyTreeBranch li:hover {
+    background-color: #3C4048;
+}
+ul.warrantyTreeBranch li ul.warrantyTreeBranch li:hover {
+    background-color: transparent;
+}
+.warrantyGridHeader td .fa {
+    padding-right: 15px;
+}
+.warrantyDDWinBody table {
+  border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+@-moz-document url-prefix() {
+  .warrantyGridHeader {
+  border:none;
+  padding: 5px;
+  line-height: 1.42857143;
+  text-align: left;
+  color: #ddd;
+  margin-top: -1px;
+}
+}
+div[id*=".GRID_PART.FORM_CONTAINER_DIV"] {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+td.warrantyGridFooter {
+  /*letter-spacing: 10px;*/
+}
+table .warrantyGrid {
+  color: #54a09e;
+}
+table .warrantyGridFooter {
+  color: #000;
+}
+ul.warrantyTreeBranch ul.warrantyTreeBranch:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: 0px;
+    bottom: 14px;
+    /* border-left: 1px solid #7A7A7A; */
+    background-color: #ccc;
+    width: 1px;
+}
+
+ul.warrantyTreeBranch ul.warrantyTreeBranch li:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 1px;
+    left: 50px;
+    top: 16px;
+    /*border-top: 1px solid #7A7A7A;*/
+    z-index: 1;
+    background-color: #ccc;
+}
+.warrantyCardBox {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #FFF;
+  width: 100% !important;
+  padding: 20px !important;
+  /*margin: 25px;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.warrantyCardBox .warrantyDialogLabel {
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 5px;
+}
+div[a5windowtype="modeless"] {
+  right: inherit;
+  left: inherit;
+  background-color: #fff;
+}
+div[a5windowtype="popup"] {
+  right: inherit;
+  left: inherit;
+}
+form[id*=".SEARCH_PART.FORM"] {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+}
+form[id*=".SEARCH_PART.FORM"] tr td.warrantyGridFooter {
+  letter-spacing: 0;
+}
+.warrantyGridHeader .warrantyLink[onclick*="alphabetSearch"] {
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 25px;
+    padding: 4px;
+    float: left;
+}
+.warrantyLink[onclick*=".detailViewNewRecord()"] {
+    letter-spacing: normal;
+}
+#UPLOADFORM {
+  padding: 20px;
+}
+/*div[id="tbi.PANES"] {
+  height: auto !important;
+  margin: 20px;
+}*/
+.warrantyEdit[disabled] {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background-color: transparent;
+   border: none;
+   -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button .fa {
+  padding: 5px;
+}
+div[id*=".REPEATINGSECTION"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.warrantyCardBox .warrantyButton {
+    margin-top: 25px;
+}
+.warrantyLoginPage {
+  background: url('http://res.cloudinary.com/rimuzakki/image/upload/v1455161610/background_vgug4m.jpg') fixed no-repeat center center /cover;
+}
+.warrantyLoginBox {
+    color: #00c7cc;
+    /*background-color: #fff;*/
+    border-radius: 4px;
+    /*border: 1px solid #FFF;*/
+    padding: 20px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    /*box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);*/
+    border: none;
+    background: #FFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.63), rgba(255, 255, 255, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.63), rgba(255, 255, 255, 0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.63), rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(255, 255, 255, 0));
+}
+.warrantyLoginPage .warrantyLoginImage {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.warrantyLoginPage .warrantyEdit {
+  margin-bottom: 10px;
+}
+
+.warrantyLoginPage textarea, 
+.warrantyLoginPage textarea.warrantyEdit, 
+.warrantyLoginPage input.warrantyEdit, 
+.warrantyLoginPage input[type=text], 
+.warrantyLoginPage input[type=password], 
+.warrantyLoginPage input[type=email], 
+.warrantyLoginPage input[type=number], 
+.warrantyLoginPage [type=text].warrantyEdit, 
+.warrantyLoginPage [type=password].warrantyEdit, 
+.warrantyLoginPage [type=email].warrantyEdit, 
+.warrantyLoginPage [type=tel].warrantyEdit, 
+.warrantyLoginPage [contenteditable].warrantyEdit {
+  padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 -1px 0 #dddddd;
+    box-shadow: inset 0 -1px 0 #dddddd;
+    font-size: 14px;
+    height: 28px;
+}
+
+.warrantyLoginPage textarea:focus, 
+.warrantyLoginPage textarea.warrantyEdit:focus, 
+.warrantyLoginPage input.warrantyEdit:focus, 
+.warrantyLoginPage input[type=text]:focus, 
+.warrantyLoginPage input[type=password]:focus, 
+.warrantyLoginPage input[type=email]:focus, 
+.warrantyLoginPage input[type=number]:focus, 
+.warrantyLoginPage [type=text].warrantyEdit:focus, 
+.warrantyLoginPage [type=password].warrantyEdit:focus, 
+.warrantyLoginPage [type=email].warrantyEdit:focus, 
+.warrantyLoginPage [type=tel].warrantyEdit:focus, 
+.warrantyLoginPage [contenteditable].warrantyEdit:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #00F9FF;
+    box-shadow: inset 0 -2px 0 #00F9FF;
+}
+
+.warrantyLoginPage .warrantyEdit {
+  display: block;
+    width: 100%;
+    height: 37px;
+    padding: 6px 16px;
+    font-size: 13px;
+    line-height: 1.846;
+    color: #00c7cc;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.warrantyLoginPage .warrantyEdit:before {
+  position: absolute;
+    top: 1em;
+    left: 0;
+    content: "";
+    width: 150px;
+    height: 0;
+    border-bottom: 1px solid #bada55;
+}
+
+.warrantyLoginPage .warrantyEdit:after {
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    height: 0.5em;
+    width: 1px;
+    background: #bada55;
+}
+
+/*.warrantyLoginPage label {
+  color: #417e7f;
+}*/
+
+.warrantyLoginPage .warrantyButton {
+  border-radius: 0;
+  background-color: #00c7cc;
+}
+
+.warrantyLoginPage table {
+  width: 100% !important;
+}
+
+#login_submitbutton {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.warrantyLoginPage a {
+  color: #00F9FF;
+}
+.footer-login {
+    margin-top: 15px;
+}
+.header-login {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-error {
+    width: 50%;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    color: #e51c23;
+}
+@media (min-width: 768px) {
+  .warrantyLoginBox, .login-error {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .warrantyLoginBox, .login-error {
+    width: 30%;
+  } 
+}
+@media (min-width: 1200px) {
+  .warrantyLoginBox, .login-error {
+    width: 30%;
+  }
+}
+.warrantyLoginPage .warrantyGrid {
+    color: #00c7cc;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 10px;
+  border-radius: 4px; }
+  .pagination > li {
+    display: inline; }
+    .pagination > li > a, .pagination > li > span {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      text-decoration: none;
+      color: #337ab7;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      margin-left: -1px; }
+    .pagination > li:first-child > a, .pagination > li:first-child > span {
+      margin-left: 0;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    .pagination > li:last-child > a, .pagination > li:last-child > span {
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px; }
+    .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+      z-index: 2;
+      color: #23527c;
+      background-color: #eeeeee;
+      border-color: #dddddd; }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #ffffff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: default; }
+  .pagination > .disabled > span {
+    color: #777777;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    cursor: not-allowed; }
+    .pagination > .disabled > span:hover, .pagination > .disabled > span:focus {
+      color: #777777;
+      background-color: #ffffff;
+      border-color: #dddddd;
+      cursor: not-allowed; }
+  .pagination > .disabled > a {
+    color: #777777;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    cursor: not-allowed; }
+    .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+      color: #777777;
+      background-color: #ffffff;
+      border-color: #dddddd;
+      cursor: not-allowed; }

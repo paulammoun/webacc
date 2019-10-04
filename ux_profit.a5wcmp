@@ -1,0 +1,1270 @@
+{
+    "$schema": "UX",
+    "$definition": {
+        "style_name": "Alpha",
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "builderVersionNumber": 1,
+        "overrideStyleName": "Default",
+        "FontSize": "Larger",
+        "A5ContainerClassPadding": "0px",
+        "A5ContainerClassPaddingForContainerWidthMode": "4px",
+        "layoutType": "ContainerWidth",
+        "previewMode": "Default",
+        "useDragScrolling": "Auto",
+        "pageTitle": "UX",
+        "waitMsg": {
+            "message": {
+                "text": "Wait...",
+                "waitIcon": "css/A5System/Images/wait.gif"
+            },
+            "cssAnimation": {
+                "size": "32"
+            }
+        },
+        "globalSettings": {
+            "labelWidth": "1in"
+        },
+        "serverSideEvents": {
+            "canAjaxCallback": "",
+            "afterAjaxCallback": ""
+        },
+        "onTimerEventInterval": 60,
+        "securityDeniedAction": "Redirect to login page",
+        "clientSideEvents": {
+            "_canAjaxCallback": "",
+            "__afterAjaxCallbackComplete": "",
+            "onAjaxCallbackFailed": "",
+            "onAjaxCallbackNotAvailable": "",
+            "onAjaxCallbackNotAllowed": "",
+            "onServerSideEventHandlerError": "",
+            "onFieldValidationError": "",
+            "beforePrepare": "",
+            "afterPrepare": "",
+            "afterValidate": "",
+            "onTabPaneChanged": "",
+            "beforeRptSectionRowPrepare": "",
+            "afterRptSectionRowPrepare": "",
+            "canRptSectionRowAdd": "",
+            "afterRptSectionRowAdd": "",
+            "canRptSectionRowDelete": "",
+            "afterRptSectionRowDelete": "",
+            "onStateChange": "",
+            "onDataStateChange": "",
+            "onControlFocus": "",
+            "onRptSectionFocus": "",
+            "onRptSectionRowChange": "",
+            "canResetForm": "",
+            "afterResetForm": "",
+            "canRecordNavigate": "",
+            "afterRecordNavigate": "",
+            "onSynchronizeDialog": "",
+            "afterPopulateFromTable": "",
+            "onRenderComplete": "",
+            "onAndroidBackButton": "",
+            "onPanelActivate": "",
+            "afterSaveToRepository": "",
+            "afterLoadFromRepository": "",
+            "afterGoogleVisualization": "",
+            "canDeleteParentRecord": "",
+            "afterDeleteParentRecord": "",
+            "onOrientationChange": "",
+            "onKeyboard": "",
+            "onCordovaReady": "",
+            "onPhoneGapReady": "",
+            "onImageError": "",
+            "onSignatureCaptureToggle": "",
+            "onSignatureCaptureAccept": "",
+            "onTimer": "",
+            "beforeOnTimer": "",
+            "canLogin": "",
+            "afterLogin": "",
+            "afterFailedLogin": "",
+            "canLogout": "",
+            "afterLogout": "",
+            "onSessionTimeoutWarning": "",
+            "onServerSideListSummaryCompute": "",
+            "beforeHTMLReportExport": "",
+            "onConnectionChange": "",
+            "appCache_cached": "",
+            "appCache_checking": "",
+            "appCache_downloading": "",
+            "appCache_error": "",
+            "appCache_noupdate": "",
+            "appCache_obsolete": "",
+            "appCache_progress": "",
+            "appCache_updateready": "",
+            "onControlBlur": "",
+            "onControlChange": "",
+            "onBeforePersistControlValuesToLocalStorage": "",
+            "onPersistControlValuesToLocalStorage": "",
+            "onRestoreVariablesFromLocalStorage": "",
+            "onRestoreComponentStateFromLocalStorage": "",
+            "localStorageEncryption": "",
+            "localStorageDecryption": "",
+            "securityNotAuthenticated": "",
+            "securityPermissionDenied": "",
+            "webSocketOnMessage": "",
+            "webSocketServerClose": "",
+            "webSocketSendMessageFail": "",
+            "afterGoogleAddressSelect": "",
+            "onBeforeClientSideDataCacheRead": "",
+            "afterClientSideDataCacheAjaxCallback": ""
+        },
+        "onlyValidateChangedFields": true,
+        "edit": {
+            "field_error_style": {
+                "type": "Block",
+                "showWarning": true,
+                "icon": "<Specified by Style>",
+                "controlContainer_classname": ""
+            },
+            "row_errors_window_title": "Error",
+            "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+            "fieldValidationErrorMessage": "Form has errors."
+        },
+        "submitDialogIfHasClientSideValidationErrors": true,
+        "activeLanguage": "<Default>",
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close"
+        },
+        "clientSideDateFormat": "dd/MM/yyyy",
+        "fontScalingOption": "All",
+        "helpTableType": "DBF",
+        "fieldHelpWindowStyle": "modal-resizeable",
+        "customization": {
+            "resetFormMessage": "Are you sure you want to reset the form?",
+            "resetFormTitle": "Warning",
+            "resetFormIcon": "<Specified by Style>",
+            "resetFormYesButton": "Yes",
+            "resetFormNoButton": "No",
+            "windowTitleDirection": "ltr",
+            "dirtyWarning": "You must first save your changes or cancel changes by clicking the Reset button.",
+            "dirtyWarningTitle": "Notice",
+            "dirtyWarningIcon": "<Specified by Style>",
+            "deleteRecordWarningTitle": "Delete Record",
+            "deleteRecordWarningMessage": "Are you sure you want to delete this record?"
+        },
+        "dataBinding": {
+            "computeDataBindingCodeAtDesignTime": true,
+            "computeDataBindingCodeAtDesignTimePrompt": "Prompt",
+            "autoRefreshSchemaOnLoad": true,
+            "autoRefreshPromptFirst": "Prompt",
+            "precalc": {
+                "flagCodeComputed": false
+            }
+        },
+        "actionJavascriptDefined": true,
+        "info": {
+            "createdBy": "PCS",
+            "dateCreated": "2017-5-22",
+            "dateLastEdited": "2017-9-18"
+        },
+        "flagShowCommentsInTree": true,
+        "treeCommentOffset": "6",
+        "renderUXLocation": {
+            "type": "window",
+            "sizeToElement": true
+        },
+        "checkSessionEvery": 1,
+        "warningIntervalBeforeExpiration": 1,
+        "sessionTimeOutWarningMessage": "Your session will expire in {secondsToSessionEnd} seconds. Click the button to extend your session.",
+        "sessionExtendSessionButtonLabel": "Extend Session",
+        "sessionTimeoutWarningDialogTitle": "Warning",
+        "sessionHasExpiredMessage": "Your session has expired.",
+        "sessionHasExpiredButtonLabel": "OK",
+        "sessionHasExpiredAction": "Nothing",
+        "sessionHasExpiredRedirectPage": "<self>",
+        "sessionHasExpiredDialogTitle": "Notice",
+        "sessionHasExpiredOKButtonJavascript": "<ReloadThisPage>",
+        "login": {
+            "errorMessageStyle": "color: red;",
+            "logoutDoesFullPageReload": true
+        },
+        "applyResponsiveDesignSettings": true,
+        "responseDesignRulesMode": "FirstTrue",
+        "localStorage": {
+            "namespace": "<Default>",
+            "__version": 1,
+            "workingPreviewTestingMode": "Browser",
+            "variablesToNotPersist": ""
+        },
+        "preRenderComputeWhen": "Every time component is saved",
+        "page_fields": [
+            {
+                "controlType": "layout_directive_FrameBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=90d6d207-f83c-4389-91a7-dbd7d5c0220a}{I:'$$control.group'} [Frame: <No Label> - FRAME_1]",
+                "displayODFlat": "{Data=539c0b41-fbc2-4d63-bf51-57b4f996d15b}{I:'$$control.group'}[Frame Begin]",
+                "idInternal": "539c0b41-fbc2-4d63-bf51-57b4f996d15b",
+                "lastIndex": 13,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=90d6d207-f83c-4389-91a7-dbd7d5c0220a}{I:'$$control.group'} [Frame: <No Label>]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=90d6d207-f83c-4389-91a7-dbd7d5c0220a}{I:'$$control.group'} [Frame: <No Label> - FRAME_1]",
+                "crc": "4294955255",
+                "v": {
+                    "Frame": {
+                        "ID": "FRAME_1",
+                        "width": "40%",
+                        "Border": {
+                            "Style": "border-color: #faf9f9;"
+                        },
+                        "type": "Simple",
+                        "initialState": "Shown"
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "id": "FRAMEBEGIN1"
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\"     style=\"width: 100%; width: 40%; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_1\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; border-color: #faf9f9; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >",
+                    "DesignViewHTML": ""
+                },
+                "shortControlType": "FRAMEBEGIN",
+                "p": {
+                    "lastbutton": "OK",
+                    "control": "[Frame Begin]",
+                    "controltype": "layout_directive_FrameBegin",
+                    "icon": "$$control.group"
+                }
+            },
+            {
+                "controlType": "layout_directive_ContainerBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=352755d1-f911-446d-9372-c5b0f9ef0219}{I:'$$format.border.style.dash'} [Container: CONTAINER_2]",
+                "displayODFlat": "{Data=dd400994-d4d2-4edf-8903-99ee86f3bb34}{I:'$$format.border.style.dash'}[Container Begin]",
+                "idInternal": "dd400994-d4d2-4edf-8903-99ee86f3bb34",
+                "lastIndex": 4,
+                "parentContainer": 1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=352755d1-f911-446d-9372-c5b0f9ef0219}{I:'$$format.border.style.dash'} [Container: CONTAINER_2]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=352755d1-f911-446d-9372-c5b0f9ef0219}{I:'$$format.border.style.dash'} [Container: CONTAINER_2]",
+                "crc": "4294962057",
+                "v": {
+                    "container": {
+                        "ID": "CONTAINER_2",
+                        "contentAlignment": "Left",
+                        "width": "100%",
+                        "buttonGroup": {
+                            "orientation": "Horizontal"
+                        },
+                        "subType": "None",
+                        "allowScrolling": false,
+                        "scrolling": {
+                            "axis": "Both",
+                            "stopPropogation": false,
+                            "isDefined": false,
+                            "indicator": {
+                                "v": {
+                                    "show": true,
+                                    "className": "",
+                                    "barClassName": "",
+                                    "location": "right",
+                                    "offset": "0px",
+                                    "top": "0px",
+                                    "bottom": "0px"
+                                },
+                                "h": {
+                                    "show": true,
+                                    "className": "",
+                                    "barClassName": "",
+                                    "location": "right",
+                                    "offset": "0px",
+                                    "left": "0px",
+                                    "right": "0px"
+                                }
+                            }
+                        },
+                        "pull": {
+                            "isDefined": false,
+                            "javascript": {
+                                "onPullRelease": "",
+                                "onPullEnd": "",
+                                "onPull": ""
+                            },
+                            "pullpastEnd": {
+                                "YSetting": "auto",
+                                "XSetting": "auto"
+                            }
+                        },
+                        "edgeOffset": "",
+                        "BreakType": "After",
+                        "parentIsNonFloating": false
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "id": "CONTAINERBEGIN1"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_2\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 100%; \"  ><!--DIV for Container control-->",
+                    "DesignViewHTML": ""
+                },
+                "shortControlType": "CONTAINERBEGIN",
+                "p": {
+                    "lastbutton": "OK",
+                    "control": "[Container Begin]",
+                    "controltype": "layout_directive_ContainerBegin",
+                    "icon": "$$format.border.style.dash"
+                }
+            },
+            {
+                "controlType": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=cb05a6e8-f15c-4e23-a2e5-89bc0894e50f}{I:'$$control.text'} [Profit_Loss] �",
+                "displayODFlat": "{Data=deb1e31b-ff65-48c3-9119-2eba8201e404}{I:'$$control.text'}[Profit_Loss]",
+                "idInternal": "deb1e31b-ff65-48c3-9119-2eba8201e404",
+                "parentContainer": 2,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=cb05a6e8-f15c-4e23-a2e5-89bc0894e50f}{I:'$$control.text'} [Profit_Loss]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=cb05a6e8-f15c-4e23-a2e5-89bc0894e50f}{I:'$$control.text'} [Profit_Loss] �",
+                "crc": "4294960110",
+                "v": {
+                    "controlType": "Label",
+                    "variableName": "Profit_Loss",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "Profit & Loss",
+                    "class": "<Default>",
+                    "width": "100%",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelStyle": "background-color: #edecec; font-size: 18px; font-weight: bold;",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Center",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "textboxSubTheme": "",
+                    "getFunction": "",
+                    "setFunction": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 2,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 100%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.PROFIT_LOSS\" for=\"{grid.componentname}.V.R{grid.rownumber}.PROFIT_LOSS\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 18px; font-weight: bold; display: block; \">Profit & Loss</label>\n<!--LblE-->\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.PROFIT_LOSS\" class=\"[class.dialogLabel]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'PROFIT_LOSS': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                }
+            },
+            {
+                "controlType": "layout_directive_ContainerEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=1492a825-5b8c-43ab-ba6a-7cdad038b15d}{I:'vertLineCap'} [Container End: CONTAINER_2] �",
+                "displayODFlat": "{Data=1ad8bba3-e8a1-437f-ac43-e9c1cc90d88f}{I:'$$format.border.style.dash'}[Container End]",
+                "idInternal": "1ad8bba3-e8a1-437f-ac43-e9c1cc90d88f",
+                "parentContainer": 1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=1492a825-5b8c-43ab-ba6a-7cdad038b15d}{I:'vertLineCap'} [Container End]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=1492a825-5b8c-43ab-ba6a-7cdad038b15d}{I:'vertLineCap'} [Container End: CONTAINER_2] �",
+                "v": {
+                    "container": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "id": "CONTAINEREND1"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.CONTAINER_2.BREAK\"  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "containerStartIndex": 2,
+                "shortControlType": "CONTAINEREND",
+                "p": {
+                    "control": "[Container End]",
+                    "controltype": "layout_directive_ContainerEnd",
+                    "icon": "$$format.border.style.dash",
+                    "lastbutton": "OK"
+                }
+            },
+            {
+                "controlType": "layout_directive_FrameBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=a952dbdb-7c94-4687-900a-bec4123bab25}{I:'$$control.group'} [Frame: <Date> - FRAME_2]",
+                "displayODFlat": "{Data=1feec274-c6be-44fc-982b-dfee9433b11e}{I:'$$control.group'}[Frame Begin]",
+                "idInternal": "1feec274-c6be-44fc-982b-dfee9433b11e",
+                "lastIndex": 8,
+                "parentContainer": 1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=a952dbdb-7c94-4687-900a-bec4123bab25}{I:'$$control.group'} [Frame: <No Label>]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=a952dbdb-7c94-4687-900a-bec4123bab25}{I:'$$control.group'} [Frame: <Date> - FRAME_2]",
+                "crc": "4294937591",
+                "v": {
+                    "FrameTitle": "Date",
+                    "Frame": {
+                        "ID": "FRAME_2",
+                        "width": "100%",
+                        "Legend": {
+                            "Style": "font-size: 15px; font-weight: bold;"
+                        },
+                        "type": "Simple",
+                        "initialState": "Shown"
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "id": "FRAMEBEGIN2"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\"     style=\"width: 100%; width: 100%; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_2\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n\t<legend class=\"\" style=\"font-size: 15px; font-weight: bold;\"  >Date</legend>",
+                    "DesignViewHTML": ""
+                },
+                "shortControlType": "FRAMEBEGIN",
+                "p": {
+                    "lastbutton": "OK",
+                    "control": "[Frame Begin]",
+                    "controltype": "layout_directive_FrameBegin",
+                    "icon": "$$control.group"
+                }
+            },
+            {
+                "controlType": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=43a585f1-3948-4cff-80a7-b384295cc147}{I:'$$control.edit'} [fromdate]",
+                "displayODFlat": "{Data=9d34450f-a2de-4e92-aafe-2531aa47fb6a}{I:'$$control.edit'}[fromdate]",
+                "idInternal": "9d34450f-a2de-4e92-aafe-2531aa47fb6a",
+                "parentContainer": 5,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=43a585f1-3948-4cff-80a7-b384295cc147}{I:'$$control.edit'} [fromdate]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=43a585f1-3948-4cff-80a7-b384295cc147}{I:'$$control.edit'} [fromdate]",
+                "crc": "4294901798",
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "fromdate",
+                    "type": "Date",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "From Date",
+                    "class": "<Default>",
+                    "width": "45%",
+                    "smartFieldContainerStyle": "border-style: solid; border-width: 1px; border-color: #969696;",
+                    "breakType": "None",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelStyle": "font-size: 15px; background-color: #edecec; font-weight: bold; width: 100%;",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Center",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "textboxSubTheme": "primary",
+                    "getFunction": "",
+                    "setFunction": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": true,
+                        "useComboBoxes": true,
+                        "lowYear": 1950,
+                        "highYear": 2050,
+                        "switchYear": 20,
+                        "lowDate": "",
+                        "highDate": "",
+                        "disabledDays": "",
+                        "disabledDates": "",
+                        "hasDisabledDates": false,
+                        "disabledDatesMethod": "Explicit",
+                        "disabledDatesExplicit": "",
+                        "disabledDatesJavascript": "",
+                        "showDaysOfWeek": true,
+                        "showWeeksOfYear": false,
+                        "showTodayButton": true,
+                        "lockColumnWidths": false,
+                        "drawBoxAroundDates": false,
+                        "dateItemHoverClassName": "",
+                        "dateItemSelectedClassName": "",
+                        "dateItemOutOfRangeClassName": "",
+                        "dateItemStyle": "",
+                        "containerWidth": "",
+                        "containerHeight": "",
+                        "hasEvents": false,
+                        "event": {
+                            "onItemDraw": "",
+                            "onClick": "",
+                            "onRightClick": "",
+                            "onSelect": "",
+                            "onNavigate": "",
+                            "onMonthNavigate": "",
+                            "onYearNavigate": ""
+                        }
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "precalc": {
+                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['FROMDATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['FROMDATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t}\n\t\t},\n\t\tswitchYear: 20\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t\t{\n\t\t\t\t\thtml: 'OK',\n\t\t\t\t\taction: 'commit'\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\thtml: 'Cancel',\n\t\t\t\t\taction: 'close'\n\t\t\t\t}\t\t\t\n]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptDatePicker": "",
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 2,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.FROMDATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.FROMDATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 15px; font-weight: bold; display: block; width: 100%; \">From Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.primary.container.className|{grid.style}EditBG]\" style=\"border: 1px solid #969696; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE\" name=\"V.R{grid.rownumber}.FROMDATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.primary.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.primary.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE.BUTTON\" class=\"[theme:editButtonGroup.primary.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'FROMDATE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  }\n"
+                }
+            },
+            {
+                "controlType": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=75b99355-dd4c-4344-aebe-c1b4b3e683ad}{I:'$$control.edit'} [todate] �",
+                "displayODFlat": "{Data=a4ced19d-d1a4-440f-a67b-e8eb889ec34e}{I:'$$control.edit'}[todate]",
+                "idInternal": "a4ced19d-d1a4-440f-a67b-e8eb889ec34e",
+                "parentContainer": 5,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=75b99355-dd4c-4344-aebe-c1b4b3e683ad}{I:'$$control.edit'} [todate]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=75b99355-dd4c-4344-aebe-c1b4b3e683ad}{I:'$$control.edit'} [todate] �",
+                "crc": "4294926718",
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "todate",
+                    "type": "Date",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "To Date",
+                    "class": "<Default>",
+                    "width": "45%",
+                    "smartFieldContainerStyle": "margin: 0px; margin-left: 2%;border-style: solid; border-width: 1px; border-color: #969696;",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelStyle": "font-size: 15px; background-color: #edecec; font-weight: bold; margin: 0px; margin-left: 2%; width: 100%;",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Center",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "textboxSubTheme": "primary",
+                    "getFunction": "",
+                    "setFunction": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": true,
+                        "useComboBoxes": true,
+                        "lowYear": 1950,
+                        "highYear": 2050,
+                        "switchYear": 20,
+                        "lowDate": "",
+                        "highDate": "",
+                        "disabledDays": "",
+                        "disabledDates": "",
+                        "hasDisabledDates": false,
+                        "disabledDatesMethod": "Explicit",
+                        "disabledDatesExplicit": "",
+                        "disabledDatesJavascript": "",
+                        "showDaysOfWeek": true,
+                        "showWeeksOfYear": false,
+                        "showTodayButton": true,
+                        "lockColumnWidths": false,
+                        "drawBoxAroundDates": false,
+                        "dateItemHoverClassName": "",
+                        "dateItemSelectedClassName": "",
+                        "dateItemOutOfRangeClassName": "",
+                        "dateItemStyle": "",
+                        "containerWidth": "",
+                        "containerHeight": "",
+                        "hasEvents": false,
+                        "event": {
+                            "onItemDraw": "",
+                            "onClick": "",
+                            "onRightClick": "",
+                            "onSelect": "",
+                            "onNavigate": "",
+                            "onMonthNavigate": "",
+                            "onYearNavigate": ""
+                        }
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "precalc": {
+                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['TODATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['TODATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t}\n\t\t},\n\t\tswitchYear: 20\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t\t{\n\t\t\t\t\thtml: 'OK',\n\t\t\t\t\taction: 'commit'\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\thtml: 'Cancel',\n\t\t\t\t\taction: 'close'\n\t\t\t\t}\t\t\t\n]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptDatePicker": "",
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 2,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.TODATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.TODATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 15px; font-weight: bold; margin: 0px; margin-left: 2%; display: block; width: 100%; \">To Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.primary.container.className|{grid.style}EditBG]\" style=\"border: 1px solid #969696; margin: 0px; margin-left: 2%; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE\" name=\"V.R{grid.rownumber}.TODATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.primary.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.primary.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE.BUTTON\" class=\"[theme:editButtonGroup.primary.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'TODATE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  }\n"
+                }
+            },
+            {
+                "controlType": "layout_directive_FrameEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=2ca81931-54e8-4691-9acb-00aec370386c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "displayODFlat": "{Data=598aaffb-16d1-497e-819c-6730900e31a4}{I:'$$control.group'}[Frame End]",
+                "idInternal": "598aaffb-16d1-497e-819c-6730900e31a4",
+                "parentContainer": 1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=2ca81931-54e8-4691-9acb-00aec370386c}{I:'vertLineCap'} [Frame End]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{Data=2ca81931-54e8-4691-9acb-00aec370386c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "v": {
+                    "Frame": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "id": "FRAMEEND1"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "containerStartIndex": 5,
+                "shortControlType": "FRAMEEND",
+                "p": {
+                    "control": "[Frame End]",
+                    "controltype": "layout_directive_FrameEnd",
+                    "icon": "$$control.group",
+                    "lastbutton": "OK"
+                }
+            },
+            {
+                "controlType": "layout_directive_spacer",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=a57d938b-f5c0-4159-929c-0e1b46837e01}{I:'$$format.border.style.dot'} [Spacer] �",
+                "displayODFlat": "{Data=766f6907-6c3f-4dd7-b935-6b28f4202fcb}{I:'$$format.border.style.dot'}[Spacer]",
+                "idInternal": "766f6907-6c3f-4dd7-b935-6b28f4202fcb",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=a57d938b-f5c0-4159-929c-0e1b46837e01}{I:'$$format.border.style.dot'} [Spacer]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=a57d938b-f5c0-4159-929c-0e1b46837e01}{I:'$$format.border.style.dot'} [Spacer] �",
+                "crc": "4294946557",
+                "v": {
+                    "spacer": {
+                        "height": "1px",
+                        "width": "0px"
+                    },
+                    "BreakType": "After",
+                    "id": "SPACER_1"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 0px\" >\n\t<div id=\"SPACER_1\" style=\"width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "shortControlType": "SPACER",
+                "p": {
+                    "control": "[Spacer]",
+                    "controltype": "layout_directive_spacer",
+                    "icon": "$$format.border.style.dot",
+                    "lastbutton": "OK"
+                }
+            },
+            {
+                "controlType": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=33cb7619-ebe1-4bfe-a702-9833591fa365}{I:'$$control.editCombo'} [Report] �",
+                "displayODFlat": "{Data=eac72ea1-866c-40f1-bf1e-3e0e47577f3a}{I:'$$control.editCombo'}[Report]",
+                "idInternal": "eac72ea1-866c-40f1-bf1e-3e0e47577f3a",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=33cb7619-ebe1-4bfe-a702-9833591fa365}{I:'$$control.editCombo'} [Report]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=33cb7619-ebe1-4bfe-a702-9833591fa365}{I:'$$control.editCombo'} [Report] �",
+                "crc": "4294949007",
+                "v": {
+                    "controlType": "DropdownBox",
+                    "variableName": "Report",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "View Report By",
+                    "defaultValue": "Local Currency",
+                    "class": "<Default>",
+                    "style": "border-style: solid; border-width: 1px; border-color: #969696;",
+                    "width": "45%",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelStyle": "background-color: #edecec; font-size: 18px; font-weight: bold;",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "textboxSubTheme": "",
+                    "getFunction": "",
+                    "setFunction": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "dropdownbox": {
+                        "size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "choices": "Local Currency\nForeign Currency\n\n",
+                        "errorinlinestyle": "",
+                        "datasource": "AlphaDAO",
+                        "additionalChoicesPre": "",
+                        "additionalChoicesPost": "",
+                        "choicesVariableName": "",
+                        "dbf": {
+                            "table": "",
+                            "displayValueField": "",
+                            "storedValueField": "",
+                            "filter": "",
+                            "parameter_string": ""
+                        },
+                        "cs": {
+                            "connectionString": "",
+                            "sql": "",
+                            "parameter_string": ""
+                        },
+                        "maxchoices": 0,
+                        "stylefieldiferror": true,
+                        "notInListRule": "Add to List",
+                        "hasCascadingChoices": false,
+                        "methodForComputingCascadingFilter": "<Auto>",
+                        "explicitCasacadingFilter": "",
+                        "parentControl": "",
+                        "noSelectionDisplayValue": "",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "fieldTypeOfFieldLinkedToParentControl": "",
+                        "noChoicesDisplayValue": "",
+                        "noChoicesFound": "",
+                        "autoSubmitSearch": false,
+                        "flagIsDefined": true
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "indentTree": 1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.REPORT\" for=\"{grid.componentname}.V.R{grid.rownumber}.REPORT\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"background-color: #edecec; font-size: 18px; font-weight: bold; display: block; \">View Report By</label>\n<!--LblE-->\n\t<!--FldS--><select \t\n\t\tsize=\"1\" \n\t\tclass=\"[class.dialogSelect]\"  \n\t\tname=\"V.R{grid.rownumber}.REPORT\" \n\t\ttitle=\"\"\n\t\tstyle=\"border: 1px solid #969696; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"\n\t\tid=\"{grid.componentname}.V.R{grid.rownumber}.REPORT\"  \n\t\t   >\n{dialog.dropdownboxchoices.REPORT}\n</select>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'REPORT': {info: {controlType: 'DropdownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                }
+            },
+            {
+                "controlType": "layout_directive_spacer",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=4607d962-3ec9-46a4-90f9-aeb68c561eb8}{I:'$$format.border.style.dot'} [Spacer] �",
+                "displayODFlat": "{Data=366ec86f-735f-43d6-9e6e-6edfdb6c35fb}{I:'$$format.border.style.dot'}[Spacer]",
+                "idInternal": "366ec86f-735f-43d6-9e6e-6edfdb6c35fb",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=4607d962-3ec9-46a4-90f9-aeb68c561eb8}{I:'$$format.border.style.dot'} [Spacer]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=4607d962-3ec9-46a4-90f9-aeb68c561eb8}{I:'$$format.border.style.dot'} [Spacer] �",
+                "crc": "4294942662",
+                "v": {
+                    "spacer": {
+                        "height": "1px",
+                        "width": "0px"
+                    },
+                    "BreakType": "After",
+                    "id": "SPACER_3"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 0px\" >\n\t<div id=\"SPACER_3\" style=\"width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "shortControlType": "SPACER",
+                "p": {
+                    "control": "[Spacer]",
+                    "controltype": "layout_directive_spacer",
+                    "icon": "$$format.border.style.dot",
+                    "lastbutton": "OK"
+                }
+            },
+            {
+                "controlType": "layout_directive_button",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{Data=5a631220-ccbb-47c8-9e44-296b736c3266}{I:'$$control.button'} [Button: Print]",
+                "displayODFlat": "{Data=1f77c19a-96d8-4787-a967-7bf5c13bc1c2}{I:'$$control.button'}[Button]",
+                "idInternal": "1f77c19a-96d8-4787-a967-7bf5c13bc1c2",
+                "parentContainer": 1,
+                "displayOD": "{B=White,Light Blue}{I:'vertLine'}{Data=5a631220-ccbb-47c8-9e44-296b736c3266}{I:'$$control.button'} [Button]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{Data=5a631220-ccbb-47c8-9e44-296b736c3266}{I:'$$control.button'} [Button: Print]",
+                "crc": "4294926037",
+                "v": {
+                    "buttonText": "Print",
+                    "Class": "<Default>",
+                    "BreakType": "None",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "id": "BUTTON_2",
+                    "advancedButtonStyling": true,
+                    "width": "45%",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "advancedButton": {
+                        "subTheme": "primary",
+                        "buttonClass": "",
+                        "buttonClassDisabled": "",
+                        "buttonClassHover": "",
+                        "buttonClassPressed": "",
+                        "buttonInlineStyle": "",
+                        "buttonstyle": "Text only",
+                        "disabledImageName": "",
+                        "hoverImageName": "",
+                        "displayDropdownIconOnButton": false,
+                        "displayAsSplitButton": false,
+                        "hyperlinkClass": "[class.gridHyperlinkButton]",
+                        "hyperlinkImagePosition": "None",
+                        "hyperlinkInlineStyle": "",
+                        "imageClass": "",
+                        "imageInlineStyle": "",
+                        "imageName": "",
+                        "pressedImageName": "",
+                        "textClass": "",
+                        "textInlineStyle": "",
+                        "type": "Button"
+                    },
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "clientSideconditionalStyle": "",
+                    "CalcExpression": "",
+                    "EnableExpression": "",
+                    "ShowExpression": "",
+                    "abstractJavascript": {
+                        "click": "var ob = {dialog.Object}.getValue('report');\n\nif(ob=='Local Currency') {dialog.object}.runAction('repprofitlbp');\nif(ob=='Foreign Currency') {dialog.object}.runAction('repprofitusd');"
+                    },
+                    "precalc": {
+                        "javascriptClientSideWatches": "",
+                        "javascriptAbstractSetupCode": "$e.add('{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2',A5.d.evnts.click,function(e) {\nvar ob = {dialog.Object}.getValue('report');\n\nif(ob=='Local Currency') {dialog.object}.runAction('repprofitlbp');\nif(ob=='Foreign Currency') {dialog.object}.runAction('repprofitusd');\n},this,false,'{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2');\n",
+                        "javascriptAdvancedButton": "",
+                        "javascriptAdvancedButton_control": "{dialog.object}._buttons['BUTTON_2'] = new A5.Button({\n\tlayout: 'text',\n\tstyle: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',\n\thtml: 'Print',\n\tonClick: function() { \n\n},\n\ttheme: '{grid.style}:primary'\n});",
+                        "javascriptAdvancedButton_bind": "{dialog.object}._buttons['BUTTON_2'].bind('{DIALOG.COMPONENTNAME}.V.R{DIALOG.ROWNUMBER}.BUTTON_2');"
+                    },
+                    "javascript": {
+                        "onclick": ""
+                    }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "shortControlType": "BUTTON",
+                "p": {
+                    "control": "[Button]",
+                    "controltype": "layout_directive_button",
+                    "icon": "$$control.button",
+                    "lastbutton": "OK"
+                }
+            },
+            {
+                "controlType": "layout_directive_FrameEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=38e51192-9f82-4a2e-a4bb-4b2fc4bbdd53}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "displayODFlat": "{Data=c745213a-6b4c-4ac9-af5a-07037e758e85}{I:'$$control.group'}[Frame End]",
+                "idInternal": "c745213a-6b4c-4ac9-af5a-07037e758e85",
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=38e51192-9f82-4a2e-a4bb-4b2fc4bbdd53}{I:'vertLineCap'} [Frame End]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=38e51192-9f82-4a2e-a4bb-4b2fc4bbdd53}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "v": {
+                    "Frame": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "id": "FRAMEEND2"
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "containerStartIndex": 1,
+                "shortControlType": "FRAMEEND",
+                "p": {
+                    "control": "[Frame End]",
+                    "controltype": "layout_directive_FrameEnd",
+                    "icon": "$$control.group",
+                    "lastbutton": "OK"
+                }
+            }
+        ],
+        "builderType": "Dialog2",
+        "guid": "0b41a124-61c4-4897-a374-61ef36147337",
+        "componentName": "ux_profit",
+        "componentFilename": "C:\\alpha_projects\\brokers\\Brokers.WebProjects\\Default.WebProject\\ux_profit.a5wcmp",
+        "_style_versionNumber": 4,
+        "_style_hasSassOverrides": true,
+        "_style_hasCSSTweaks": false,
+        "_style_hasCSS_or_subtheme_tweaks": false,
+        "useCompactTheme": true,
+        "styleTweaksCSS": "",
+        "styleTweaksSubthemes": "",
+        "controlflowdirection": "ltr",
+        "SVGLinkedFiles": "",
+        "localsvg": "",
+        "createAppCacheVersion": false,
+        "createAppCacheVersionC": "No",
+        "appcache": {
+            "pageName": "<Default>",
+            "pageTitle": "",
+            "hasHomeScreenIcons": false,
+            "homeScreenIconName": "",
+            "icons": {
+                "precomposed": false
+            },
+            "pageHeadSection": ""
+        },
+        "clientsideNumberFormatDecimal": "period",
+        "clientsideNumberFormatThousands": "comma",
+        "dataSeriesPublishToClientSide": false,
+        "showLineNumbersInControlsList": false,
+        "saveFileType": "Formatted JSON",
+        "keyboardShortcutsJSON": "",
+        "preRenderWarningMessageShow": false,
+        "autoSetPreRenderOnForAllUX": false,
+        "selected": "539c0b41-fbc2-4d63-bf51-57b4f996d15b",
+        "designPaneIndex": 1,
+        "masterPaneC": "Overview",
+        "serverSideEventIndex": 1,
+        "clientSideEventIndex": 1,
+        "clientSideEventIndexC": "1",
+        "lastControlSelected": "Insert_layout_directive_ContainerBegin",
+        "__WPhostName": "Internet Explorer",
+        "embeddedMode": false,
+        "_style_hassubthemeTweaks": false,
+        "repeatingSectionsAreDirty": true,
+        "flagDropdownCascadingChanged": false,
+        "toolBox_value": "",
+        "addinBuildNumber": "4932",
+        "addinBuildNumberHighestUsed": "4932",
+        "alphaFiveBuildNumber": "12",
+        "openedFromTemplate": false,
+        "builtWithVersionNumer": 1,
+        "securityEnabled": false,
+        "showHideIsUsed": false,
+        "precalc": {
+            "js_editorSetInitialization": ";\n",
+            "customControl": {
+                "js_beforePrepare": "",
+                "js_afterRender": "",
+                "customControl_xbasicFunctions": ""
+            },
+            "jschart": {
+                "js_beforePrepare": "",
+                "js_afterRender": "",
+                "jschart_xbasicFunctions": ""
+            },
+            "rgraph": {
+                "libraries": ""
+            },
+            "getSetFunctions": {
+                "js_beforePrepare": ""
+            },
+            "injectibleHTML": "",
+            "containerWindowHTML": "",
+            "repeatingsectionInfoJs": "",
+            "framesInfoJS": "{dialog.object}.framesInfo = {\n\n};\n",
+            "jsActionJavascriptGlobalFunctions": "",
+            "xbActionJavascriptGlobalFunctions": "",
+            "javascriptSetupForGridLookups": "{\n}",
+            "javascript": {
+                "showWaitMessage": "",
+                "hideWaitMessage": "",
+                "embeddedUXComponents": ""
+            },
+            "fileUpload_controlInfo": "",
+            "javascript_cascadingDropdowns": "{dialog.object}._cascadingControls = [];\n{dialog.object}._cascadingControlsChildren = [];",
+            "template_html": "<!--div GLOBALERRORS-->\n<div class=\"errorTip\" style=\"margin-bottom: 2px; display: none; width: 8in; \" id=\"{dialog.componentname}.GLOBALERRORS\"></div>\n<!--End div GLOBALERRORS-->\n\n<div id=\"{dialog.componentname}.R1\">\n<div class=\"A5CWLayout\"     style=\"width: 100%; width: 40%; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_1\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; border-color: #faf9f9; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_2\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 100%; \"  ><!--DIV for Container control-->\n<div class=\"A5CWLayout\" style=\"width: 100%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.PROFIT_LOSS\" for=\"{grid.componentname}.V.R{grid.rownumber}.PROFIT_LOSS\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 18px; font-weight: bold; display: block; \">Profit & Loss</label>\n<!--LblE-->\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.PROFIT_LOSS\" class=\"[class.dialogLabel]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.CONTAINER_2.BREAK\"  style=\"clear:both; \" /><!--breakend-->\n<div class=\"A5CWLayout\"     style=\"width: 100%; width: 100%; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_2\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n\t<legend class=\"\" style=\"font-size: 15px; font-weight: bold;\"  >Date</legend>\n<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.FROMDATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.FROMDATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 15px; font-weight: bold; display: block; width: 100%; \">From Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.primary.container.className|{grid.style}EditBG]\" style=\"border: 1px solid #969696; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE\" name=\"V.R{grid.rownumber}.FROMDATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.primary.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.primary.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.FROMDATE.BUTTON\" class=\"[theme:editButtonGroup.primary.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>\n<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.TODATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.TODATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; background-color: #edecec; font-size: 15px; font-weight: bold; margin: 0px; margin-left: 2%; display: block; width: 100%; \">To Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.primary.container.className|{grid.style}EditBG]\" style=\"border: 1px solid #969696; margin: 0px; margin-left: 2%; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE\" name=\"V.R{grid.rownumber}.TODATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.primary.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.primary.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.TODATE.BUTTON\" class=\"[theme:editButtonGroup.primary.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<div class=\"A5CWLayout\" style=\"width: 0px\" >\n\t<div id=\"SPACER_1\" style=\"width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t\n<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.REPORT\" for=\"{grid.componentname}.V.R{grid.rownumber}.REPORT\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"background-color: #edecec; font-size: 18px; font-weight: bold; display: block; \">View Report By</label>\n<!--LblE-->\n\t<!--FldS--><select \t\n\t\tsize=\"1\" \n\t\tclass=\"[class.dialogSelect]\"  \n\t\tname=\"V.R{grid.rownumber}.REPORT\" \n\t\ttitle=\"\"\n\t\tstyle=\"border: 1px solid #969696; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"\n\t\tid=\"{grid.componentname}.V.R{grid.rownumber}.REPORT\"  \n\t\t   >\n{dialog.dropdownboxchoices.REPORT}\n</select>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<div class=\"A5CWLayout\" style=\"width: 0px\" >\n\t<div id=\"SPACER_3\" style=\"width: 100%; height: 1px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t\n<div class=\"A5CWLayout\" style=\"width: 45%\" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n\n\n</div>\n<!--div DEBUGUPDATECOMMANDS-->\n<div class=\"\" style=\"display: none; \" id=\"{dialog.componentname}.DEBUGUPDATECOMMANDS\"></div>\n<!--End div DEBUGUPDATECOMMANDS-->\n",
+            "panelDisplayNames": "",
+            "controlJavascript": "",
+            "controlJavascriptRepeatingSections": "",
+            "template_js": "",
+            "sessionVarsInShowHideExpns": "",
+            "flagHasShowTimer": false,
+            "themeSearchReplaceString": "[theme:editButtonGroup.primary.container.className|{grid.style}EditBG]=*if_error(*if_error(p.editButtonGroup.primary.container.className,p.editButtonGroup.base.container.className),\"{grid.style}EditBG\")\n[theme:editButtonGroup.primary.container.editClassName|class.editButtonGroupEdit]=*if_error(*if_error(p.editButtonGroup.primary.container.editClassName,p.editButtonGroup.base.container.editClassName),\"[class.editButtonGroupEdit]\")\n[theme:editButtonGroup.primary.container.separatorClassName|{grid.style}EditBGSeparator]=*if_error(*if_error(p.editButtonGroup.primary.container.separatorClassName,p.editButtonGroup.base.container.separatorClassName),\"{grid.style}EditBGSeparator\")\n[theme:editButtonGroup.primary.container.button.className|{grid.style}EditBGButton]=*if_error(*if_error(p.editButtonGroup.primary.container.button.className,p.editButtonGroup.base.container.button.className),\"{grid.style}EditBGButton\")\n[theme:edit.primary.className|class.dialogInput]=*if_error(*if_error(p.edit.primary.className,p.edit.base.className),\"[class.dialogInput]\")\n[theme:general.icons.edit.dropdown|{images.edit.dropdownArrow}]=*if_error(p.general.icons.edit.dropdown,\"{images.edit.dropdownArrow}\")\n",
+            "flagHasHTML5ImageCapture": false,
+            "flagUsesCordova": false,
+            "flagUseAmazonS3FileUpload": false,
+            "flagUseStripe": false,
+            "usesSystemSVG": false,
+            "flagUseAudioPlayer": false,
+            "flagUseInk": false,
+            "flagUsesAudioLibrary": false,
+            "flagUsesPhoneGapFileSystemFunctions": false,
+            "flagUsesGetAccurateLocation": false,
+            "editorSet_for_editor": "{dialog.object}._EDITOR_EDITORSET = {};",
+            "otherJS": "",
+            "javascript_layoutRules": "",
+            "javascript_controlNesting": "{\nFRAME_1: ['container:CONTAINER_2','frame:FRAME_2','Report'],\nCONTAINER_2: ['Profit_Loss'],\nFRAME_2: ['fromdate','todate']\n}",
+            "appcacheEvents": ""
+        },
+        "FieldsInRepeatingSectionsDeletedBySecurity": "",
+        "repeatingSectionsToRecalc": "",
+        "dialogObject": "if(typeof {dialog.componentName}_DlgObj == 'object') {dialog.componentName}_DlgObj._destroy();\nvar {dialog.componentName}_DlgObj = new A5.DialogComponentHelper('{dialog.componentName}',{\n\tajaxURL: '{dialog.ajaxUrl}',\n\t_embeddedMode: {dialog.embeddedMode},\n\t_livePreviewInBuilder: {livePreviewInBuilder},\n\tcomponentGUID: '0b41a124-61c4-4897-a374-61ef36147337',\n\tcolumnInfo: {columninfo},\n\toriginalValues: {dialog.jsOriginalValues},\n\tdefaultValues: {dialog.jsDefaultValues},\n\tdatePickerMonthNames: [{datePickerMonthNames}],\n\tdatePickerDayNames: [{datePickerDayNames}],\n\tdatePickerTodayButton: '{datePickerTodayButton}',\n\tdatePickerCloseButton: '{datePickerCloseButton}',\n\tdatePickerFirstDayOfWeek: {datePickerFirstDayOfWeek},\n\tresetFormMessage: '{resetFormMessage}',\n\tresetFormTitle: '{resetFormTitle}',\n\tresetFormIcon: '{resetFormIcon}',\n\tdirtyFormMessage: '{dirtyFormMessage}',\n\tdirtyFormTitle: '{dirtyFormTitle}',\n\tdirtyFormIcon: '{dirtyFormIcon}',\n\tdeleteRecordDialogTitle: '{deleteRecordTitle}',\n\tdeleteRecordDialogMessage: '{deleteRecordMessage}',\t\n\tssDateFormat: '{serverSideDateFormat}',\n\tstyleName: '{dialog.style}',\n\t_fieldHelpers_DIALOG2: [],\n\tparentComponentAlias: '{parentComponentAlias}',\n\tsubmitIfHasClientSideErrors: true, \n\trowErrors: {\n\t\t\t\tshowMessageBox: false,\n\t\t\t\tmessageBoxTitle: 'Error',\n\t\t\t\tstyle: 'color: red; width: 6in; height: 2in;'\n\t\t},\n\tfieldErrors: {\n\t\ttype: 'block', \n\t\tclassName: 'errorText',\n\t\tinputClassName: '[class.gridInputError]',\n\t\tedit: { \n\t\t\tcontainer: { className: '[class.gridInputContainerError]'}\n\t\t},\n\t\ticon: '{images.dialog.editError}',\n\t\tglobal: {\n\t\t\tcontId: '{dialog.componentname}.GLOBALERRORS',\n\t\t\thoverClassName: 'errorTextHighlight',\n\t\t\thoverInputClassName: 'errorInputHighlight'\n\t\t}\n\t}\n\n\t});\n\n",
+        "xbasiccode": {
+            "blankInitialValueIfVarNotFound": "",
+            "setValueProperties": "value.PROFIT_LOSS=\"\"\nvalue.FROMDATE=\"\"\nvalue.TODATE=\"\"\nvalue.REPORT=\"Local Currency\"",
+            "setValueProperties2": "value.PROFIT_LOSS=\"\"\nvalue.FROMDATE=\"\"\nvalue.TODATE=\"\"\nvalue.REPORT=\"Local Currency\"",
+            "setValueUnformattedProperties": "value.PROFIT_LOSS=convert_type(\"\",\"C\")\nvalue.FROMDATE=convert_type(\"\",\"D\")\nvalue.TODATE=convert_type(\"\",\"D\")\nvalue.REPORT=convert_type(\"Local Currency\",\"C\")\n"
+        },
+        "componentType": "Dialog2",
+        "version": 1,
+        "recNav": {
+            "slider": {
+                "showSlider": false
+            }
+        },
+        "A5SaveTimeStamp": "20170918112250863",
+        "a_actionJavascript": [
+            {
+                "actionGuid": "67666a04-9333-4bad-b24a-a8cdb49fbe4c",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$presentation.report'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Open a Report, Label or Letter layout{T=4}{I:'a5_vertical_line'}\">\n<action=\"Open a Report, Label or Letter layout\">\n<icon=\"$$presentation.report\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_openReport(v,wf,pv,dlg_mode)\">\n<metaData=<<%str2%\n<flagAdvancedExport=.F.>\n<reportPrintDefinition=<<%str1%\n<layoutType=1>\n<layoutName=\"rep_profitloc@ProjectReport\">\n<dbfFilter=\"\">\n<sqlFilter=\"\">\n<dbfOrder=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=<<%str%\nv_fromdate|Date|{fromdate}\nv_todate|Date|{todate}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=<<%str%\n<Arguments<[1]<variablename=\"v_fromdate\">\n<prompt=\"v_fromdate\">\n<type=\"Date\">\n<style=\"TextBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n<[2]<variablename=\"v_todate\">\n<prompt=\"v_todate\">\n<type=\"Date\">\n<style=\"TextBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n>\n<DialogTitle=\"Specify Argument Values\">\n<OKButtonLabel=\"&OK\">\n<CancelButtonLabel=\"&Cancel\">\n%str%>\n%str1%>\n<report<layoutTypeC=\"\">\n<layoutName=\"rep_profitloc@ProjectReport\">\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=<<%str%\nv_fromdate|Date|{fromdate}\nv_todate|Date|{todate}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<sqlReport=.T.>\n<pdfOpenParameters=\"\">\n<initialView=\"PDF\">\n<HTMLToolbar<buttons<pdf=.T.>\n<excel=.T.>\n<printHTML=.T.>\n<word=.T.>\n<text=.F.>\n<pdfButton<text=\"PDF\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.adobe.pdf.png.a5image\">\n<bubbleHelp=\"Print report as a PDF document.\">\n>\n<excelButton<text=\"Excel\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.excel.png.a5image\">\n<bubbleHelp=\"Export report to Excel.\">\n>\n<printHTMLButton<text=\"Print HTML\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$device.printer.png.a5image\">\n<bubbleHelp=\"Print the HTML report.\">\n>\n<WordButton<text=\"Word\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.word.png.a5image\">\n<bubbleHelp=\"Export report to Word.\">\n>\n<textButton<text=\"Text\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$control.text.png.a5image\">\n<bubbleHelp=\"Export data in report to a text file.\">\n>\n<bookmarksButton<buttonType=\"Text\">\n<text=\"Bookmarks\">\n<imageName=\"images/$$generic.book.png.a5image\">\n>\n>\n<bookMarkPanelSize=\"3in\">\n>\n<maxDisplayRecords=0>\n<moreRecordsTemplate=\"<hr />Showing first [DisplayRecords] of [TotalRecords] records in query\">\n<moreRecordsStyle=\"text-align: center;\">\n<beforeExecuteClientSideFunctionName=\"\">\n<afterExecuteJavascript=\"\">\n>\n<flagExportMode=.F.>\n<htmlReportHeight=\"3in\">\n<htmlReportWidth=\"6in\">\n<parentNavigator=\"\">\n<dynamicPanelTitle=\"\">\n<waitMessagePanel=\"\">\n<dynamicPanelCanClose=.F.>\n<ajaxWindowWorkingMessageUseCSSAnimation=.F.>\n<ajaxWindowWorkingMessageCSSAnimationSettings<size=\"32\">\n>\n<targetType=\"Window\">\n<targetDIVid=\"\">\n<targetDIVcanHide=.T.>\n<targetDIVHideHyperlink=\"Close\">\n<targetDIVIframeStyle=\"height: 5in; width: 6in;\">\n<dockWindow=.F.>\n<dockLocation=\"Bottom\">\n<windowNameExplicit=\"<Default>\">\n<ajaxWindowType=\"Modal-Popup\">\n<onCompleteXbasicFunction=\"\">\n<targetPanel=\"\">\n<clientSideFilename=\"\">\n<targetFolder=\"\">\n<ajaxWindowPositionAttribute=\"\">\n<ajaxWindowPositionAttributeEnglish=\"\">\n<ajaxWindowModalLockClassName=\"<Default>\">\n<ajaxWindowTitle=\"Profit & Loss In Local Currency\">\n<ajaxPaneTitle=\"Pane\">\n<ajaxPaneAlwaysUseNewPane=.T.>\n<ajaxWindowReuseExistingWindow=.F.>\n<ajaxWindowHeight=\"95%\">\n<ajaxWindowWidth=\"95%\">\n<ajaxWindowisResizable=.T.>\n<ajaxWindowWorkingMessage=\"Working...\">\n<ajaxWindowWorkingMessageIcon=\"css/A5System/Images/wait.gif\">\n<ajaxWindowTitlePosition=\"Top\">\n<ajaxWindowTitleDirection=\"ltr\">\n<ajaxWindowTitleHasClose=.T.>\n<ajaxWindowTitleShow=.T.>\n<ajaxWindowDisableMove=.F.>\n<window<hasCustomButtons=.F.>\n<buttons>\n<buttonCount=0>\n<customButtonsInLineStyle=\"\">\n<tbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<header<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<footer<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<bbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<pointer<has=.F.>\n<location=\"Auto\">\n>\n<onInitialize=\"\">\n<onBeforeShow=\"\">\n<onShow=\"\">\n<onBeforeHide=\"\">\n<onHide=\"\">\n<onFocus=\"\">\n<onMove=\"\">\n<onResize=\"\">\n<subtheme=\"\">\n<animation<hasAnimation=.F.>\n<show<method=\"Fade\">\n<speed=\"Slow\">\n>\n<hide<method=\"None\">\n<speed=\"Fast\">\n>\n>\n>\n<ajaxFailedMessage=\"\">\n<offlineJavascript=\"\">\n<ajaxcallbacktimeout=\"<Default>\">\n%str2%>\n<javascriptAttribute=\"{grid.componentName}_O_495CB098DB6042408B06139775AA5F58({grid.rownumber},'{grid.rowId}',this);\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=<<%str%\nwindow['{grid.componentName}_O_495CB098DB6042408B06139775AA5F58'] = function(rowNum,rowId,objEle) {\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenReport'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'] = {Grid.object}.getWindow('WINDOW_ae2fe37b_0411_4afc_93af_7b1e34eb3067' );\nif(!window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58']) {\nwindow['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'] = {grid.object}.createWindow('WINDOW_ae2fe37b_0411_4afc_93af_7b1e34eb3067','modal-url-resizable',{\n\theight: '95%',\n\twidth: '95%',\n\ttitle: {\n\t\thtml: 'Profit & Loss In Local Currency',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\nro.ajaxFailedMessage = '';\nro.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\n\t\n\tro.hostComponentType = 'Dialog';\n\tro.reportName = 'rep_profitloc@ProjectReport';\n\tro.reportNameShort = 'rep_profitloc';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = 'v_fromdate|Date|'+{dialog.object}.getValue('FROMDATE')+'||v_todate|Date|'+{dialog.object}.getValue('TODATE')+'';\n\tro.rawArgumentMapping = 'v_fromdate|Date|{fromdate}||v_todate|Date|{todate}';\n\tro.controlReferences = ['FROMDATE','TODATE'];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'].show();\n\n}\n%str%>\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+            },
+            {
+                "actionGuid": "54f0fc5b-e0f8-488e-a4a9-dc69b773caf3",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$presentation.report'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Open a Report, Label or Letter layout{T=4}{I:'a5_vertical_line'}\">\n<action=\"Open a Report, Label or Letter layout\">\n<icon=\"$$presentation.report\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_openReport(v,wf,pv,dlg_mode)\">\n<metaData=<<%str2%\n<flagAdvancedExport=.F.>\n<reportPrintDefinition=<<%str1%\n<layoutType=1>\n<layoutName=\"rep_profitfor@ProjectReport\">\n<dbfFilter=\"\">\n<sqlFilter=\"\">\n<dbfOrder=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=<<%str%\nv_fromdate|Date|{fromdate}\nv_todate|Date|{todate}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=<<%str%\n<Arguments<[1]<variablename=\"v_fromdate\">\n<prompt=\"v_fromdate\">\n<type=\"Date\">\n<style=\"TextBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n<[2]<variablename=\"v_todate\">\n<prompt=\"v_todate\">\n<type=\"Date\">\n<style=\"TextBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n>\n<DialogTitle=\"Specify Argument Values\">\n<OKButtonLabel=\"&OK\">\n<CancelButtonLabel=\"&Cancel\">\n%str%>\n%str1%>\n<report<layoutTypeC=\"\">\n<layoutName=\"rep_profitfor@ProjectReport\">\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=<<%str%\nv_fromdate|Date|{fromdate}\nv_todate|Date|{todate}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<sqlReport=.T.>\n<pdfOpenParameters=\"\">\n<initialView=\"PDF\">\n<HTMLToolbar<buttons<pdf=.T.>\n<excel=.T.>\n<printHTML=.T.>\n<word=.T.>\n<text=.F.>\n<pdfButton<text=\"PDF\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.adobe.pdf.png.a5image\">\n<bubbleHelp=\"Print report as a PDF document.\">\n>\n<excelButton<text=\"Excel\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.excel.png.a5image\">\n<bubbleHelp=\"Export report to Excel.\">\n>\n<printHTMLButton<text=\"Print HTML\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$device.printer.png.a5image\">\n<bubbleHelp=\"Print the HTML report.\">\n>\n<WordButton<text=\"Word\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$application.ms.word.png.a5image\">\n<bubbleHelp=\"Export report to Word.\">\n>\n<textButton<text=\"Text\">\n<buttonType=\"Image followed by text\">\n<imageName=\"images/$$control.text.png.a5image\">\n<bubbleHelp=\"Export data in report to a text file.\">\n>\n<bookmarksButton<buttonType=\"Text\">\n<text=\"Bookmarks\">\n<imageName=\"images/$$generic.book.png.a5image\">\n>\n>\n<bookMarkPanelSize=\"3in\">\n>\n<maxDisplayRecords=0>\n<moreRecordsTemplate=\"<hr />Showing first [DisplayRecords] of [TotalRecords] records in query\">\n<moreRecordsStyle=\"text-align: center;\">\n<beforeExecuteClientSideFunctionName=\"\">\n<afterExecuteJavascript=\"\">\n>\n<flagExportMode=.F.>\n<htmlReportHeight=\"3in\">\n<htmlReportWidth=\"6in\">\n<parentNavigator=\"\">\n<dynamicPanelTitle=\"\">\n<waitMessagePanel=\"\">\n<dynamicPanelCanClose=.F.>\n<ajaxWindowWorkingMessageUseCSSAnimation=.F.>\n<ajaxWindowWorkingMessageCSSAnimationSettings<size=\"32\">\n>\n<targetType=\"Window\">\n<targetDIVid=\"\">\n<targetDIVcanHide=.T.>\n<targetDIVHideHyperlink=\"Close\">\n<targetDIVIframeStyle=\"height: 5in; width: 6in;\">\n<dockWindow=.F.>\n<dockLocation=\"Bottom\">\n<windowNameExplicit=\"<Default>\">\n<ajaxWindowType=\"Modal-Popup\">\n<onCompleteXbasicFunction=\"\">\n<targetPanel=\"\">\n<clientSideFilename=\"\">\n<targetFolder=\"\">\n<ajaxWindowPositionAttribute=\"\">\n<ajaxWindowPositionAttributeEnglish=\"\">\n<ajaxWindowModalLockClassName=\"<Default>\">\n<ajaxWindowTitle=\"Profit & Loass In Foreign Currency\">\n<ajaxPaneTitle=\"Pane\">\n<ajaxPaneAlwaysUseNewPane=.T.>\n<ajaxWindowReuseExistingWindow=.F.>\n<ajaxWindowHeight=\"95%\">\n<ajaxWindowWidth=\"95%\">\n<ajaxWindowisResizable=.T.>\n<ajaxWindowWorkingMessage=\"Working...\">\n<ajaxWindowWorkingMessageIcon=\"css/A5System/Images/wait.gif\">\n<ajaxWindowTitlePosition=\"Top\">\n<ajaxWindowTitleDirection=\"ltr\">\n<ajaxWindowTitleHasClose=.T.>\n<ajaxWindowTitleShow=.T.>\n<ajaxWindowDisableMove=.F.>\n<window<hasCustomButtons=.F.>\n<buttons>\n<buttonCount=0>\n<customButtonsInLineStyle=\"\">\n<tbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<header<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<footer<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<bbar<show=.F.>\n<html=\"\">\n<style=\"\">\n>\n<pointer<has=.F.>\n<location=\"Auto\">\n>\n<onInitialize=\"\">\n<onBeforeShow=\"\">\n<onShow=\"\">\n<onBeforeHide=\"\">\n<onHide=\"\">\n<onFocus=\"\">\n<onMove=\"\">\n<onResize=\"\">\n<subtheme=\"\">\n<animation<hasAnimation=.F.>\n<show<method=\"Fade\">\n<speed=\"Slow\">\n>\n<hide<method=\"None\">\n<speed=\"Fast\">\n>\n>\n>\n<ajaxFailedMessage=\"\">\n<offlineJavascript=\"\">\n<ajaxcallbacktimeout=\"<Default>\">\n%str2%>\n<javascriptAttribute=\"{grid.componentName}_O_EE4D6B1BC13B42E29BBA1E8CD5370F09({grid.rownumber},'{grid.rowId}',this);\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=<<%str%\nwindow['{grid.componentName}_O_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = function(rowNum,rowId,objEle) {\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenReport'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = {Grid.object}.getWindow('WINDOW_4240e372_bfc0_444d_af26_a03feadd054a' );\nif(!window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09']) {\nwindow['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = {grid.object}.createWindow('WINDOW_4240e372_bfc0_444d_af26_a03feadd054a','modal-url-resizable',{\n\theight: '95%',\n\twidth: '95%',\n\ttitle: {\n\t\thtml: 'Profit & Loass In Foreign Currency',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\nro.ajaxFailedMessage = '';\nro.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\n\t\n\tro.hostComponentType = 'Dialog';\n\tro.reportName = 'rep_profitfor@ProjectReport';\n\tro.reportNameShort = 'rep_profitfor';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = 'v_fromdate|Date|'+{dialog.object}.getValue('FROMDATE')+'||v_todate|Date|'+{dialog.object}.getValue('TODATE')+'';\n\tro.rawArgumentMapping = 'v_fromdate|Date|{fromdate}||v_todate|Date|{todate}';\n\tro.controlReferences = ['FROMDATE','TODATE'];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'].show();\n\n}\n%str%>\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+            }
+        ],
+        "Livepreview_permissions": "",
+        "livePreview_permissions_friendly": "",
+        "_flagDoTreeview": true,
+        "__allowCascadingRecalc": true,
+        "showJavascriptActions": false,
+        "showResponsiveLayoutHelp": false,
+        "a_UnboundActionJavascript": [
+            {
+                "idInternal": "d90456c3-7587-4b5f-ba02-e4cb8e834b57",
+                "name": "repprofitlbp",
+                "javascript": {
+                    "unbound": "/* actionJavascript:67666a04-9333-4bad-b24a-a8cdb49fbe4c */\n{grid.componentName}_O_495CB098DB6042408B06139775AA5F58({grid.rownumber},'{grid.rowId}',this);"
+                },
+                "javascriptDeclarationsRow": {
+                    "unbound": ""
+                },
+                "javascriptDeclarationsGlobal": {
+                    "unbound": "window['{grid.componentName}_O_495CB098DB6042408B06139775AA5F58'] = function(rowNum,rowId,objEle) {\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenReport'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'] = {Grid.object}.getWindow('WINDOW_ae2fe37b_0411_4afc_93af_7b1e34eb3067' );\nif(!window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58']) {\nwindow['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'] = {grid.object}.createWindow('WINDOW_ae2fe37b_0411_4afc_93af_7b1e34eb3067','modal-url-resizable',{\n\theight: '95%',\n\twidth: '95%',\n\ttitle: {\n\t\thtml: 'Profit & Loss In Local Currency',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\nro.ajaxFailedMessage = '';\nro.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\n\t\n\tro.hostComponentType = 'Dialog';\n\tro.reportName = 'rep_profitloc@ProjectReport';\n\tro.reportNameShort = 'rep_profitloc';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = 'v_fromdate|Date|'+{dialog.object}.getValue('FROMDATE')+'||v_todate|Date|'+{dialog.object}.getValue('TODATE')+'';\n\tro.rawArgumentMapping = 'v_fromdate|Date|{fromdate}||v_todate|Date|{todate}';\n\tro.controlReferences = ['FROMDATE','TODATE'];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_495CB098DB6042408B06139775AA5F58'].show();\n\n}"
+                },
+                "xbasicFunctions": {
+                    "unbound": ""
+                },
+                "clientSideXbasicFunctions": {
+                    "unbound": ""
+                },
+                "part": ""
+            },
+            {
+                "idInternal": "83f9c898-8448-4d4b-9bad-5ab51259cdc9",
+                "name": "repprofitusd",
+                "javascript": {
+                    "unbound": "/* actionJavascript:54f0fc5b-e0f8-488e-a4a9-dc69b773caf3 */\n{grid.componentName}_O_EE4D6B1BC13B42E29BBA1E8CD5370F09({grid.rownumber},'{grid.rowId}',this);"
+                },
+                "javascriptDeclarationsRow": {
+                    "unbound": ""
+                },
+                "javascriptDeclarationsGlobal": {
+                    "unbound": "window['{grid.componentName}_O_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = function(rowNum,rowId,objEle) {\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenReport'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = {Grid.object}.getWindow('WINDOW_4240e372_bfc0_444d_af26_a03feadd054a' );\nif(!window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09']) {\nwindow['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'] = {grid.object}.createWindow('WINDOW_4240e372_bfc0_444d_af26_a03feadd054a','modal-url-resizable',{\n\theight: '95%',\n\twidth: '95%',\n\ttitle: {\n\t\thtml: 'Profit & Loass In Foreign Currency',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{grid.style}',\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'url',\n\t\t\turl: '__workingMessage.a5w'\n\t\t}\n\t},\n\tonHide: function() { $(this.getWindowId('body')).src = '__workingMessage.a5w';}\n}   );\n};\n\n\tvar ro = new Object();\n\t\nro.ajaxFailedMessage = '';\nro.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\n\t\n\tro.hostComponentType = 'Dialog';\n\tro.reportName = 'rep_profitfor@ProjectReport';\n\tro.reportNameShort = 'rep_profitfor';\n\tro.reportType = 'Report';\n\tro.reportIFrame = window['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'].getWindowId('body');;\n\tro.gridId = '{grid.componentName}';\n\tro.download = 'N';\n\tro.xbasicFunction = '';\n\tro.clientSideFilename = '';\n\tro.reportMessagesDivId = '';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = 'v_fromdate|Date|'+{dialog.object}.getValue('FROMDATE')+'||v_todate|Date|'+{dialog.object}.getValue('TODATE')+'';\n\tro.rawArgumentMapping = 'v_fromdate|Date|{fromdate}||v_todate|Date|{todate}';\n\tro.controlReferences = ['FROMDATE','TODATE'];\n\tro.arrayControls = {grid.object}._getArrayControls();\n\tro.workingMessage = 'Working...';\n\tro.workingMessageIcon = 'css/A5System/Images/wait.gif'\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.pdfOpenParameters = '' ;\n\tro._rowNumber = rowNum;\n\tro.afterExecuteJavascript = '';\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\t\n\tro.htmlReporting = {initialView: 'PDF'};\n\t\n\t\n\t\n\tif({grid.object}._embeddedMode) {\n\t\tvar callWorkingPreview = true;\n\t\tif( typeof ro.htmlReporting == 'object' ) {\n\t\t\tif( ro.htmlReporting.initialView == \"HTML\" ) {\n\t\t\t\tcallWorkingPreview = false;\n\t\t\t}\n\t\t}\n\t\tif( callWorkingPreview ) {\n\t\t\tro.windowType = 'Modal';\n\t\t\treportPreviewFromWorkingPreview(ro);\n\t\t\treturn false;\n\t\t}\n\t}\n\n\n\t\n\t\n\t\n\tA5.component.runReport(ro);\n\nwindow['{Grid.ComponentName}_EE4D6B1BC13B42E29BBA1E8CD5370F09'].show();\n\n}"
+                },
+                "xbasicFunctions": {
+                    "unbound": ""
+                },
+                "clientSideXbasicFunctions": {
+                    "unbound": ""
+                },
+                "part": ""
+            }
+        ],
+        "unboundActionShowOnNewActionMessage": true,
+        "actionJavascriptUnboundLastEdited": "83f9c898-8448-4d4b-9bad-5ab51259cdc9",
+        "_flagCreateDialogUsingXbasic": true,
+        "minimumBuildNumber": "",
+        "_buildCount": "1"
+    }
+}
