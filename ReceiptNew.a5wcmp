@@ -1,0 +1,2151 @@
+{
+    "$schema": "UX",
+    "$definition": {
+        "style_name": "Alpha",
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "builderVersionNumber": 1,
+        "overrideStyleName": "Default",
+        "FontSize": "Medium",
+        "A5ContainerClassPadding": "0px",
+        "A5ContainerClassPaddingForContainerWidthMode": "4px",
+        "hasArguments": true,
+        "layoutType": "ContainerWidth",
+        "previewMode": "Default",
+        "useDragScrolling": "Auto",
+        "pageTitle": "UX",
+        "waitMsg": {
+            "message": {
+                "text": "Wait...",
+                "waitIcon": "css/A5System/Images/wait.gif"
+            },
+            "cssAnimation": {
+                "size": "32"
+            }
+        },
+        "globalSettings": {
+            "labelWidth": "1in"
+        },
+        "serverSideEvents": {
+            "canAjaxCallback": "",
+            "afterAjaxCallback": ""
+        },
+        "onTimerEventInterval": 60,
+        "securityDeniedAction": "Redirect to login page",
+        "clientSideEvents": {
+            "_canAjaxCallback": "",
+            "__afterAjaxCallbackComplete": "",
+            "onAjaxCallbackFailed": "",
+            "onAjaxCallbackNotAvailable": "",
+            "onAjaxCallbackNotAllowed": "",
+            "onServerSideEventHandlerError": "",
+            "onFieldValidationError": "",
+            "beforePrepare": "",
+            "afterPrepare": "",
+            "afterValidate": "",
+            "onTabPaneChanged": "",
+            "beforeRptSectionRowPrepare": "",
+            "afterRptSectionRowPrepare": "",
+            "canRptSectionRowAdd": "",
+            "afterRptSectionRowAdd": "",
+            "canRptSectionRowDelete": "",
+            "afterRptSectionRowDelete": "",
+            "onStateChange": "",
+            "onDataStateChange": "",
+            "onControlFocus": "",
+            "onRptSectionFocus": "",
+            "onRptSectionRowChange": "",
+            "canResetForm": "",
+            "afterResetForm": "",
+            "canRecordNavigate": "",
+            "afterRecordNavigate": "",
+            "onSynchronizeDialog": "",
+            "afterPopulateFromTable": "",
+            "onRenderComplete": "",
+            "onAndroidBackButton": "",
+            "onPanelActivate": "",
+            "afterSaveToRepository": "",
+            "afterLoadFromRepository": "",
+            "afterGoogleVisualization": "",
+            "canDeleteParentRecord": "",
+            "afterDeleteParentRecord": "",
+            "onOrientationChange": "",
+            "onKeyboard": "",
+            "onCordovaReady": "",
+            "onPhoneGapReady": "",
+            "onImageError": "",
+            "onSignatureCaptureToggle": "",
+            "onSignatureCaptureAccept": "",
+            "onTimer": "",
+            "beforeOnTimer": "",
+            "canLogin": "",
+            "afterLogin": "",
+            "afterFailedLogin": "",
+            "canLogout": "",
+            "afterLogout": "",
+            "onSessionTimeoutWarning": "",
+            "onServerSideListSummaryCompute": "",
+            "beforeHTMLReportExport": "",
+            "onConnectionChange": "",
+            "appCache_cached": "",
+            "appCache_checking": "",
+            "appCache_downloading": "",
+            "appCache_error": "",
+            "appCache_noupdate": "",
+            "appCache_obsolete": "",
+            "appCache_progress": "",
+            "appCache_updateready": "",
+            "onControlBlur": "",
+            "onControlChange": "",
+            "onBeforePersistControlValuesToLocalStorage": "",
+            "onPersistControlValuesToLocalStorage": "",
+            "onRestoreVariablesFromLocalStorage": "",
+            "onRestoreComponentStateFromLocalStorage": "",
+            "localStorageEncryption": "",
+            "localStorageDecryption": "",
+            "securityNotAuthenticated": "",
+            "securityPermissionDenied": "",
+            "webSocketOnMessage": "",
+            "webSocketServerClose": "",
+            "webSocketSendMessageFail": "",
+            "afterGoogleAddressSelect": "",
+            "onBeforeClientSideDataCacheRead": "",
+            "afterClientSideDataCacheAjaxCallback": ""
+        },
+        "onlyValidateChangedFields": true,
+        "edit": {
+            "field_error_style": {
+                "type": "Block",
+                "showWarning": true,
+                "icon": "<Specified by Style>",
+                "controlContainer_classname": ""
+            },
+            "row_errors_window_title": "Error",
+            "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+            "fieldValidationErrorMessage": "Form has errors."
+        },
+        "submitDialogIfHasClientSideValidationErrors": true,
+        "activeLanguage": "<Default>",
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close"
+        },
+        "clientSideDateFormat": "MM/dd/yyyy",
+        "fontScalingOption": "All",
+        "helpTableType": "DBF",
+        "fieldHelpWindowStyle": "modal-resizeable",
+        "customization": {
+            "resetFormMessage": "Are you sure you want to reset the form?",
+            "resetFormTitle": "Warning",
+            "resetFormIcon": "<Specified by Style>",
+            "resetFormYesButton": "Yes",
+            "resetFormNoButton": "No",
+            "windowTitleDirection": "ltr",
+            "dirtyWarning": "You must first save your changes or cancel changes by clicking the Reset button.",
+            "dirtyWarningTitle": "Notice",
+            "dirtyWarningIcon": "<Specified by Style>",
+            "deleteRecordWarningTitle": "Delete Record",
+            "deleteRecordWarningMessage": "Are you sure you want to delete this record?"
+        },
+        "dataBinding": {
+            "computeDataBindingCodeAtDesignTimePrompt": "Prompt",
+            "autoRefreshSchemaOnLoad": true,
+            "autoRefreshPromptFirst": "Prompt"
+        },
+        "info": {
+            "createdBy": "Paul",
+            "dateCreated": "2017-11-25",
+            "dateLastEdited": "2017-12-18"
+        },
+        "flagShowCommentsInTree": true,
+        "treeCommentOffset": "6",
+        "renderUXLocation": {
+            "type": "window",
+            "sizeToElement": true
+        },
+        "checkSessionEvery": 1,
+        "warningIntervalBeforeExpiration": 1,
+        "sessionTimeOutWarningMessage": "Your session will expire in {secondsToSessionEnd} seconds. Click the button to extend your session.",
+        "sessionExtendSessionButtonLabel": "Extend Session",
+        "sessionTimeoutWarningDialogTitle": "Warning",
+        "sessionHasExpiredMessage": "Your session has expired.",
+        "sessionHasExpiredButtonLabel": "OK",
+        "sessionHasExpiredAction": "Nothing",
+        "sessionHasExpiredRedirectPage": "<self>",
+        "sessionHasExpiredDialogTitle": "Notice",
+        "sessionHasExpiredOKButtonJavascript": "<ReloadThisPage>",
+        "login": {
+            "errorMessageStyle": "color: red;",
+            "logoutDoesFullPageReload": true
+        },
+        "applyResponsiveDesignSettings": true,
+        "responseDesignRulesMode": "FirstTrue",
+        "localStorage": {
+            "namespace": "<Default>",
+            "__version": 1,
+            "workingPreviewTestingMode": "Browser",
+            "variablesToNotPersist": ""
+        },
+        "preRenderComputeWhen": "Every time component is saved",
+        "page_fields": [
+            {
+                "controltype": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{Data=ffb0ad9e-2ece-471e-873b-47aab06d9b66}{I:'$$control.edit'} [Account]",
+                "displayODFlat": "{Data=ffb0ad9e-2ece-471e-873b-47aab06d9b66}{I:'$$control.edit'} [Account]",
+                "displayOD": "{B=White,Light Blue}{Data=ffb0ad9e-2ece-471e-873b-47aab06d9b66}{I:'$$control.edit'} [Account]",
+                "displayODtree": "{B=White,Light Blue}{Data=ffb0ad9e-2ece-471e-873b-47aab06d9b66}{I:'$$control.edit'} [Account]",
+                "idInternal": "ffb0ad9e-2ece-471e-873b-47aab06d9b66",
+                "repeatingSectionParentId": -1,
+                "crc": "4294945069",
+                "parentContainer": -1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "indentTree": 0,
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "Account",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "hasLookup": true,
+                    "lookup": {
+                        "Type": "Grid Component",
+                        "grid": {
+                            "linkType": "Icon",
+                            "iconName": "images/$$edit.find.png.a5image",
+                            "linkLabel": "Lookup",
+                            "linkLabelStyle": "",
+                            "gridName": "grid_lookup_account",
+                            "gridNameJavascriptFunction": "",
+                            "windowTitle": "Lookup",
+                            "windowWidth": 600,
+                            "windowHeight": 500,
+                            "lookupWindowInheritParentStyle": true,
+                            "isResizeable": true,
+                            "lookupGrid": {
+                                "LinkLabel": "Select",
+                                "LinkLabelStyle": "",
+                                "OverrideSettings": ""
+                            },
+                            "fieldMap": "Account<Account,AccName<Accdescript,AccId<Id",
+                            "ajaxWindowPositionAttribute": "",
+                            "resetFilterWhenGridIsOpened": true,
+                            "hasDynamicFilter": false,
+                            "hasStaticFilter": false,
+                            "dynamicFilterDefinition": "",
+                            "dynamicFilterMode": "Filter",
+                            "staticFilterDefinition": "",
+                            "filterMode": "BaseFilter",
+                            "userMustSelectFromLookupWindow": false,
+                            "displayAsDropDown": false,
+                            "workingMessage": "<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>",
+                            "restrictAllowedValues": false,
+                            "invalidValueErrorText": "Value not found in Lookup Table",
+                            "ajaxcallbacktimeout": "<Default>",
+                            "ajaxFailedMessage": "",
+                            "offlineJavascript": ""
+                        },
+                        "flagIsDefined": true
+                    },
+                    "textboxSubTheme": "",
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "Account",
+                    "class": "<Default>",
+                    "breakType": "None",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "getFunction": "",
+                    "setFunction": "",
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "javascript": {
+                        "onBlur": "/* actionJavascript:3c461244-8632-4fec-9f16-84b41688a54d  */\nvar lObj = {dialog.object}.getControl('LIST1');\nif(lObj) { \nif(lObj.listIsDirty()) { \nalert('Cannot refresh List because it has unsynchronized edits.');\n} else { \nvar options = {\n\tkeepFocusOnCurrentSelection: true,\n\tsetFocusToValue: '',\n\trefreshDependentLists: true,\n\tonlyRefreshDependentLists: false\n};\n{dialog.object}.refreshListData('LIST1',options);\n}\n};"
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "lookupGridJSONProperties": "{\n\tfieldsToFillin: [\n\t\t'ACCOUNT',\n\t\t'ACCNAME',\n\t\t'ACCID'\t\n],\n\tresetAfterFillin: true,\n\tworkingMessage: '<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>'\n}",
+                        "lookupGridJavascript": "window['{dialog.componentName}_LOOKUPGRID_ACCOUNT'] = function(objEle) {\n\nvar windowName = '{dialog.componentname}.LOOKUP.ACCOUNT';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\ngo.objectId = objEle.id;\ngo.gridName = 'grid_lookup_account';\ngo.alias = '{Grid.componentname}_grid_looku_xyjv';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'O';\ngo.sourceGridRowNumber = '1';\ngo.userFilter = '';\ngo.baseFilter = '';\ngo.arguments = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = '';\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\n\ngo._parentAlias = {dialog.object}.dialogId;\ngo.isLookupGrid = true;\ngo.lookupFieldName = 'Account';\ngo.lookupFieldSection = 'Odialog2';\ngo.lookupReturnFields = 'ACCOUNT,ACCDESCRIPT,ID';\ngo.lookupGridLinkLabel = 'Select';\ngo.lookupGridLinkLabelStyle = '';\ngo.workingMessage = '<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>';\ngo.windowTitle = 'Lookup';\n\n\n\ngo.showWindowParameters = '';\n\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\ngo.ajaxFailedMessage = '';\ngo.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenComponent'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modal-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t}\n\t},\n\theight: '',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: 'ltr',\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}'\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\n\tcurrWindow.show();\n\tcurrWindow.setTitle(go.windowTitle)\n} else {\n\n\t\tvar ele = '{Grid.componentname}_grid_looku_xyjv.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> Working...';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\t\n\twindow['{GRID.COMPONENTNAME}_GRID_LOOKU_XYJV_GridObj'].synchronizeGrid(go);\n\n\n\t\n\n\tcurrWindow.setTitle(go.windowTitle)\n};\n\n}\n",
+                        "javascript_Lookupfields": "{dialog.componentName}_DlgObj.fieldHelpers['ACCOUNT'] = new A5.EditButtonGroup({\n\ttheme: '{dialog.style}'\n});",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptAbstractSetupCode": "$e.add('{grid.componentname}.V.R{grid.rownumber}.ACCOUNT.BUTTON',A5.d.evnts.click,function(e) {  if($('{grid.componentname}.V.R{grid.rownumber}.ACCOUNT').disabled) return false; {dialog.object}.openLookup('ACCOUNT',this);return false; });"
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCOUNT\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Account</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"{dialog.style}EditBG\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT\" name=\"V.R{grid.rownumber}.ACCOUNT\"  value=\"\"  onBlur=\"var lObj = {dialog.object}.getControl('LIST1'); if(lObj) {  if(lObj.listIsDirty()) {  alert('Cannot refresh List because it has unsynchronized edits.'); } else {  var options = { \tkeepFocusOnCurrentSelection: true, \tsetFocusToValue: '', \trefreshDependentLists: true, \tonlyRefreshDependentLists: false }; {dialog.object}.refreshListData('LIST1',options); } };\"   title=\"\" autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"{dialog.style}EditBGSeparator\" >&nbsp;</td>\n\t\t<td id=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT.BUTTON\" class=\"{dialog.style}EditBGButton\" style=\"width: 0%;\"><img src=\"images/$$edit.find.png.a5image\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'ACCOUNT': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                }
+            },
+            {
+                "controltype": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{Data=82e341da-ad71-48d5-9c42-2782e610abb1}{I:'$$control.edit'} [AccName]",
+                "displayODFlat": "{Data=82e341da-ad71-48d5-9c42-2782e610abb1}{I:'$$control.edit'} [AccName]",
+                "displayOD": "{B=White,Light Blue}{Data=82e341da-ad71-48d5-9c42-2782e610abb1}{I:'$$control.edit'} [AccName]",
+                "displayODtree": "{B=White,Light Blue}{Data=82e341da-ad71-48d5-9c42-2782e610abb1}{I:'$$control.edit'} [AccName]",
+                "idInternal": "82e341da-ad71-48d5-9c42-2782e610abb1",
+                "repeatingSectionParentId": -1,
+                "crc": "4294936034",
+                "parentContainer": -1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "indentTree": 0,
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "AccName",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxSubTheme": "",
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "Acc Name",
+                    "class": "<Default>",
+                    "breakType": "None",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "getFunction": "",
+                    "setFunction": "",
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCNAME\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCNAME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Acc Name</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ACCNAME\" title=\"\"     class=\"[class.dialogInput]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"    name=\"V.R{grid.rownumber}.ACCNAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'ACCNAME': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                }
+            },
+            {
+                "controltype": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{Data=a776a929-d1a5-450a-a87f-7f8669cb2fc0}{I:'$$control.edit'} [Date] �",
+                "displayODFlat": "{Data=a776a929-d1a5-450a-a87f-7f8669cb2fc0}{I:'$$control.edit'} [Date]",
+                "displayOD": "{B=White,Light Blue}{Data=a776a929-d1a5-450a-a87f-7f8669cb2fc0}{I:'$$control.edit'} [Date]",
+                "displayODtree": "{B=White,Light Blue}{Data=a776a929-d1a5-450a-a87f-7f8669cb2fc0}{I:'$$control.edit'} [Date] �",
+                "idInternal": "a776a929-d1a5-450a-a87f-7f8669cb2fc0",
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "Date",
+                    "type": "Date",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxSubTheme": "",
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "Date",
+                    "class": "<Default>",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "getFunction": "",
+                    "setFunction": "",
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "datePicker": {
+                        "display": true,
+                        "timePickerOptionsDefined": false,
+                        "openMethod": "ClickIcon",
+                        "useComboBoxes": true,
+                        "dateFormat": "<Default>",
+                        "lowYear": 1950,
+                        "highYear": 2050,
+                        "switchYear": 20,
+                        "iconNumber": 2,
+                        "lowDate": "",
+                        "highDate": "",
+                        "disabledDays": "",
+                        "disabledDates": "",
+                        "hasDisabledDates": false,
+                        "disabledDatesMethod": "Explicit",
+                        "disabledDatesExplicit": "",
+                        "disabledDatesJavascript": "",
+                        "showDaysOfWeek": true,
+                        "showWeeksOfYear": false,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "lockColumnWidths": false,
+                        "userMustSelectFromDatePicker": false,
+                        "drawBoxAroundDates": false,
+                        "dateItemHoverClassName": "",
+                        "dateItemSelectedClassName": "",
+                        "dateItemOutOfRangeClassName": "",
+                        "dateItemStyle": "",
+                        "containerWidth": "",
+                        "containerHeight": "",
+                        "hasEvents": false,
+                        "event": {
+                            "onItemDraw": "",
+                            "onClick": "",
+                            "onRightClick": "",
+                            "onSelect": "",
+                            "onNavigate": "",
+                            "onMonthNavigate": "",
+                            "onYearNavigate": ""
+                        },
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "displayTimePicker": false
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "precalc": {
+                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t}\n\t\t},\n\t\tswitchYear: 20\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t\t{\n\t\t\t\t\thtml: 'OK',\n\t\t\t\t\taction: 'commit'\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\thtml: 'Cancel',\n\t\t\t\t\taction: 'close'\n\t\t\t\t}\t\t\t\n]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptDatePicker": "",
+                        "javascriptAbstractSetupCode": ""
+                    }
+                },
+                "repeatingSectionParentId": -1,
+                "crc": "4294927707",
+                "parentContainer": -1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE\" name=\"V.R{grid.rownumber}.DATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'DATE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  }\n"
+                }
+            },
+            {
+                "controltype": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{Data=359a3f12-4858-4be5-9f53-c97763f46bea}{I:'$$control.edit'} [AccId] �",
+                "displayODFlat": "{Data=359a3f12-4858-4be5-9f53-c97763f46bea}{I:'$$control.edit'} [AccId]",
+                "displayOD": "{B=White,Light Blue}{Data=359a3f12-4858-4be5-9f53-c97763f46bea}{I:'$$control.edit'} [AccId]",
+                "displayODtree": "{B=White,Light Blue}{Data=359a3f12-4858-4be5-9f53-c97763f46bea}{I:'$$control.edit'} [AccId] �",
+                "idInternal": "359a3f12-4858-4be5-9f53-c97763f46bea",
+                "parentContainer": -1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "repeatingSectionParentId": -1,
+                "indentTree": 0,
+                "v": {
+                    "controlType": "Textbox",
+                    "variableName": "AccId",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxSubTheme": "",
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "Acc Id",
+                    "class": "<Default>",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "getFunction": "",
+                    "setFunction": "",
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCID\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCID\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Acc Id</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ACCID\" title=\"\"     class=\"[class.dialogInput]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"    name=\"V.R{grid.rownumber}.ACCID\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'ACCID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                },
+                "crc": "4294946363"
+            },
+            {
+                "controltype": "dialog_formcontrol",
+                "display": "{B=White,Light Blue}{Data=82617b24-2a39-48c6-88bb-e7bc3994e047}{I:'$$control.browse'} [list1] �",
+                "displayODFlat": "{Data=82617b24-2a39-48c6-88bb-e7bc3994e047}{I:'$$control.browse'} [list1]",
+                "displayOD": "{B=White,Light Blue}{Data=82617b24-2a39-48c6-88bb-e7bc3994e047}{I:'$$control.browse'} [list1]",
+                "displayODtree": "{B=White,Light Blue}{Data=82617b24-2a39-48c6-88bb-e7bc3994e047}{I:'$$control.browse'} [list1] �",
+                "idInternal": "82617b24-2a39-48c6-88bb-e7bc3994e047",
+                "parentContainer": -1,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "repeatingSectionParentId": -1,
+                "indentTree": 0,
+                "crc": "4294939013",
+                "v": {
+                    "controlType": "List",
+                    "variableName": "list1",
+                    "type": "Character",
+                    "maxLength": -1,
+                    "watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "textboxSubTheme": "",
+                    "textboxAutocorrect": true,
+                    "textboxAutoCapitalize": true,
+                    "label": "List1",
+                    "class": "<Default>",
+                    "breakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "labelClass": "<Default>",
+                    "labelPosition": "Above",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "repeatingSectionColumnHeading": "<FieldLabel>",
+                    "embeddedJavascriptControl": true,
+                    "helpIcon": "images/$$generic.help.png.a5image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "getFunction": "",
+                    "setFunction": "",
+                    "onChange_ValidationOption": "Client-side only",
+                    "dataBinding": {
+                        "updateable": true,
+                        "image": {
+                            "type": "JPG",
+                            "noImageFoundImage": "<None>",
+                            "newRecordImage": "<None>"
+                        },
+                        "ink": {
+                            "hasbackgroundimage": false,
+                            "backgroundimage": "",
+                            "inkunits": 1
+                        }
+                    },
+                    "listView": {
+                        "class": "<Default>",
+                        "style": "",
+                        "dataSourceType": "SQL",
+                        "overrides": "",
+                        "flagIsDefined": true,
+                        "staticData": "",
+                        "staticJSONData": "",
+                        "height": "3in",
+                        "width": "4in",
+                        "hasParentList": false,
+                        "parentListId": "",
+                        "preLoadData": false,
+                        "objectNameInParentListForData": "",
+                        "linkingFields": {
+                            "parent": "",
+                            "this": ""
+                        },
+                        "hasDataHeader": false,
+                        "readonlyList": false,
+                        "headerHTML": "",
+                        "noRecordsMessage": {
+                            "has": false,
+                            "HTML": "No records in list.",
+                            "centerH": true,
+                            "centerV": true
+                        },
+                        "templateItemsJSON": "",
+                        "hasDataFooter": false,
+                        "footerHTML": "",
+                        "headerStyle": "",
+                        "footerStyle": "",
+                        "hasFixedHeader": false,
+                        "fixedHeaderHTML": "",
+                        "fixedHeaderStyle": "",
+                        "fixedHeaderClassName": "",
+                        "hasFixedFooter": false,
+                        "fixedFooterHTML": "",
+                        "fixedFooterStyle": "",
+                        "fixedFooterClassName": "",
+                        "fillPanelContainer": false,
+                        "static": {
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "dataReturnExpression": ""
+                        },
+                        "jsFuncDS": {
+                            "functionName": "",
+                            "columnNames": "",
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "dataReturnExpression": "",
+                            "sampleData": ""
+                        },
+                        "clientSideFilterExpression": "",
+                        "clientSideOrderExpression": "",
+                        "custom": {
+                            "xbasicfunctionname": "",
+                            "localXbasic": false,
+                            "localXbasicDef": "",
+                            "javascriptfunctionname": "",
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "dataReturnExpression": "",
+                            "serverSideAfterQueryEvent": ""
+                        },
+                        "dataSeriesSeriesName": "",
+                        "dataSeries": {
+                            "dataReturnType": "Field",
+                            "dataReturnField": ""
+                        },
+                        "sql": {
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "dataReturnExpression": "",
+                            "refreshSchemaOnEdit": true,
+                            "storedSchemaJSON": "",
+                            "flagTableInfoHasBeenUpdated": false,
+                            "connectionString": "::Name::SQL",
+                            "selectType": "FieldsFromTable",
+                            "tablename": "unpaidpolicy",
+                            "fieldlist": "policy_id,accid,curid,restcur,Accdescript,date",
+                            "filter": "accid = :mAccId",
+                            "distinct": false,
+                            "order": "",
+                            "sqlstatement": "SELECT policy_id, accid, curid, restcur, Accdescript, date \nFROM unpaidpolicy \nWHERE accid = :mAccId",
+                            "portableSQL": true,
+                            "first": -1,
+                            "primaryKey": "policy_id",
+                            "serverSideAfterQueryEvent": "",
+                            "serverSideBeforeQueryEvent": "",
+                            "sqlSecurityJSON": "",
+                            "serversidedatenumberformatjson": ""
+                        },
+                        "dbf": {
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "dataReturnExpression": "",
+                            "serverSideAfterQueryEvent": "",
+                            "isDefined": false,
+                            "fieldmap": "",
+                            "filter": "",
+                            "order": ""
+                        },
+                        "variablename": "",
+                        "showTitleRow": false,
+                        "titleText": "",
+                        "hasFreeformTemplate": false,
+                        "freeformTemplate": "",
+                        "javascript": {
+                            "onBeforePopulate": "",
+                            "onPopulate": "",
+                            "onBeforeAddRows": "",
+                            "onBeforeRemoveRows": "",
+                            "onBeforeUpdateRow": "",
+                            "onAddRows": "",
+                            "onRemoveRows": "",
+                            "onUpdateRow": "",
+                            "onBeforeListDraw": "",
+                            "onInitialize": "",
+                            "onBeforeItemDraw": "",
+                            "onListDraw": "",
+                            "onItemDraw": "",
+                            "onNavigate": "",
+                            "onSelect": "",
+                            "onBeforeSelect": "",
+                            "afterSelect": "",
+                            "onDblClick": "",
+                            "onClick": "",
+                            "onRightClick": "",
+                            "onTap": "",
+                            "onDblTap": "",
+                            "onDownHold": "",
+                            "onFocus": "",
+                            "onFieldClick": "",
+                            "onFieldDblClick": "",
+                            "onFieldRightClick": "",
+                            "onBlur": "",
+                            "beforeFetchMore": "",
+                            "afterFetchMore": "",
+                            "beforePageNavigate": "",
+                            "afterPageNavigate": "",
+                            "beforeRefreshRow": "",
+                            "afterRefreshRow": "",
+                            "afterRefreshData": "",
+                            "afterRenderComplete": "",
+                            "afterAjaxCallback": "",
+                            "beforeClientSideFilter": "",
+                            "afterClientSideFilter": "",
+                            "beforeServerSideSort": "",
+                            "afterServerSideSort": "",
+                            "afterServerSideSummaryCompute": "",
+                            "afterClientSideSummaryCompute": "",
+                            "beforeClientSideSort": "",
+                            "afterClientSideSort": "",
+                            "onSwipe": "",
+                            "onScroll": "",
+                            "onPullRelease": "",
+                            "onPullEnd": "",
+                            "onPull": "",
+                            "afterSearchComplete": "",
+                            "beforeSearch": "",
+                            "onSearchResultTooLarge": "",
+                            "onSearchResultTooLargeForLocalStorage": "",
+                            "onBeforePersistToLocalStorage": "",
+                            "onPersistToLocalStorage": "",
+                            "onRestoreFromLocalStorage": "",
+                            "onListReady": ""
+                        },
+                        "pullpastEnd": {
+                            "YSetting": "auto",
+                            "XSetting": "auto"
+                        },
+                        "displayTextForNulls": "",
+                        "hasMoreEventsDefined": false,
+                        "hasMultipleLayouts": false,
+                        "autoselectLayoutOnOrientationChange": false,
+                        "autoSelectLandscape": "",
+                        "autoSelectPortrait": "",
+                        "subTheme": "",
+                        "dragScrollDirection": "Both",
+                        "scrolling": {
+                            "isDefined": false,
+                            "indicator": {
+                                "v": {
+                                    "show": true,
+                                    "className": "",
+                                    "barClassName": "",
+                                    "location": "right",
+                                    "offset": "0px",
+                                    "top": "0px",
+                                    "bottom": "0px"
+                                },
+                                "h": {
+                                    "show": true,
+                                    "className": "",
+                                    "barClassName": "",
+                                    "location": "top",
+                                    "offset": "0px",
+                                    "left": "0px",
+                                    "right": "0px"
+                                }
+                            }
+                        },
+                        "hasSearchPart": false,
+                        "searchPart": {
+                            "fieldMap": "",
+                            "searchFieldProperties": "",
+                            "searchStyle": "IndividualControls",
+                            "combineMultipleConditionsUsing": "AND",
+                            "keywordsearchControl": "",
+                            "keywordSearchFields": "",
+                            "showDebugInfo": false,
+                            "debugInfoPlaceholder": "",
+                            "delayPopulateListTillActiveSearch": false,
+                            "searchErrorPlaceholder": "",
+                            "setMaxProperties": false,
+                            "maxSearchSizeJSON": ""
+                        },
+                        "includeCRC": false,
+                        "userDefinedMethodsJSON": "",
+                        "reverseColumnOrder": false,
+                        "persistDataToLocalStorage": false,
+                        "persistWhere": "LocalStorage",
+                        "persistMode": "Full",
+                        "incrementalRefreshAfterLoad": false,
+                        "versionNumber": 1,
+                        "hasDetailView": false,
+                        "detailView": {
+                            "method": "FieldMap",
+                            "fieldMap": "",
+                            "container": "",
+                            "serverSideUpdateRules": "DirtyFieldsOnly",
+                            "showDebuggingInfo": false,
+                            "placeholderForDebuggingInfo": "",
+                            "placeholderGlobalErrors": "",
+                            "suppressGlobalErrorAlerts": false,
+                            "globalErrorStyle": "font-family: Arial; font-size: 10pt; color: red; border: solid 1px red; width: 100%;",
+                            "showFadeOutConfirmationMessage": false,
+                            "fadeOutMessagePlaceholder": "",
+                            "fadeOutMessageText": "",
+                            "fadeOutMessageDuration": 2000,
+                            "fadeOutMessageStyle": "Default",
+                            "submitLocationInformation": false,
+                            "noRecordInListIsSelectedSetting": "None",
+                            "newRecordPolicy": "UseControlDefault",
+                            "useServerSideSyncLog": false,
+                            "clearServerSideSyncLog": true,
+                            "synchronizationHandler": "",
+                            "synchronizationRefreshHandler": "",
+                            "refreshListIncrementalHandler": "",
+                            "synchronizationLevel": "EachListInHierarchy",
+                            "phoneGap": {
+                                "mediaFilesSettingsJSON": ""
+                            },
+                            "customization": {
+                                "clientSideErrorWarning": "Cannot save because there are validation errors.",
+                                "dirtyDetailViewRecord": {
+                                    "title": "Warning",
+                                    "icon": "<Defined in Style>",
+                                    "message": "You must first save or undo the changes you have made to the List's Detail View."
+                                },
+                                "confirmFormResetWarning": {
+                                    "title": "Warning",
+                                    "icon": "<Defined in Style>",
+                                    "message": "Are you sure you want to undo changes made to the List's Detail View?"
+                                },
+                                "confirmRowResetWarning": {
+                                    "title": "Warning",
+                                    "icon": "<Defined in Style>",
+                                    "message": "Are you sure you want to undo changes made to this record?"
+                                },
+                                "confirmDeleteWarning": {
+                                    "title": "Warning",
+                                    "icon": "<Defined in Style>",
+                                    "message": "Are you sure you want to delete this record?"
+                                },
+                                "writeConflict": {
+                                    "message": "Write conflict. Tap here to resolve.",
+                                    "useMineMessage": "Use mine ('{myvalue}')",
+                                    "useTheirsMessage": "Use theirs ('{theirvalue}')",
+                                    "useMineAll": "Use mine for all fields",
+                                    "useTheirsAll": "Use theirs for all fields"
+                                },
+                                "databaseError": {
+                                    "update": "Record was not updated.|More...|Less",
+                                    "insert": "Record was not inserted.|More...|Less",
+                                    "delete": "Record was not deleted.|More...|Less"
+                                },
+                                "useCustomClasses": false,
+                                "customClasses": "",
+                                "setClassonEditedRows": true,
+                                "css": {
+                                    "dirtyRecord": "",
+                                    "newRecord": "",
+                                    "serverSideError": "",
+                                    "deletedRecord": "",
+                                    "dirtyRecordRow": "",
+                                    "newRecordRow": "",
+                                    "serverSideErrorRow": "",
+                                    "deletedRecordRow": ""
+                                }
+                            },
+                            "refreshRowOnSelect": false,
+                            "synchronizeImmediately": false,
+                            "pushServerUpdatesToClientOnCommit": false,
+                            "tablePropertiesDefined": true,
+                            "autoCommitDetailViewEdits": true,
+                            "syncBatchSize": 0,
+                            "synchProgressPlaceholder": "",
+                            "synchProgressProperties": "",
+                            "dirtyControlClassName": "",
+                            "javascript": {
+                                "canUpdateList": "",
+                                "afterUpdateList": "",
+                                "canSynchronizeList": "",
+                                "afterSynchronizeList": "",
+                                "afterRefreshListIncremental": "",
+                                "hasClientSideValidationErrors": "",
+                                "afterSynchronizeListBatch": "",
+                                "beforeSynchronizeListBatchStart": "",
+                                "afterSynchronizeListBatchEnd": "",
+                                "canCancelBatch": "",
+                                "afterCancelBatch": "",
+                                "afterListRowSelectCancelled": "",
+                                "canResetRow": "",
+                                "canDeleteRow": "",
+                                "afterDeleteRow": "",
+                                "canUndoEdits": "",
+                                "afterResetRow": "",
+                                "afterUndoEdits": "",
+                                "canNewRecord": "",
+                                "afterNewRecord": "",
+                                "modeChanged": "",
+                                "afterDetailViewPopulate": "",
+                                "beforeDetailViewPopulate": "",
+                                "beforeMediaFilesUploaded": "",
+                                "afterMediaFilesUploaded": "",
+                                "onMediaFilesUploadErrors": "",
+                                "beforeMediaFilesDownloaded": "",
+                                "afterMediaFilesDownloaded": "",
+                                "beforeDeleteOrphanMediaFiles": "",
+                                "afterDeleteOrphanMediaFiles": ""
+                            },
+                            "hasClientSideEventsDefined": false,
+                            "serverSideEvent": {
+                                "validate": "",
+                                "errorMessageTranslate": "",
+                                "onsynchronize": "",
+                                "aftersynchronize": "",
+                                "aftersynchronizeRecord": ""
+                            }
+                        },
+                        "dragScrollMomentum": true,
+                        "dragScroll": {
+                            "hasCustomSnapSettings": false,
+                            "snap": {
+                                "x": {
+                                    "use": false,
+                                    "offset": "0",
+                                    "step": "1"
+                                },
+                                "y": {
+                                    "use": false,
+                                    "offset": "0",
+                                    "step": "1"
+                                }
+                            }
+                        },
+                        "behavior": {
+                            "pulltorefresh": false,
+                            "pulltoRefreshSettingsJSON": ""
+                        },
+                        "searchHighlighting": false,
+                        "searchHighlightClass": "",
+                        "searchHighlightStyle": "color: red;",
+                        "customSettingsJSON": "",
+                        "clientSideVirtualColumns": "",
+                        "clientSideLookupColumnsJSON": "",
+                        "clientSideGroupBreaksHas": false,
+                        "clientSideGroupBreakJSON": "",
+                        "listNavigatorHas": false,
+                        "listNavigatorJSON": "",
+                        "serverSideRowStyle": "",
+                        "clientSideRowStyle": "",
+                        "defaults": {
+                            "indexLayout": 1
+                        },
+                        "fieldsArray": {
+                            "fields": [
+                                {
+                                    "name": "policy_id",
+                                    "type": "N",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "policy_id",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "policy_id",
+                                    "display": "{data=1}{I:'$$control.smartField'} policy_id (N)",
+                                    "deleteField": false
+                                },
+                                {
+                                    "name": "accid",
+                                    "type": "N",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "accid",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "accid",
+                                    "display": "{data=2}{I:'$$control.smartField'} accid (N)",
+                                    "deleteField": false
+                                },
+                                {
+                                    "name": "curid",
+                                    "type": "N",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "curid",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "curid",
+                                    "display": "{data=3}{I:'$$control.smartField'} curid (N)",
+                                    "deleteField": false
+                                },
+                                {
+                                    "name": "restcur",
+                                    "type": "N",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "restcur",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "restcur",
+                                    "display": "{data=4}{I:'$$control.smartField'} restcur (N)",
+                                    "deleteField": false
+                                },
+                                {
+                                    "name": "Accdescript",
+                                    "type": "C",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "Accdescript",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "Accdescript",
+                                    "display": "{data=5}{I:'$$control.smartField'} Accdescript (C)",
+                                    "deleteField": false
+                                },
+                                {
+                                    "name": "date",
+                                    "type": "D",
+                                    "displayFormat": "",
+                                    "serverSideInlineStyle": "",
+                                    "serverSideConditionalStyle": "",
+                                    "securityGroups": "",
+                                    "javascriptAddressible": false,
+                                    "serversideShowhideExpn": "",
+                                    "clientSideShowHideExpn": "",
+                                    "controlType": "Label",
+                                    "clientsideInlineStyle": "",
+                                    "wordwrap": false,
+                                    "wordwrapOption": "normal",
+                                    "clientsideClass": "",
+                                    "baseExpression": "date",
+                                    "searchPropertiesJSON": "",
+                                    "image": {
+                                        "base64Encode": false,
+                                        "type": "JPG",
+                                        "scale": "",
+                                        "fileNameTransformation": "",
+                                        "imageDataType": "Name",
+                                        "base64Prefix": "data:image/jpg;base64,",
+                                        "noImageFoundImage": ""
+                                    },
+                                    "sourceTableType": "",
+                                    "detailview": {
+                                        "serversidevalidation": "",
+                                        "defaultValueJavascript": "",
+                                        "onDetailViewPopulateJavascript": "",
+                                        "onListUpdateFromDetailView": "",
+                                        "updateable": true,
+                                        "checkforwriteConflicts": true,
+                                        "blankIsNull": false,
+                                        "updatePermissionSecurityGroups": "",
+                                        "serverSidePermissionExpression": "",
+                                        "imageCapturePropertiesJSON": "",
+                                        "ExifCapturePropertiesJSON": ""
+                                    },
+                                    "hide": false,
+                                    "button": {
+                                        "label": "Button",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "hyperlink": {
+                                        "label": "Hyperlink",
+                                        "bubblehelp": "",
+                                        "class": "",
+                                        "style": "",
+                                        "onClick": "",
+                                        "actionType": "Javascript",
+                                        "href": "",
+                                        "target": "New Window",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "unboundtype": "",
+                                    "dynamicImage": {
+                                        "definition": "",
+                                        "class": "",
+                                        "style": "",
+                                        "bubbleHelp": "",
+                                        "onClick": "",
+                                        "stopPropagation": false,
+                                        "giveFocusToRowOnClick": false
+                                    },
+                                    "serverSideSummaryFieldsHas": false,
+                                    "serverSideSummaryFields": "",
+                                    "clientSideSummaryFieldsHas": false,
+                                    "clientSideTypeTransform": "None",
+                                    "clientSideDateTemplate": "MM-dd-yyyy",
+                                    "clientSideDateFormat": "<None>",
+                                    "clientSideNumericFormat": "",
+                                    "customControl": {
+                                        "definition": ""
+                                    },
+                                    "isComputedColumn": false,
+                                    "ink": {
+                                        "width": "300",
+                                        "height": "",
+                                        "sizeMethod": "Width-Height",
+                                        "scale": 0.25,
+                                        "zoom": "50%",
+                                        "boundsType": "Page",
+                                        "boundsMargin": 10,
+                                        "boundsX": 0,
+                                        "boundsY": 0,
+                                        "boundsWidth": 100,
+                                        "boundsHeight": 100
+                                    },
+                                    "unboundField": false,
+                                    "baseName": "date",
+                                    "display": "{data=6}{I:'$$control.smartField'} date (D)",
+                                    "deleteField": false
+                                }
+                            ]
+                        },
+                        "layoutsArray": {
+                            "layouts": [
+                                {
+                                    "Name": "Default",
+                                    "Type": "Column",
+                                    "isDefaultLayout": true,
+                                    "friendlyName": "",
+                                    "showColumnTitles": true,
+                                    "template": "",
+                                    "snakingLayoutWidth": "1in",
+                                    "itemHeight": "",
+                                    "freeformType": "Vertical",
+                                    "className": "",
+                                    "hoverclassName": "",
+                                    "selectedClassName": "",
+                                    "style": "",
+                                    "titleClassName": "",
+                                    "separatorClassName": "",
+                                    "hasListItemFooter": false,
+                                    "listItemFooter": "",
+                                    "listItemFooterInitialState": "Open",
+                                    "dragScroll": {
+                                        "hasCustomSnapSettings": false,
+                                        "snap": {
+                                            "x": {
+                                                "use": false,
+                                                "offset": "0",
+                                                "step": "1"
+                                            },
+                                            "y": {
+                                                "use": false,
+                                                "offset": "0",
+                                                "step": "1"
+                                            }
+                                        }
+                                    },
+                                    "dragScrollMomentum": true,
+                                    "columns": [
+                                        {
+                                            "heading": "Date",
+                                            "headingInlineStyle": "",
+                                            "headingClassName": "",
+                                            "Template": "{date}",
+                                            "dataInlineStyle": "",
+                                            "canSort": true,
+                                            "sortColumnName": "date",
+                                            "columnWidth": "flex(1)",
+                                            "sortWhere": "ClientSide",
+                                            "sortJavascript": "",
+                                            "serverSideSortExpression": "date",
+                                            "javascript": {
+                                                "onclick": "",
+                                                "onrightclick": ""
+                                            },
+                                            "hideColumnIfFieldHidden": true,
+                                            "hideColumnReferenceField": "date",
+                                            "columnIsResizeable": false,
+                                            "name": "date",
+                                            "display": "{I:'$$control.smartField'} date"
+                                        },
+                                        {
+                                            "heading": "Restcur",
+                                            "headingInlineStyle": "text-align: right;",
+                                            "headingClassName": "",
+                                            "Template": "{restcur}",
+                                            "dataInlineStyle": "text-align: right;",
+                                            "canSort": true,
+                                            "sortColumnName": "restcur",
+                                            "columnWidth": "flex(1)",
+                                            "sortWhere": "ClientSide",
+                                            "sortJavascript": "",
+                                            "serverSideSortExpression": "restcur",
+                                            "javascript": {
+                                                "onclick": "",
+                                                "onrightclick": ""
+                                            },
+                                            "hideColumnIfFieldHidden": true,
+                                            "hideColumnReferenceField": "restcur",
+                                            "columnIsResizeable": false,
+                                            "name": "restcur",
+                                            "display": "{I:'$$control.smartField'} restcur"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "dataBinding": {
+                            "tablesArray": {
+                                "tables": [
+                                    {
+                                        "table": "unpaidpolicy",
+                                        "owner": "",
+                                        "alias": "unpaidpolicy",
+                                        "primaryKeyFields": "",
+                                        "mapPrimaryKeyToListQuery": "",
+                                        "primaryKeyIsAutoIncrement": false,
+                                        "sequenceName": "",
+                                        "sqlInsertSequence": "",
+                                        "tableInfo": "policy_id=N|F|T|Integer32|!!|policy_id\naccid=N|F|T|Integer32|!!|accid\ncurid=N|F|T|Integer32|!!|curid\nAccdescript=C|F|T|VaryingCharacter|!!|Accdescript\ndate=D|F|T|Date|!!|date\nrestcur=N|F|T|Number|!!|restcur\n",
+                                        "tableInfoCRC": 4294966209,
+                                        "updateWhereClause": "{policy_id}=(policy_id = :old_policy_id OR policy_id IS NULL AND :old_policy_id IS NULL)\n{accid}=(accid = :old_accid OR accid IS NULL AND :old_accid IS NULL)\n{curid}=(curid = :old_curid OR curid IS NULL AND :old_curid IS NULL)\n{Accdescript}=(Accdescript = :old_Accdescript OR Accdescript IS NULL AND :old_Accdescript IS NULL)\n{date}=(date = :old_date OR date IS NULL AND :old_date IS NULL)\n{restcur}=(restcur = :old_restcur OR restcur IS NULL AND :old_restcur IS NULL)\n",
+                                        "updateWhereClauseNative": "",
+                                        "allowInsert": true,
+                                        "allowUpdate": true,
+                                        "allowDelete": true,
+                                        "deleteType": "Hard",
+                                        "deleteField": "",
+                                        "readonly": false,
+                                        "securityGroups_insert": "",
+                                        "securityGroups_update": "",
+                                        "securityGroups_delete": "",
+                                        "serversidePermission_insert": "",
+                                        "serversidePermission_update": "",
+                                        "serversidePermission_delete": "",
+                                        "joinDefinition": "",
+                                        "parentAlias": "",
+                                        "events": {
+                                            "beforeInsert": "",
+                                            "beforeUpdate": "",
+                                            "beforeDelete": "",
+                                            "afterInsert": "",
+                                            "afterUpdate": "",
+                                            "afterDelete": "",
+                                            "onWriteConflict": "",
+                                            "onSQLError": ""
+                                        },
+                                        "geography": {
+                                            "geocodeFieldDefinition": "",
+                                            "locationFieldDefinition": ""
+                                        },
+                                        "flagStoreLocationInformationC": "No",
+                                        "flagStoreLocationInformation": false,
+                                        "latField": "",
+                                        "lngField": "",
+                                        "flagUpdateLocationField": false,
+                                        "storeLocationWhen": "InsertOnly",
+                                        "locationFieldNameForLatLng": ""
+                                    }
+                                ]
+                            }
+                        },
+                        "odata": {
+                            "url": "http://services.odata.org/V4/Northwind/Northwind.svc",
+                            "serviceType": "OData",
+                            "requiresAuthentication": false,
+                            "usesCSRFToken": false,
+                            "authType": "Basic",
+                            "authUsername": "",
+                            "authPassword": "",
+                            "containerName": "",
+                            "columns": "",
+                            "filter": "",
+                            "order": "",
+                            "max_rows": -1,
+                            "dataReturnType": "Field",
+                            "dataReturnField": "",
+                            "primarykey": "",
+                            "primaryKeyType": ""
+                        },
+                        "paginateData": false,
+                        "pageSize": 20,
+                        "paginateMethod": "FetchMore",
+                        "fetchMoreButtonHTML": "More records...",
+                        "fetchMoreButtonType": "Button",
+                        "fetchMoreButtonStyle": "",
+                        "fetchMoreButtonContainerStyle": "text-align: center;",
+                        "breaks": {
+                            "has": false,
+                            "field": "",
+                            "sortDescending": false,
+                            "sortOnBreakField": true,
+                            "fieldChars": -1,
+                            "template": "",
+                            "stringDictionary": "",
+                            "caseSensitive": false,
+                            "breakType": "Automatic",
+                            "userDefinedBreakGroups": "",
+                            "geographyUnits": "Meters|Meters"
+                        },
+                        "allowNullSelection": false,
+                        "allowAnyValue": false,
+                        "allowTextSelection": false,
+                        "allowNullDeselection": false,
+                        "loopNavigate": false,
+                        "loopNavigateNullSelection": false,
+                        "delayRenderTillVisible": false,
+                        "delayRenderTillRefresh": false,
+                        "multiSelect": false,
+                        "multiSelectMode": "Control-click",
+                        "localCSS": "",
+                        "virtualization": {
+                            "type": "None",
+                            "size": 50,
+                            "maxSize": 0,
+                            "offset": 10,
+                            "navigation": {
+                                "pull": true,
+                                "pullSize": 40,
+                                "prevHTML": "Previous",
+                                "prevClassName": "",
+                                "prevPressedClassName": "",
+                                "nextHTML": "Next",
+                                "nextClassName": "",
+                                "nextPressedClassName": ""
+                            }
+                        },
+                        "scroller": {
+                            "has": false,
+                            "messageType": "Template",
+                            "messageTemplate": "",
+                            "messageJS": "",
+                            "customizationIsDefined": false,
+                            "flow": "ttb",
+                            "location": "after",
+                            "className": "",
+                            "focusClassName": "",
+                            "dialClassName": "",
+                            "style": "",
+                            "offset": {
+                                "top": "0px",
+                                "bottom": "0px",
+                                "left": "0px",
+                                "right": "0px"
+                            },
+                            "slider": {
+                                "className": "",
+                                "innerClassName": "",
+                                "handle": {
+                                    "className": "",
+                                    "style": ""
+                                },
+                                "shadow": {
+                                    "show": true,
+                                    "className": "",
+                                    "style": ""
+                                },
+                                "message": {
+                                    "show": "auto",
+                                    "className": "",
+                                    "topClassName": "",
+                                    "bottomClassName": "",
+                                    "leftClassName": "",
+                                    "rightClassName": "",
+                                    "style": "",
+                                    "lowSwitch": 75,
+                                    "highSwitch": 75
+                                }
+                            },
+                            "dial": {
+                                "show": "drag",
+                                "invertDrag": false,
+                                "className": "",
+                                "message": {
+                                    "className": ""
+                                },
+                                "style": "",
+                                "pixelStep": 4,
+                                "size": 2
+                            }
+                        },
+                        "precalc": {
+                            "javascriptOnOrientationChange": ""
+                        }
+                    },
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false
+                    },
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "controlHTMLInPanelCard": "in panel card",
+                        "javascript_listViewData": "{dialog.object}._listViewData['LIST1'] = [[dialog.listViewData.list1]]; ",
+                        "javascript_listViewSettings": "{dialog.object}._listViewSettings['LIST1'] = [[dialog.listViewSettings.list1]]; ",
+                        "javascript_listview": "{dialog.object}._controls['LIST1'] =  { type: 'list',  data: {dialog.object}._listViewData['LIST1'],  settings: {dialog.object}._listViewSettings['LIST1'] }",
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.LIST1\" for=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">List1</label>\n<!--LblE-->\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" name=\"V.R{grid.rownumber}.LIST1\" /><!--JSControlEnd-->\n<div  class=\"[theme:listBox.base.className|{dialog.style}List]\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1.CONTROL\"  class=\"{grid.componentName}_LIST1\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": "",
+                    "columnInfo": "'LIST1': {info: {controlType: 'List'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
+                }
+            }
+        ],
+        "builderType": "Dialog2",
+        "guid": "fdfb2ac3-b98c-4e14-be40-d3034da9c079",
+        "componentName": "ReceiptNew",
+        "componentFilename": "C:\\alpha_projects\\brokers\\Brokers.WebProjects\\Default.WebProject\\ReceiptNew.a5wcmp",
+        "_style_versionNumber": 4,
+        "_style_hasSassOverrides": true,
+        "_style_hasCSSTweaks": false,
+        "_style_hasCSS_or_subtheme_tweaks": false,
+        "useCompactTheme": true,
+        "styleTweaksCSS": "",
+        "styleTweaksSubthemes": "",
+        "controlflowdirection": "ltr",
+        "SVGLinkedFiles": "",
+        "localsvg": "",
+        "createAppCacheVersion": false,
+        "createAppCacheVersionC": "No",
+        "appcache": {
+            "pageName": "<Default>",
+            "pageTitle": "",
+            "hasHomeScreenIcons": false,
+            "homeScreenIconName": "",
+            "icons": {
+                "precomposed": false
+            },
+            "pageHeadSection": ""
+        },
+        "clientsideNumberFormatDecimal": "period",
+        "clientsideNumberFormatThousands": "comma",
+        "dataSeriesPublishToClientSide": false,
+        "showLineNumbersInControlsList": false,
+        "saveFileType": "Formatted JSON",
+        "keyboardShortcutsJSON": "",
+        "preRenderWarningMessageShow": true,
+        "autoSetPreRenderOnForAllUX": false,
+        "selected": "ffb0ad9e-2ece-471e-873b-47aab06d9b66\n",
+        "designPaneIndex": 1,
+        "masterPaneC": "controls",
+        "serverSideEventIndex": 1,
+        "clientSideEventIndex": 1,
+        "clientSideEventIndexC": "1",
+        "lastControlSelected": "insert_dialog_textbox",
+        "__WPhostName": "Chrome",
+        "embeddedMode": false,
+        "_style_hassubthemeTweaks": false,
+        "repeatingSectionsAreDirty": true,
+        "toolBox_value": "",
+        "addinBuildNumber": "4932",
+        "addinBuildNumberHighestUsed": "4932",
+        "alphaFiveBuildNumber": "12",
+        "openedFromTemplate": false,
+        "builtWithVersionNumer": 1,
+        "_buildCount": "4",
+        "securityEnabled": false,
+        "showHideIsUsed": false,
+        "precalc": {
+            "js_editorSetInitialization": ";\n",
+            "customControl": {
+                "js_beforePrepare": "",
+                "js_afterRender": "",
+                "customControl_xbasicFunctions": ""
+            },
+            "jschart": {
+                "js_beforePrepare": "",
+                "js_afterRender": "",
+                "jschart_xbasicFunctions": ""
+            },
+            "rgraph": {
+                "libraries": ""
+            },
+            "getSetFunctions": {
+                "js_beforePrepare": ""
+            },
+            "injectibleHTML": "",
+            "containerWindowHTML": "",
+            "repeatingsectionInfoJs": "",
+            "framesInfoJS": "{dialog.object}.framesInfo = {\n\n};\n",
+            "jsActionJavascriptGlobalFunctions": "",
+            "xbActionJavascriptGlobalFunctions": "",
+            "javascriptSetupForGridLookups": "{\n\tACCOUNT: {\n\tfieldsToFillin: [\n\t\t'ACCOUNT',\n\t\t'ACCNAME',\n\t\t'ACCID'\t\n],\n\tresetAfterFillin: true,\n\tworkingMessage: '<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>'\n}\n}",
+            "javascript": {
+                "showWaitMessage": "",
+                "hideWaitMessage": "",
+                "embeddedUXComponents": ""
+            },
+            "fileUpload_controlInfo": "",
+            "javascript_cascadingDropdowns": "{dialog.object}._cascadingControls = [];\n{dialog.object}._cascadingControlsChildren = [];",
+            "template_html": "<!--div GLOBALERRORS-->\n<div class=\"errorTip\" style=\"margin-bottom: 2px; display: none; width: 8in; \" id=\"{dialog.componentname}.GLOBALERRORS\"></div>\n<!--End div GLOBALERRORS-->\n\n<div id=\"{dialog.componentname}.R1\">\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCOUNT\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Account</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"{dialog.style}EditBG\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT\" name=\"V.R{grid.rownumber}.ACCOUNT\"  value=\"\"  onBlur=\"var lObj = {dialog.object}.getControl('LIST1'); if(lObj) {  if(lObj.listIsDirty()) {  alert('Cannot refresh List because it has unsynchronized edits.'); } else {  var options = { \tkeepFocusOnCurrentSelection: true, \tsetFocusToValue: '', \trefreshDependentLists: true, \tonlyRefreshDependentLists: false }; {dialog.object}.refreshListData('LIST1',options); } };\"   title=\"\" autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"{dialog.style}EditBGSeparator\" >&nbsp;</td>\n\t\t<td id=\"{grid.componentname}.V.R{grid.rownumber}.ACCOUNT.BUTTON\" class=\"{dialog.style}EditBGButton\" style=\"width: 0%;\"><img src=\"images/$$edit.find.png.a5image\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCNAME\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCNAME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Acc Name</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ACCNAME\" title=\"\"     class=\"[class.dialogInput]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"    name=\"V.R{grid.rownumber}.ACCNAME\"    value=\"\"    />\n<!--FldE-->\n</div>\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; *display: inline; width: 100%; \">\n<tr>\n<td style=\"width:100%\">\n\n<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE\" name=\"V.R{grid.rownumber}.DATE\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ACCID\" for=\"{grid.componentname}.V.R{grid.rownumber}.ACCID\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">Acc Id</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ACCID\" title=\"\"     class=\"[class.dialogInput]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"    name=\"V.R{grid.rownumber}.ACCID\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.LIST1\" for=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"display:block;\">List1</label>\n<!--LblE-->\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" name=\"V.R{grid.rownumber}.LIST1\" /><!--JSControlEnd-->\n<div  class=\"[theme:listBox.base.className|{dialog.style}List]\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1.CONTROL\"  class=\"{grid.componentName}_LIST1\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n\n\n</div>\n<!--div DEBUGUPDATECOMMANDS-->\n<div class=\"\" style=\"display: none; \" id=\"{dialog.componentname}.DEBUGUPDATECOMMANDS\"></div>\n<!--End div DEBUGUPDATECOMMANDS-->\n",
+            "panelDisplayNames": "",
+            "controlJavascript": "",
+            "controlJavascriptRepeatingSections": "",
+            "template_js": "",
+            "sessionVarsInShowHideExpns": "",
+            "flagHasShowTimer": false,
+            "themeSearchReplaceString": "[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]=*if_error(p.editButtonGroup.base.container.editClassName,\"[class.editButtonGroupEdit]\")\n[theme:editButtonGroup.base.container.className|{grid.style}EditBG]=*if_error(p.editButtonGroup.base.container.className,\"{grid.style}EditBG\")\n[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]=*if_error(p.editButtonGroup.base.container.separatorClassName,\"{grid.style}EditBGSeparator\")\n[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]=*if_error(p.editButtonGroup.base.container.button.className,\"{grid.style}EditBGButton\")\n[theme:listBox.base.className|{dialog.style}List]=*if_error(p.listBox.base.className,\"{dialog.style}List\")\n",
+            "flagHasHTML5ImageCapture": false,
+            "flagUsesCordova": false,
+            "flagUseAmazonS3FileUpload": false,
+            "flagUseStripe": false,
+            "usesSystemSVG": false,
+            "flagUseAudioPlayer": false,
+            "flagUseInk": false,
+            "flagUsesAudioLibrary": false,
+            "flagUsesPhoneGapFileSystemFunctions": false,
+            "flagUsesGetAccurateLocation": false,
+            "editorSet_for_editor": "{dialog.object}._EDITOR_EDITORSET = {};",
+            "otherJS": "",
+            "javascript_layoutRules": "",
+            "javascript_controlNesting": "{\n\n}",
+            "appcacheEvents": ""
+        },
+        "FieldsInRepeatingSectionsDeletedBySecurity": "",
+        "repeatingSectionsToRecalc": "",
+        "dialogObject": "if(typeof {dialog.componentName}_DlgObj == 'object') {dialog.componentName}_DlgObj._destroy();\nvar {dialog.componentName}_DlgObj = new A5.DialogComponentHelper('{dialog.componentName}',{\n\tajaxURL: '{dialog.ajaxUrl}',\n\t_embeddedMode: {dialog.embeddedMode},\n\t_livePreviewInBuilder: {livePreviewInBuilder},\n\tcomponentGUID: 'fdfb2ac3-b98c-4e14-be40-d3034da9c079',\n\tcolumnInfo: {columninfo},\n\toriginalValues: {dialog.jsOriginalValues},\n\tdefaultValues: {dialog.jsDefaultValues},\n\tdatePickerMonthNames: [{datePickerMonthNames}],\n\tdatePickerDayNames: [{datePickerDayNames}],\n\tdatePickerTodayButton: '{datePickerTodayButton}',\n\tdatePickerCloseButton: '{datePickerCloseButton}',\n\tdatePickerFirstDayOfWeek: {datePickerFirstDayOfWeek},\n\tresetFormMessage: '{resetFormMessage}',\n\tresetFormTitle: '{resetFormTitle}',\n\tresetFormIcon: '{resetFormIcon}',\n\tdirtyFormMessage: '{dirtyFormMessage}',\n\tdirtyFormTitle: '{dirtyFormTitle}',\n\tdirtyFormIcon: '{dirtyFormIcon}',\n\tdeleteRecordDialogTitle: '{deleteRecordTitle}',\n\tdeleteRecordDialogMessage: '{deleteRecordMessage}',\t\n\tssDateFormat: '{serverSideDateFormat}',\n\tstyleName: '{dialog.style}',\n\t_fieldHelpers_DIALOG2: [],\n\tparentComponentAlias: '{parentComponentAlias}',\n\tsubmitIfHasClientSideErrors: true, \n\trowErrors: {\n\t\t\t\tshowMessageBox: false,\n\t\t\t\tmessageBoxTitle: 'Error',\n\t\t\t\tstyle: 'color: red; width: 6in; height: 2in;'\n\t\t},\n\tfieldErrors: {\n\t\ttype: 'block', \n\t\tclassName: 'errorText',\n\t\tinputClassName: '[class.gridInputError]',\n\t\tedit: { \n\t\t\tcontainer: { className: '[class.gridInputContainerError]'}\n\t\t},\n\t\ticon: '{images.dialog.editError}',\n\t\tglobal: {\n\t\t\tcontId: '{dialog.componentname}.GLOBALERRORS',\n\t\t\thoverClassName: 'errorTextHighlight',\n\t\t\thoverInputClassName: 'errorInputHighlight'\n\t\t}\n\t}\n\n\t});\n\n",
+        "xbasiccode": {
+            "blankInitialValueIfVarNotFound": "",
+            "setValueProperties": "value.ACCOUNT=\"\"\nvalue.ACCNAME=\"\"\nvalue.DATE=\"\"\nvalue.ACCID=\"\"\nvalue.LIST1=\"\"",
+            "setValueProperties2": "value.ACCOUNT=\"\"\nvalue.ACCNAME=\"\"\nvalue.DATE=\"\"\nvalue.ACCID=\"\"\nvalue.LIST1=\"\"",
+            "setValueUnformattedProperties": "value.ACCOUNT=convert_type(\"\",\"C\")\nvalue.ACCNAME=convert_type(\"\",\"C\")\nvalue.DATE=convert_type(\"\",\"D\")\nvalue.ACCID=convert_type(\"\",\"C\")\nvalue.LIST1=convert_type(\"\",\"C\")\n"
+        },
+        "componentType": "Dialog2",
+        "version": 1,
+        "recNav": {
+            "slider": {
+                "showSlider": false
+            }
+        },
+        "A5SaveTimeStamp": "20171218180110232",
+        "__allowCascadingRecalc": true,
+        "Livepreview_permissions": "",
+        "minimumBuildNumber": "",
+        "livePreview_permissions_friendly": "",
+        "lastbutton": "OK",
+        "containerSubTypeNew": "",
+        "containerSubTypeOld": "",
+        "flagDropdownCascadingChanged": false,
+        "_flagDoTreeview": true,
+        "arguments": [
+            {
+                "Name": "mAccId",
+                "DataType": "Numeric",
+                "Source": "RUNTIMEBINDING",
+                "VariableScope": "",
+                "VariableName": "",
+                "DefaultValue": "{AccId}"
+            }
+        ],
+        "a_actionJavascript": [
+            {
+                "actionGuid": "3c461244-8632-4fec-9f16-84b41688a54d ",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$control.browse'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}List Control Actions.... (action: Refresh Data){T=4}{I:'a5_vertical_line'}\">\n<action=\"List Control Actions.... (action: Refresh Data)\">\n<icon=\"$$control.browse\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_Dialog_ListControlActions(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<listAction=\"Refresh Data\">\n<listId=\"list1\">\n<targetListId=\"\">\n<direction=\"Next\">\n<keyValues=\"\">\n<addRowIfKeyNotFound=.F.>\n<pageNumber=1>\n<searchField=\"\">\n<layoutName=\"\">\n<clientSideSortColumnName=\"\">\n<clientSideSortDirection=\"Ascending\">\n<serverSideSortColumnNumber=\"1\">\n<clientSideSortType=\"Default\">\n<clientSideSortMode=\"Simple\">\n<clientSideSortDef=\"\">\n<clientSideGroupingJSON=\"\">\n<listNavigatorJSON=\"\">\n<shiftDirection=\"\">\n<exportSettings=\"\">\n<keepFocusOnCurrentSelection=.T.>\n<setFocusToValue=\"\">\n<refreshDependentLists=.T.>\n<incrementalRefresh=.F.>\n<onlyRefreshDependentLists=.F.>\n<warnIfListIsDirtyBeforeFullRefresh=.T.>\n<warningMessage=\"Cannot refresh List because it has unsynchronized edits.\">\n<listDetailViewAction=\"\">\n<promptforconfirmation=.T.>\n<filterExpn=\"\">\n<orderExpn=\"\">\n<filterParameters=\"\">\n<populateControlsMap=\"\">\n<scrolltorow=\"\">\n<scrolltovalue=\"\">\n<scrollto<mode=\"into-view\">\n<animation<allow=.F.>\n<duration=200>\n>\n<offset<x=0>\n<y=0>\n>\n>\n<window<animation<show<method=\"Slide\">\n<speed=\"Slow\">\n>\n<hide<method=\"Slide\">\n<speed=\"Slow\">\n>\n<hasAnimation=.T.>\n>\n>\n<onShowCompleteJS=\"\">\n<onHideCompleteJS=\"\">\n<togglemode=\"ToggleVisibility\">\n<targetRow=\"<Current>\">\n<flagAnimated=.F.>\n<animationType=\"slide-left\">\n<animationDuration=\"200\">\n<animationTween=\"ease-in-out\">\n<keepSelection=.T.>\n%str%>\n<javascriptAttribute=<<%str%\nvar lObj = {dialog.object}.getControl('LIST1');\nif(lObj) { \nif(lObj.listIsDirty()) { \nalert('Cannot refresh List because it has unsynchronized edits.');\n} else { \nvar options = {\n\tkeepFocusOnCurrentSelection: true,\n\tsetFocusToValue: '',\n\trefreshDependentLists: true,\n\tonlyRefreshDependentLists: false\n};\n{dialog.object}.refreshListData('LIST1',options);\n}\n};\n%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+            }
+        ]
+    }
+}
